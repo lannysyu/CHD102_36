@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* color:#000; */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0.12em;
+    /* text-align: left; */
+    /* color: #ffffff; */
+}
+
+h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.18em;
+    /* text-align: left; */
+    /* color: #ffffff; */
+}
+
+h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.12em;
+}
+
+h5 {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    /* text-align: left; */
+}
+
+.h5 {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    /* text-align: left; */
+}
+
+.h6 {
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.06em;
+    /* text-align: left; */
+}
+
+.header_pic a,
+.hot_button a {
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.12em;
+    /* text-align: center; */
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.header_nav {
+    width: 1200px;
+    height: 100px;
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    margin: auto;
+
+}
+
+.header_nav .logo {
+    align-self: center;
+    padding: 0px 20px 0px 60px;
+    display: flex;
+}
+
+.header_nav .logo img {
+    width: 80px;
+    align-items: center;
+}
+
+.header_nav .search {
+    /* outline: auto; */
+    margin-right: auto;
+    display: flex;
+}
+
+.header_nav .search .bar {
+    align-self: center;
+    display: flex;
+    padding: 10px 10px;
+    background-color: #F2F2F233;
+    border-radius: 20px
+}
+
+.header_nav .search .bar i {
+    color: #fff;
+    padding: 0 3px;
+}
+
+.header_nav .search .input {
+    background-color: transparent;
+    border: none;
+    padding: 0px 5px;
+}
+
+.header_nav .search .input:focus {
+    outline: none;
+}
+
+.header_nav .search :hover {
+    outline: none;
+    background-color: #F2F2F255;
+}
+
+.header_nav .search .bar i,
+.header_nav .search .bar a,
+.header_nav .search .bar .input:hover {
+    background-color: transparent;
+}
+
+.header_nav .item {
+    align-self: center;
+}
+
+.header_nav .item ul {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    padding-right: 60px;
+    gap: 35px;
+}
+
+.header_nav .item ul a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+.header_nav .item ul a:hover {
+    color: #00EFFE;
+}
+
+.item_fish {
+    position: absolute;
+    top: -16px;
+    right: 15%;
+    display: none;
+}
+
+.item_fish img {
+    width: 50%;
+}
+
+.header_nav .item ul a:hover .item_fish {
+    display: block;
+    color: #00EFFE;
+}
+
+.header_pic {
+    position: relative;
+    font-size: 0px;
+}
+
+.header_pic .title {
+    position: absolute;
+    top: 250px;
+    left: 520px;
+}
+
+.header_pic .title h1,
+.header_pic .title h2 {
+    color: #fff;
+}
+
+.header_pic .title a {
+    text-decoration: none;
+    color: #00EFFE;
+    border: 1px solid #00EFFE;
+    border-radius: 35px;
+    padding: 15px 30px;
+    display: inline-flex;
+    margin-top: 50px;
+}
+
+.header_pic .title a img {
+    padding-left: 10px;
+}
+
+.header_pic .title a:hover {
+    background-color: #ffffff33;
+    border: 1px solid #fff;
+}
+
+/* .hot{
+    background-color: #F9F3F0;
+} */
+section .hot_title {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+section .hot_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+section .hot_card .oi,
+section .hot_card .gi {
+    display: flex;
+    justify-self: center;
+    width: 1036px;
+    font-size: 0px;
+    align-items: center;
+    background-color: #F9F3F0;
+    border-radius: 8px;
+    position: relative;
+}
+
+section .hot_card .oi .oi_text,
+section .hot_card .gi .gi_text {
+    padding: 0 90px;
+}
+
+section .hot_card .oi .oi_text h6,
+section .hot_card .gi .gi_text h6 {
+    padding-top: 10px;
+}
+
+section .hot_card .oi .oi_button,
+section .hot_card .gi .gi_button {
+    position: absolute;
+    /* display: inline; */
+    top: 65%;
+    right: -4.5%;
+    padding: 45px;
+    background-color: #0BC6D6;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+
+}
+
+section .hot_card .oi .oi_button_fish,
+section .hot_card .gi .gi_button_fish {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+section .hot_card .oi .oi_button a,
+section .hot_card .gi .gi_button a {
+    position: absolute;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    padding: 26px 38px;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+}
+
+.fish1 {
+    position: absolute;
+    top: 310px;
+    right: 50px;
+}
+
+.fish2 {
+    position: absolute;
+    top: 320px;
+    right: 20px;
+}
+
+.fish3 {
+    position: absolute;
+    top: 300px;
+    right: -60px;
+}
+
+.fish4 {
+    position: absolute;
+    top: 320px;
+    right: -70px;
+}
+
+.hot .hot_button {
+    width: 1036px;
+    text-align: right;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.hot .hot_button a {
+    text-decoration: none;
+    color: #0BC6D6;
+    border: 1px solid #0BC6D6;
+    border-radius: 35px;
+    padding: 15px 30px;
+    display: inline-flex;
+}
+
+.hot .hot_button a img {
+    padding-left: 10px;
+}
+
+.hot .hot_button a:hover {
+    background-color: #0BC6D6;
+    color: #fff
+}
