@@ -222,7 +222,7 @@
                         <div class="label">
                             <p>旅遊 TRAVEL
                                 <img src="./icon/section_news_icon.svg" alt="news_icon">
-                            </p>p>
+                            </p>
                         </div>
                         <div class="text">
                             <div class="title">
@@ -298,13 +298,99 @@
             </div>
         </div>
     </section>
-    <section>
-        <h2>海洋需要你</h2>
-        <p>SDG12、13和14是可持續發展目標中專注於環境保護的三個目標。<br>海洋在地球上佔了很大的面積，不僅提供了豐富的食物、資源和經濟活動，同時也是地球生命力的重要基石。</p>
-        <div class="sdg">
-            
+    <section class="need">
+        <div class="text">
+            <h2>海洋需要你</h2>
+            <p class="title_need">SDG12、13和14是可持續發展目標中專注於環境保護的三個目標。<br>海洋在地球上佔了很大的面積，不僅提供了豐富的食物、資源和經濟活動，同時也是地球生命力的重要基石。
+            </p>
+            <div class="sdg">
+                <div class="card">
+                    <div>
+                        <title>負責任的消費和生產</title>
+                    </div>
+                    <p class="word">提高可持續消費和生產的效率，減少資源浪費和污染。推廣綠色產品和技術、減少廢棄物、促進可持續公共採購等。</p>
+                    <p class="percentage">21.2 億噸垃圾僅有<span>4%</span>回收再利用</p>
+                    <img src="./icon/seaction_need_icon (1).svg" alt="icon_SDG12">
+                </div>
+                <div class="card">
+                    <div>
+                        <title>應對氣候變化</title>
+                    </div>
+                    <p class="word">加強應對氣候變化的能力和減少對氣候的負面影響。加強氣候風險管理、減少溫室氣體排放、提高社區和國家的氣候適應能力。</p>
+                    <p class="percentage">每年二氧化碳排放量平均增加<span>50%</span></p>
+                    <img src="./icon/seaction_need_icon (2).svg" alt="icon_SDG12">
+                </div>
+                <div class="card">
+                    <div>
+                        <title>保護海洋生態系統</title>
+                    </div>
+                    <p class="word">保護和維護海洋和沿岸生態系統的健康和可持續發展。減少海洋污染、保護珊瑚礁和海草床、維護漁業可持續發展、加強海洋科學研究等。</p>
+                    <p class="percentage">全球海洋僅有<span>2.7%</span>為海洋保護區</p>
+                    <img src="./icon/seaction_need_icon (3).svg" alt="icon_SDG12">
+                </div>
+            </div>
+            <a class="join" href="#">加入我們</a>
         </div>
+        <div class="bck">
+            <img src="./pic/section_need_pic.svg" alt="need_background">
+        </div>
+        <section class="gallery">
+            <h3>攝影相冊</h3>
+
+
+
+
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+                integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="owl/owl.carousel.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $('.loop').owlCarousel({
+                        center: true,
+                        items: 2,
+                        loop: true,
+                        margin: 10,
+                        responsive: {
+                            600: {
+                                items: 4
+                            }
+                        }
+                    });
+                    $('.nonloop').owlCarousel({
+                        center: true,
+                        items: 2,
+                        loop: false,
+                        margin: 10,
+                        responsive: {
+                            600: {
+                                items: 4
+                            }
+                        }
+                    });
+                });
+            </script>
+        </section>
     </section>
+    <footer>
+        <div class="footer_text">
+            <p>本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。 <br>若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。<br>COPYRIGHT
+                &copy;2023 div.ing All rights reserved.</p>
+        </div>
+        <div class="footer_connect">
+            <i class="fa-solid fa-phone"></i>
+            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="footer_sub">
+            <i class="fa-solid fa-envelope"></i>
+            <input class="sub_footer" type="email" placeholder="請輸入您的電子信箱">
+            <p class="footer_p">訂閱</p>
+        </div>
+    </footer>
 </body>
 
 </html>
