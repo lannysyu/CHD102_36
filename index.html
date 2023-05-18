@@ -24,7 +24,9 @@
                 <div class="bar">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <input class="input" type="search" placeholder="">
-                    <a href="#"><i class="fa-solid fa-circle-arrow-right"></i>
+                    <a href="#">
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                    </a>
                 </div>
             </div>
             <div class="item">
@@ -335,60 +337,44 @@
             <img src="./pic/section_need_pic.svg" alt="need_background">
         </div>
         <section class="gallery">
-            <h3>攝影相冊</h3>
-
-
-
-
-
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
-                integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
-                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            <script src="owl/owl.carousel.min.js"></script>
-            <script>
-                $(document).ready(function () {
-                    $('.loop').owlCarousel({
-                        center: true,
-                        items: 2,
-                        loop: true,
-                        margin: 10,
-                        responsive: {
-                            600: {
-                                items: 4
-                            }
-                        }
-                    });
-                    $('.nonloop').owlCarousel({
-                        center: true,
-                        items: 2,
-                        loop: false,
-                        margin: 10,
-                        responsive: {
-                            600: {
-                                items: 4
-                            }
-                        }
-                    });
-                });
-            </script>
+            <h3>攝影相冊 GALLERY</h3>
+            <div class="gallery_pic">
+                <img src="./pic/section_gallery_pic (1).svg" alt="grllery_pic1">
+                <img src="./pic/section_gallery_pic (2).svg" alt="grllery_pic2">
+                <img src="./pic/section_gallery_pic (3).svg" alt="grllery_pic3">
+                <img src="./pic/section_gallery_pic (4).svg" alt="grllery_pic4">
+                <img src="./pic/section_gallery_pic (5).svg" alt="grllery_pic5">
+                <img src="./pic/section_gallery_pic (6).svg" alt="grllery_pic5">
+                <img src="./pic/section_gallery_pic (7).svg" alt="grllery_pic5">
+            </div>
+            <div class="gallery_button">
+                <a href="#" class="arrow_left">
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                </a>
+                <a href="#" class="arrow_right">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+            </div>
         </section>
     </section>
-    <footer>
+    <footer class="footer">
         <div class="footer_text">
             <p>本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。 <br>若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。<br>COPYRIGHT
                 &copy;2023 div.ing All rights reserved.</p>
         </div>
         <div class="footer_connect">
-            <i class="fa-solid fa-phone"></i>
-            <i class="fa-solid fa-envelope"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <i class="fa-brands fa-twitter"></i>
+            <a href="#"><i class="fa-solid fa-phone"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
         </div>
         <div class="footer_sub">
             <i class="fa-solid fa-envelope"></i>
-            <input class="sub_footer" type="email" placeholder="請輸入您的電子信箱">
-            <p class="footer_p">訂閱</p>
+            <input class="input" type="email" placeholder="請輸入您的電子信箱">
+            <a href="#">
+                <p class="footer_p">訂閱</p>
+            </a>
         </div>
     </footer>
 </body>

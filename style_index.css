@@ -130,6 +130,7 @@ header {
     padding: 0 3px;
 }
 
+
 .header_nav .search .input {
     background-color: transparent;
     border: none;
@@ -149,6 +150,10 @@ header {
 .header_nav .search .bar a,
 .header_nav .search .bar .input:hover {
     background-color: transparent;
+}
+
+.header_nav .search .bar a i:hover {
+    color: #00EFFE;
 }
 
 .header_nav .item {
@@ -238,21 +243,26 @@ header {
     border: 1px solid #fff;
 }
 
-section .hot_title {
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 20px;
+.hot {
+    background-image: url(./bg/bg_hot.svg);
+    width: 100%;
 }
 
-section .hot_card {
+.hot .hot_title {
+    text-align: center;
+    padding-top: 130px;
+    padding-bottom: 30px;
+}
+
+.hot .hot_card {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
 
-section .hot_card .oi,
-section .hot_card .gi {
+.hot .hot_card .oi,
+.hot .hot_card .gi {
     display: flex;
     justify-self: center;
     width: 1036px;
@@ -263,18 +273,18 @@ section .hot_card .gi {
     position: relative;
 }
 
-section .hot_card .oi .oi_text,
-section .hot_card .gi .gi_text {
+.hot .hot_card .oi .oi_text,
+.hot .hot_card .gi .gi_text {
     padding: 0 90px;
 }
 
-section .hot_card .oi .oi_text h6,
-section .hot_card .gi .gi_text h6 {
+.hot .hot_card .oi .oi_text h6,
+.hot .hot_card .gi .gi_text h6 {
     padding-top: 10px;
 }
 
-section .hot_card .oi .oi_button,
-section .hot_card .gi .gi_button {
+.hot .hot_card .oi .oi_button,
+.hot .hot_card .gi .gi_button {
     position: absolute;
     /* display: inline; */
     top: 65%;
@@ -286,15 +296,15 @@ section .hot_card .gi .gi_button {
 
 }
 
-section .hot_card .oi .oi_button_fish,
-section .hot_card .gi .gi_button_fish {
+.hot .hot_card .oi .oi_button_fish,
+.hot .hot_card .gi .gi_button_fish {
     position: absolute;
     top: 0;
     right: 0;
 }
 
-section .hot_card .oi .oi_button a,
-section .hot_card .gi .gi_button a {
+.hot .hot_card .oi .oi_button a,
+.hot .hot_card .gi .gi_button a {
     position: absolute;
     color: #fff;
     font-size: 14px;
@@ -305,6 +315,17 @@ section .hot_card .gi .gi_button a {
     top: 0;
     right: 0;
 }
+
+.hot .hot_card .oi .oi_button a:hover {
+    background-color: #ffffff30;
+    box-shadow: 0px 0px 20px #00EFFE;
+}
+
+.hot .hot_card .gi .gi_button a:hover {
+    background-color: #ffffff30;
+    box-shadow: 0px 0px 20px #00EFFE;
+}
+
 
 .fish1 {
     position: absolute;
@@ -408,6 +429,11 @@ section .hot_card .gi .gi_button a {
     background-color: #c5b220;
 }
 
+.news {
+    background-image: url(./bg/bg_news.svg);
+    width: 100%;
+}
+
 .news h2 {
     text-align: center;
     padding: 100px 0 20px 0;
@@ -488,6 +514,11 @@ section .hot_card .gi .gi_button a {
     line-height: 24px;
     letter-spacing: 0.12em;
     text-align: center;
+}
+
+.news .box .item .text .button a:hover {
+    color: #ffffff;
+    background-color: #EDD523;
 }
 
 .news .box .item .text .button i {
@@ -592,13 +623,14 @@ section .hot_card .gi .gi_button a {
     background-color: #0aa9b8;
 }
 
-.need h2 , 
-.title_need  {
+.need h2,
+.title_need {
     text-align: center;
 }
 
 .need {
     position: relative;
+    font-size: 0;
 }
 
 .need .bck img {
@@ -607,7 +639,7 @@ section .hot_card .gi .gi_button a {
 
 .need .text {
     position: absolute;
-    top: 13%;
+    top: 15%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -705,9 +737,6 @@ section .hot_card .gi .gi_button a {
     color: #EDD523;
 }
 
-
-
-
 .need .text .join {
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -729,4 +758,148 @@ section .hot_card .gi .gi_button a {
 
 .need .text .join:hover {
     background-color: #c5b220;
+}
+
+.gallery {
+    text-align: center;
+    background-color: #00254780;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.gallery .gallery_pic {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.gallery h3 {
+    color: #ffffff;
+    padding: 50px 0;
+}
+
+.gallery .gallery_button {
+    display: flex;
+    width: 1200px;
+    justify-content: flex-end;
+    padding-right: 20px;
+    margin-top: 30px;
+    gap: 20px
+}
+
+.gallery_button a {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #00EFFE;
+    border-radius: 50%;
+    color: #00EFFE;
+    padding: 15px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.gallery_button a:hover {
+    background-color: #ffffff50;
+    border: 1px solid #ffffff50;
+}
+
+.footer {
+    display: flex;
+    background-color: #002547;
+    color: #BDBDBD;
+    width: 100%;
+}
+
+.footer_text {
+    color: #BDBDBD;
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.12em;
+    margin-left: 100px;
+    /* width:50%; */
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.footer_connect a {
+    color: #BDBDBD;
+}
+
+.footer_connect {
+    display: flex;
+    width: 13%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer_connect a:hover {
+    color: #0BC6D6;
+}
+
+.footer_sub {
+    display: flex;
+    /* width: 20%; */
+    margin: 56px 100px 56px 50px;
+    padding-left: 20px;
+    border: 1px soild #ffffff;
+    border-radius: 30px;
+    background-color: #ffffff20;
+    align-items: center;
+}
+
+.footer_sub .input {
+    background-color: transparent;
+    border: none;
+    padding-right: 25px;
+}
+
+.footer_sub .input:focus::placeholder {
+    color: transparent;
+}
+
+.footer_sub .input::placeholder {
+    color: #a1a1a1;
+    font-size: 9px;
+}
+
+.footer_sub .input:focus {
+    outline: none;
+}
+
+.footer_sub i {
+    margin-right: 10px;
+
+}
+
+.footer_sub .footer_p {
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+}
+
+.footer_sub a {
+    background-color: #0BC6D6;
+    display: block;
+    padding: 12px 25px;
+    flex-grow: 1;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0 30px 30px 0;
+}
+
+.footer_sub a:hover {
+    background-color: #0aa9b8;
 }
