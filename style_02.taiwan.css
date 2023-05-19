@@ -346,7 +346,7 @@ section .arrow a:focus {
 
 .footer_sub i {
     margin-right: 10px;
-
+    color: #a1a1a1;
 }
 
 .footer_sub .footer_p {

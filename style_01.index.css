@@ -648,7 +648,7 @@ header {
     padding: 0 70px;
     font-family: "Inter", sans-serif;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 900;
     line-height: 21px;
     letter-spacing: 0.12em;
     padding-bottom: 90px;
@@ -705,10 +705,11 @@ header {
     color: #333333;
     font-family: "Inter", sans-serif;
     font-size: 12px;
-    font-weight: 400;
+    font-weight: 900;
     line-height: 19px;
     letter-spacing: 0.12em;
     padding-top: 20px;
+    text-shadow: 0px 0px 10px #ffffff;
 }
 
 .need .text .sdg .card .percentage {
@@ -803,8 +804,8 @@ header {
 }
 
 .gallery_button a:hover {
-    background-color: #ffffff50;
-    border: 1px solid #ffffff50;
+    background-color: #ffffff30;
+    border: 1px solid #ffffff;
 }
 
 .footer {
@@ -875,6 +876,7 @@ header {
 
 .footer_sub i {
     margin-right: 10px;
+    color: #a1a1a1;
 
 }
 
