@@ -285,7 +285,7 @@ header {
     /* width: 20%; */
     margin: 56px 100px 56px 50px;
     padding-left: 20px;
-    border: 1px soild #ffffff;
+    border: 1px solid transparent;
     border-radius: 30px;
     background-color: #ffffff20;
     align-items: center;
@@ -316,7 +316,7 @@ header {
 }
 
 .footer_sub .footer_p {
-    color: #fff;
+    color: #ffffff;
     font-size: 12px;
     letter-spacing: 0.2em;
 }
@@ -366,11 +366,11 @@ header {
     text-decoration: none;
 }
 
-.latest .content .main .control .lable {
+.latest .content .main .control .label {
     position: relative;
 }
 
-.latest .content .main .control .lable p {
+.latest .content .main .control .label p {
     color: #ffffff;
     background-color: #EDD523;
     display: inline-block;
@@ -382,7 +382,7 @@ header {
     letter-spacing: 0.12em;
 }
 
-.latest .content .main .control .lable img {
+.latest .content .main .control .label img {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -630,3 +630,4 @@ header {
     border: 1px solid #ffffff;
     border-radius: 50%;
     background-color: #EDD523;
+}
