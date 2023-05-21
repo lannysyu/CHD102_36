@@ -300,7 +300,7 @@ header {
 /* .header_pic .box .text input[type="date"]::-webkit-datetime-edit {
     color: #490000;
 } */
-/* TODO input-確認圖示怎麼改顏色*/
+/* TODO input 確認圖示怎麼改顏色*/
 
 .header_pic .box .text input:focus {
     outline: none;
@@ -445,13 +445,18 @@ header {
 }
 
 .content {
-    margin-top: 200px;
+    margin: 200px 0 50px 0;
     display: flex;
     justify-content: center;
     gap: 20px;
+
 }
 
-.content aside {
+.content .left {
+    position: relative;
+}
+
+.content .left aside {
     display: flex;
     flex-direction: column;
     width: 130px;
@@ -459,16 +464,23 @@ header {
     background-color: #ECECEC;
     padding: 40px 40px;
     position: sticky;
-    height: 500px;
+    /* height: 500px; */
+    top: 150px;
 }
 
-.content aside .type {
-    margin: 10px 0;
+/* NOTE sticky定位要同時設定top */
+
+.content .left aside .bottom_line {
+
     padding-bottom: 20px;
     border-bottom: 1px solid #E0E0E0;
 }
 
-.content aside .type .title {
+.content .left aside .type {
+    margin: 10px 0;
+}
+
+.content .left aside .type .title {
     font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -478,7 +490,7 @@ header {
 
 }
 
-.content aside .type .item {
+.content .left aside .type .item {
     font-family: "Inter", sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -489,12 +501,32 @@ header {
     gap: 12px;
 }
 
+/* .content .left .type .item:checked {
+    border:1px solid red;
+    border-color: #5D0027;
+}
+.content .left .type .item input:checked{
+    border:1px solid red;
+    border-color: #5D0027;
+}
+
+.content .left .type .item label::before{
+    border:1px solid red;
+    border-color: #5D0027;
+} */
+/* TODO checkbox 修改樣式 */
+
+.content .right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 .content .box {
     display: flex;
     background-color: #F9F3F0;
     font-size: 0px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .content .box .text {
@@ -570,16 +602,28 @@ header {
 
 .content .box .text .like .button {
     text-align: right;
-    line-height: 42px;
     justify-content: end;
     display: flex;
-
+    height: 48px;
 }
 
+.content .box .text .like button {
+    border: none;
+    background-color: transparent;
+}
+
+.content .box .text .like button:hover img {
+    background-image: url(./icon/store_like_icon_hover.svg);
+}
+
+.content .box .text .like button:focus img {
+    background-image: url(./icon/store_like_icon_active.svg);
+}
+
+/* TODO button 點了其他的本身的就不會有顏色 */
 .content .box .text .like .button img {
     font-size: 0px;
 }
-
 
 .content .box .text .like a {
     font-family: "Inter", sans-serif;
@@ -598,7 +642,49 @@ header {
 }
 
 .content .box .text .like a:hover {
-    background-color: #0aa9b8;
+    background-color: #00EFFE;
     color: #ffffff;
-    border: 1px solid #0aa9b8;
+    border: 1px solid #00EFFE;
+}
+
+.page {
+    display: flex;
+    gap: 30px;
+    font-size: 14px;
+    color: #333333;
+    margin: 80px 0 50px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.page .number {
+    border: 1px solid transparent;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.page .number:hover {
+    border: 1px solid #F9F3F0;
+    color: #333333;
+    background-color: #F9F3F0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.page .arrow {
+    font-size: 0px;
+}
+
+.page .arrow i {
+    font-size: 16px;
+}
+
+.page .arrow:hover {
+    color: #33333370;
 }

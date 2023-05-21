@@ -233,6 +233,7 @@ header {
     border-radius: 50%;
     width: 90px;
     height: 90px;
+    /* NOTE a 變成正圓形要設定寬高 */
     text-align: center;
     line-height: 90px;
     font-size: 15px;
