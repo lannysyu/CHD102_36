@@ -270,7 +270,7 @@ header {
     display: inline-flex;
     background-color: #F9F3F0;
     padding: 50px 80px;
-    bottom: -25%;
+    bottom: -150px;
     left: 50%;
     transform: translateX(-50%);
     align-items: center;
@@ -442,4 +442,163 @@ header {
 
 .footer_sub a:hover {
     background-color: #0aa9b8;
+}
+
+.content {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.content aside {
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+    color: #333333;
+    background-color: #ECECEC;
+    padding: 40px 40px;
+    position: sticky;
+    height: 500px;
+}
+
+.content aside .type {
+    margin: 10px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.content aside .type .title {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    padding-bottom: 10px;
+
+}
+
+.content aside .type .item {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    padding: 5px 0;
+    display: flex;
+    gap: 12px;
+}
+
+
+.content .box {
+    display: flex;
+    background-color: #F9F3F0;
+    font-size: 0px;
+    margin-bottom: 20px;
+}
+
+.content .box .text {
+    display: flex;
+    padding: 40px 80px;
+    gap: 10px;
+}
+
+.content .box .text .name {
+    display: flex;
+    flex-direction: column;
+    width: 405px;
+}
+
+.content .box .text .name .introduce {
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #333333;
+    padding-top: 5px;
+}
+
+.content .box .text .name .location {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #333333;
+    margin-top: auto;
+    padding-bottom: 15px;
+}
+
+.content .box .text .name .label {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #ffffff;
+    display: flex;
+    gap: 10px;
+}
+
+.content .box .text .name .label .r {
+    padding: 5px 15px;
+    background-color: #8D7C00;
+    border-radius: 5px;
+}
+
+.content .box .text .name .label .t {
+    padding: 5px 15px;
+    background-color: #5D0027;
+    border-radius: 5px;
+}
+
+.content .box .text .name .label .l {
+    padding: 5px 15px;
+    background-color: #00656C;
+    border-radius: 5px;
+}
+
+.content .box .text .like {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content .box .text .like .button {
+    text-align: right;
+    line-height: 42px;
+    justify-content: end;
+    display: flex;
+
+}
+
+.content .box .text .like .button img {
+    font-size: 0px;
+}
+
+
+.content .box .text .like a {
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #0BC6D6;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid #0BC6D6;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.content .box .text .like a:hover {
+    background-color: #0aa9b8;
+    color: #ffffff;
+    border: 1px solid #0aa9b8;
 }
