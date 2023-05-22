@@ -142,41 +142,73 @@
                     <p>ASSIST</p>
                 </div>
             </div>
-            <div class="question">
-                <ul class="list">
+            <ul class="question">
+                <div class="list">
                     <button type="button">
                         <p>如何成為一名潛水員</p>
-                        <img src="./icon/padi_plus_icon.svg" alt="plus_icon">
+                        <div class="plus">
+                            <img src="./icon/padi_plus_icon.svg" alt="plus_icon">
+                        </div>
                     </button>
-                </ul>
-                <ul class="list">
+                    <!-- NOTE 加號移到右邊，要先在父層設定寬度 -->
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, optio!
+                        </p>
+                    </div>
+                </div>
+                <div class="list">
                     <button type="button">
                         <p>初學者潛水建議認知與課程</p>
-                        <img src="./icon/padi_plus_icon.svg" alt="plus_icon">
+                        <div class="plus">
+                            <img src="./icon/padi_plus_icon.svg" alt="plus_icon">
+                        </div>
                     </button>
-                </ul>
-                <ul class="list">
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, optio!
+                        </p>
+                    </div>
+                </div>
+                <div class="list">
                     <button type="button">
                         <p>潛水要準備什麼裝備</p>
-                        <img src="./icon/padi_plus_icon.svg" alt="plus_icon">
+                        <div class="plus">
+                            <img src="./icon/padi_plus_icon.svg" alt="plus_icon">
+                        </div>
                     </button>
-                </ul>
-                <ul class="list">
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, optio!
+                        </p>
+                    </div>
+                </div>
+                <div class="list">
                     <button type="button">
                         <p>近視可以戴隱形眼鏡潛水嗎</p>
-                        <img src="./icon/padi_plus_icon.svg" alt="plus_icon">
+                        <div class="plus">
+                            <img src="./icon/padi_plus_icon.svg" alt="plus_icon">
+                        </div>
                     </button>
-                </ul>
-                <ul class="list">
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, optio!
+                        </p>
+                    </div>
+                </div>
+                <div class="list">
                     <button type="button">
                         <p>要幾歲才能考潛水證</p>
-                        <img src="./icon/padi_plus_icon.svg" alt="plus_icon">
+                        <div class="plus">
+                            <img src="./icon/padi_plus_icon.svg" alt="plus_icon">
+                        </div>
                     </button>
-                </ul>
-            </div>
-            <div class="more">
-                <a href="#">MORE<i class="fa-solid fa-arrow-right-long"></i></a>
-            </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, optio!
+                        </p>
+                    </div>
+                </div>
+                <div class="more">
+                    <a href="#">MORE<i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </ul>
+
         </section>
         <section class="contact">
             <div class="pic">
@@ -189,31 +221,47 @@
                 </div>
             </div>
             <div class="social">
-                <a href="#"><i class="fa-solid fa-phone"></i></a>
-                <a href="#"><i class="fa-solid fa-envelope"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <div class="a">
+                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                    <p>02-28560066</p>
+                </div>
+                <div class="a">
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    <p>div.ing_2023@diver.com</p>
+                </div>
+                <div class="a">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <p>div.ing_2023</p>
+                </div>
+                <div class="a">
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <p>div.ing_2023</p>
+                </div>
+                <div class="a">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <p>div.ing_2023</p>
+                </div>
             </div>
             <div class="message">
                 <form action="#" method="#">
                     <div class="name">
                         <div>
-                            <label for="last">姓氏</label>
+                            <label for="last">姓氏<span>LEST NAME</span></label>
                             <input type="text" placeholder="Last name" id="last" name="last">
                         </div>
                         <div>
-                            <label for="first">名字</label>
+                            <label for="first">名字<span>FIRST NAME</span></label>
                             <input type="text" placeholder="First name" id="first" name="first">
                         </div>
                     </div>
                     <div class="email">
-                        <label for="email">電子信箱</label>
+                        <label for="email">電子信箱<span>EMAIL</span></label>
                         <input type="email" placeholder="Enter e-mail" id="email" name="email">
                     </div>
-                    <div class="message">
-                        <label for="message">留言</label>
-                        <textarea id="message" name="message" rows="6" cols="40">Leave a message</textarea>
+                    <div class="leave">
+                        <label for="message">您的留言<span>MESSAGE</span></label>
+                        <textarea id="message" name="message" rows="6" cols="40"
+                            placeholder="Leave a message"></textarea>
                     </div>
                     <div class="submit">
                         <a href="#">SUBMIT<i class="fa-solid fa-arrow-right-long"></i></a>

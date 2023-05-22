@@ -304,6 +304,14 @@ header {
     background-color: #0aa9b8;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-10%);
+}
+
 section {
     margin-top: 100px;
 }
@@ -402,6 +410,10 @@ h3 {
     display: block;
 }
 
+.content .more {
+    margin-top: auto;
+}
+
 .more,
 .submit {
     padding-top: 20px;
@@ -419,7 +431,8 @@ h3 {
     letter-spacing: 0.12em;
     text-align: center;
     display: inline-block;
-    color: #333333
+    color: #333333;
+    border-bottom: 2px solid transparent;
 }
 
 .more a i,
@@ -433,4 +446,196 @@ h3 {
 
 .submit a:hover {
     border-bottom: 2px solid #333333;
+}
+
+.assist {
+    display: flex;
+    gap: 100px;
+}
+
+.assist .question {
+    width: 915px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.assist .question .list {
+    display: flex;
+    border: 1px solid #BDBDBD80;
+}
+
+.assist .question .list .text {
+    display: none;
+}
+
+.assist .question .list button {
+    display: flex;
+    width: 100%;
+    border: none;
+    align-items: center;
+    background-color: transparent;
+    justify-content: space-between;
+}
+
+.assist .question .list button p {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.15em;
+    text-align: left;
+    display: block;
+    padding: 15px;
+}
+
+.assist .question .list button .plus {
+    padding: 20px;
+}
+
+.assist .question .more {
+    margin-top: auto;
+}
+
+.contact {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.contact .social {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-left: 100px;
+    width: 155px;
+}
+
+.contact .social .a {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    align-items: center;
+    height: 62px;
+}
+
+.contact .social .a:hover p {
+    display: block;
+}
+
+.contact .social .a p {
+    padding: 5px 8px;
+    border-bottom: 1px solid #BDBDBD90;
+    text-align: center;
+    display: none;
+}
+
+.contact .social .a i {
+    font-size: 20px;
+    color: #333333;
+    height: 22px;
+    width: 22px;
+}
+
+.contact .message {
+    margin-left: 60px;
+    width: 700px;
+    display: flex;
+}
+
+.contact .message form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .message label {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    /* line-height: 30px; */
+    letter-spacing: 0.18em;
+    text-align: left;
+    padding: 0 10px 10px 10px;
+    display: inline-block;
+}
+
+.contact .message label span {
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    /* line-height: 30px; */
+    letter-spacing: 0.12em;
+    text-align: left;
+    padding-left: 5px;
+    color: #33333380;
+}
+
+.contact .message .name {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.contact .message .name div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .message .email {
+    padding-bottom: 30px;
+}
+
+.contact .message .leave {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.contact .message .submit {
+    margin-top: auto;
+}
+
+input#last,
+input#first {
+    padding: 14px;
+    outline: none;
+    background-color: #BDBDBD40;
+    width: 307px;
+    border: none;
+}
+
+input#email {
+    padding: 14px;
+    outline: none;
+    background-color: #BDBDBD40;
+    border: none;
+    width: 672px;
+}
+
+textarea#message {
+    padding: 14px;
+    outline: none;
+    background-color: #BDBDBD40;
+    border: none;
+    width: 672px;
+}
+
+input#last::placeholder,
+input#first::placeholder,
+input#email::placeholder,
+textarea#message::placeholder {
+    color: #BDBDBD90
+}
+
+input#last:hover,
+input#first:hover,
+input#email:hover,
+textarea#message:hover {
+    background-color: #BDBDBD65;
 }
