@@ -478,6 +478,10 @@ h3 {
     justify-content: space-between;
 }
 
+.assist .question .list button:hover {
+    background-color: #BDBDBD20;
+}
+
 .assist .question .list button p {
     font-family: "Inter", sans-serif;
     font-size: 20px;
