@@ -343,4 +343,6 @@ aside .list a {
     text-align: right;
 }
 
-.part {}
+.part_title {
+    display: flex;
+}
