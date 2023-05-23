@@ -304,3 +304,43 @@ header {
     background-color: #0aa9b8;
 }
 
+body {
+    background-color: #F9F3F0;
+
+    text-align: center;
+}
+
+main {
+    position: relative;
+}
+
+aside {
+    position: sticky;
+    top: 100px;
+    width: 230px;
+    transform: translateX(100px);
+    margin-right: 500px;
+}
+
+aside .list {
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    gap: 40px;
+    border: 2px solid #ffffff;
+    margin-top: 100px;
+    background-color: #ffffff60;
+}
+
+aside .list a {
+    text-decoration: none;
+    color: #333333;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.12em;
+    text-align: right;
+}
+
+.part {}
