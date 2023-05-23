@@ -3,11 +3,12 @@
     padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
 
 
 h1 {
     font-family: "Inter", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
     font-size: 40px;
     font-weight: 700;
     line-height: 60px;
@@ -17,6 +18,8 @@ h1 {
 
 h2 {
     font-family: "Inter", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
+
     font-size: 32px;
     font-weight: 700;
     line-height: 48px;
@@ -26,6 +29,7 @@ h2 {
 
 h3 {
     font-family: "Inter", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
     font-size: 24px;
     font-weight: 700;
     line-height: 48px;
@@ -35,6 +39,7 @@ h3 {
 
 h4 {
     font-family: "Inter", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 48px;
@@ -44,6 +49,7 @@ h4 {
 
 h5 {
     font-family: "Inter", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -53,6 +59,7 @@ h5 {
 
 .h5 {
     font-family: "Inter", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -62,6 +69,7 @@ h5 {
 
 .h6 {
     font-family: "Inter", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 19px;
@@ -72,6 +80,7 @@ h5 {
 .header_pic a,
 .hot_button a {
     font-family: "Inter", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -86,7 +95,7 @@ header {
 }
 
 .header_nav {
-    width: 100%;
+    width: 1920px;
     height: 100px;
     display: flex;
     position: fixed;
@@ -179,7 +188,7 @@ header {
 .item_fish {
     position: absolute;
     top: -16px;
-    right: 15%;
+    right: 25%;
     display: none;
 }
 
@@ -212,6 +221,7 @@ header {
 .header_pic .title h2,
 .header_pic .title h3 {
     color: #fff;
+    text-align: left;
 }
 
 .footer {
@@ -224,6 +234,7 @@ header {
 .footer_text {
     color: #BDBDBD;
     font-family: "Inter", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
     font-size: 10px;
     font-weight: 400;
     line-height: 15px;
@@ -306,12 +317,14 @@ header {
 
 body {
     background-color: #F9F3F0;
-
     text-align: center;
 }
 
 main {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 aside {
@@ -320,6 +333,7 @@ aside {
     width: 230px;
     transform: translateX(100px);
     margin-right: 500px;
+    display: none;
 }
 
 aside .list {
@@ -336,6 +350,7 @@ aside .list a {
     text-decoration: none;
     color: #333333;
     font-family: "Inter", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 21px;
@@ -345,4 +360,158 @@ aside .list a {
 
 .part_title {
     display: flex;
+    width: 1200px;
+    margin: 200px 0;
+    text-align: left;
+}
+
+.part_title .pic_cm {
+    font-size: 0px;
+    margin-left: 13%
+}
+
+.part_title .text {
+    margin: auto;
+    transform: translateX(-50px);
+    width: 488px;
+    text-align: left;
+}
+
+.part_title .text .small {
+    font-family: "Inter", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0.06em;
+    margin-bottom: 25px;
+}
+
+.part_title .text h3 {
+    margin-bottom: 25px;
+}
+
+.part_title .text .content,
+.part_clownfish .text p {
+    font-family: "Inter", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.06em;
+    text-align: left;
+}
+
+.part_clownfish {
+    margin-bottom: 200px;
+}
+
+.part_clownfish .pic_rb {
+    font-size: 0px;
+    ;
+}
+
+.part_clownfish .text {
+    margin-top: 100px;
+    text-align: right;
+    /* transform: translateX(-185px); */
+}
+
+.part_clownfish .text p {
+    width: 488px;
+    display: inline-block;
+}
+
+.part_clownfish .content {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around
+}
+
+.part_clownfish .content .pic_cm {
+    font-size: 0px;
+}
+
+.part_anemone {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.part_anemone .pic_bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.part_anemone .pic_bg .pic {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 90px;
+    width: 1000px;
+    position: absolute;
+    z-index: 1;
+    font-size: 0;
+}
+
+.part_anemone .pic_bg .pic .pic_rm_2 {
+    transform: translateY(190px);
+}
+
+.part_anemone .pic_bg .bg {
+    position: relative;
+    transform: translateY(350px);
+}
+
+.part_anemone .pic_bg {
+    height: 1830px;
+}
+
+.part_anemone .second {
+    bottom: 190px
+}
+
+.part_jellyfish {
+    margin-bottom: 100px;
+}
+
+.part_other {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 1500px;
+}
+
+.part_other .pic {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+    width: 1000px;
+    position: absolute;
+    z-index: 1;
+    font-size: 0;
+    top: 0;
+}
+
+.part_other .pic .pic_rm_2 {
+    transform: translateY(190px);
+}
+
+.part_other .pic_bg {
+    font-size: 0;
+    position: relative;
+    margin-top: auto;
+}
+
+.footer {
+    background-color: transparent;
+    /* background-image: url(./pic/gallery/footer_bg_down.png); */
+    width: 1920px;
+    margin: auto;
+}
+
+.footer .pic {
+    position: absolute;
+    z-index: -1;
+    margin: auto;
 }

@@ -3,11 +3,12 @@
     padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
 
 
 h1 {
     font-family: "Inter", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
     font-size: 40px;
     font-weight: 700;
     line-height: 60px;
@@ -17,6 +18,7 @@ h1 {
 
 h2 {
     font-family: "Inter", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
     font-size: 32px;
     font-weight: 700;
     line-height: 48px;
@@ -26,6 +28,7 @@ h2 {
 
 h3 {
     font-family: "Inter", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
     font-size: 24px;
     font-weight: 700;
     line-height: 48px;
@@ -35,6 +38,7 @@ h3 {
 
 h4 {
     font-family: "Inter", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 48px;
@@ -44,6 +48,7 @@ h4 {
 
 h5 {
     font-family: "Inter", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -53,6 +58,7 @@ h5 {
 
 .h5 {
     font-family: "Inter", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -62,6 +68,7 @@ h5 {
 
 .h6 {
     font-family: "Inter", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 19px;
@@ -72,6 +79,7 @@ h5 {
 .header_pic a,
 .hot_button a {
     font-family: "Inter", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -86,7 +94,7 @@ header {
 }
 
 .header_nav {
-    width: 100%;
+    width: 1920px;
     height: 100px;
     display: flex;
     position: fixed;
@@ -282,14 +290,16 @@ section .arrow a:focus {
 
 .footer {
     display: flex;
-    background-color: #002547;
+    /* background-color: #002547; */
     color: #BDBDBD;
     width: 100%;
+    background-image: url(./pic/taiwan/footer_pic.png);
 }
 
 .footer_text {
     color: #BDBDBD;
     font-family: "Inter", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
     font-size: 10px;
     font-weight: 400;
     line-height: 15px;
@@ -319,7 +329,7 @@ section .arrow a:focus {
 .footer_sub {
     display: flex;
     /* width: 20%; */
-    margin: 56px 100px 56px 50px;
+    margin: 53px 100px 53px 50px;
     padding-left: 20px;
     border-radius: 30px;
     background-color: #ffffff20;
@@ -374,6 +384,7 @@ section .arrow a:focus {
     text-decoration: none;
     color: #fff;
     font-family: "Inter", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 19px;
@@ -403,6 +414,7 @@ section .arrow a:focus {
 
 .attractions div p {
     font-family: "Inter", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -444,10 +456,10 @@ section .arrow a:focus {
 }
 
 .banner_protect {
-    background-image: url(./pic/taiwan/section_pic.svg);
+    background-image: url(./pic/taiwan/section_pic.png);
     width: 100%;
     text-align: center;
-    padding: 90px 0;
+    padding: 80px 0;
     display: flex;
     flex-direction: column;
 }
@@ -470,6 +482,7 @@ section .arrow a:focus {
 
 .banner_protect .text {
     font-family: "Inter", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 19px;
@@ -479,6 +492,7 @@ section .arrow a:focus {
 
 .banner_protect .icon p {
     font-family: "Inter", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
@@ -494,6 +508,7 @@ section .arrow a:focus {
 
 .banner_protect .button a {
     font-family: "Inter", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 19px;
