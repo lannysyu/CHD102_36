@@ -266,30 +266,6 @@
                 </div>
             </div>
         </section>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
-            integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="owl/owl.carousel.min.js"></script>
-        <script>
-            $(document).ready(function () {
-                $(".owl-carousel").owlCarousel({
-                    loop: true,
-                    margin: 20,
-                    nav: true,
-                    responsive: {
-                        0: {
-                            items: 1
-                        },
-                        600: {
-                            items: 2
-                        },
-                        1000: {
-                            items: 2
-                        }
-                    }
-                });
-            });
-        </script>
         <section class="banner_sub">
             <div class="img">
                 <img src="./pic/index/section_banner_pic (2).png" alt="banner_img">
@@ -388,6 +364,30 @@
         </div>
     </footer>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="owl/owl.carousel.min.js"></script>
+<script>
+$(document).ready(function () {
+    $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 2
+            }
+        }
+    });
+});
+</script>
 <script>
     window.addEventListener("scroll", function () {
         var navbar = document.getElementById("navbar");
