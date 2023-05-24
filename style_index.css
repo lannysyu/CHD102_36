@@ -185,20 +185,64 @@ header {
     color: #fff;
 }
 
+.header_nav .item ul .box {
+    position: relative;
+}
+
+.header_nav .item ul .box .language_item {
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -40px;
+    align-items: center;
+}
+
+.header_nav .item ul .box:hover .language_item {
+    display: flex;
+}
+
 .item_fish {
     position: absolute;
     top: -16px;
-    right: 15%;
+    /* right: 25%; */
     display: none;
 }
 
 .item_fish img {
-    width: 50%;
+    width: 15px;
 }
 
 .header_nav .item ul a:hover .item_fish {
     display: block;
     color: #00EFFE;
+    animation-name: moveRight;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveRight {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: calc(100% - 15px);
+    }
+}
+
+#navbar {
+    transition: background-color 0.5s ease;
+    background-color: transparent;
+}
+
+#navbar.scrolled {
+    background-color: #002547;
 }
 
 .header_pic {
@@ -452,7 +496,7 @@ main {
 .news {
     background-image: url(./bg/bg_news.svg);
     width: 1920px;
-    height: 950px;
+    height: 930px;
 
 }
 
@@ -461,7 +505,7 @@ main {
     color: #c5b220;
     position: relative;
     transform: translateY(-570px);
-    padding: 15px;
+
 }
 
 .news h2 {
@@ -473,7 +517,39 @@ main {
     border: 1px solid #ECECEC;
     border-radius: 8px;
     padding: 20px;
-    padding-bottom: 130px;
+    padding-bottom: 110px;
+}
+
+/* .owl-carousel .owl-theme .owl-loaded .owl-drag,
+.owl-stage,
+.owl-stage-outer {
+    height: 950px !important;
+}
+
+.news .box {
+    height: 950px;
+} */
+
+.owl-prev,
+.owl-next {
+    width: 50px !important;
+    height: 50px !important;
+    background-color: #ffffff !important;
+    border-radius: 50% !important;
+    border: 1px solid #EDD523 !important;
+    /* box-shadow: 1px 1px 10px #b1b1b1; */
+    margin: 15px !important;
+
+
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+    background-color: #EDD523 !important;
+}
+
+.owl-dots {
+    display: none;
 }
 
 .news .box .item .label {

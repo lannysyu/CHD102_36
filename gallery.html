@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <nav class="header_nav">
+        <nav class="header_nav" id="navbar">
             <div class="logo">
                 <a href="index.html"><img src="./logo/logo_black.svg" alt="div.ing_logo"></a>
             </div>
@@ -59,7 +59,14 @@
                             <img src="./icon/header_a_icon_fish.svg" alt="fish">
                         </div>
                     </a>
-                    <a class="language" href="#"><i class="fa-solid fa-earth-americas"></i></a>
+                    <div class="box">
+                        <a class="language" href="#"><i class="fa-solid fa-earth-americas"></i></a>
+                        <div class="language_item">
+                            <a href="#" class="ch">Chinese</a>
+                            <a href="#" class="en">English</a>
+                            <a href="#" class="ja">Japanese</a>
+                        </div>
+                    </div>
                     <a class="member" href="member.html"><i class="fa-solid fa-circle-user"></i></a>
                 </ul>
             </div>
@@ -192,5 +199,17 @@
         </div> -->
     </footer>
 </body>
+<script>
+    window.addEventListener("scroll", function () {
+        var navbar = document.getElementById("navbar");
+        var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrolled > 650) {
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    });
+</script>
 
 </html>

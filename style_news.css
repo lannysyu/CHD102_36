@@ -189,17 +189,66 @@ header {
 .item_fish {
     position: absolute;
     top: -16px;
-    right: 15%;
+    /* right: 25%; */
     display: none;
 }
 
 .item_fish img {
-    width: 50%;
+    width: 15px;
 }
 
 .header_nav .item ul a:hover .item_fish {
     display: block;
     color: #00EFFE;
+    animation-name: moveRight;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveRight {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: calc(100% - 15px);
+    }
+}
+
+#navbar {
+    transition: background-color 0.5s ease;
+    background-color: transparent;
+}
+
+#navbar.scrolled {
+    background-color: #002547;
+}
+
+.header_nav .item ul a:hover .item_fish {
+    display: block;
+    color: #00EFFE;
+}
+
+.header_nav .item ul .box {
+    position: relative;
+}
+
+.header_nav .item ul .box .language_item {
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -40px;
+    align-items: center;
+}
+
+.header_nav .item ul .box:hover .language_item {
+    display: flex;
 }
 
 .header_pic {

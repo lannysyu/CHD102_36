@@ -5,6 +5,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
 
 h1 {
     font-family: "Inter", sans-serif;
@@ -185,20 +188,78 @@ header {
     color: #fff;
 }
 
+.header_nav .item ul .box {
+    position: relative;
+}
+
+.header_nav .item ul .box .language_item {
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -40px;
+    align-items: center;
+}
+
+.header_nav .item ul .box:hover .language_item {
+    display: flex;
+}
+
 .item_fish {
     position: absolute;
     top: -16px;
-    right: 15%;
+    /* right: 25%; */
     display: none;
 }
 
 .item_fish img {
-    width: 50%;
+    width: 15px;
 }
 
 .header_nav .item ul a:hover .item_fish {
     display: block;
     color: #00EFFE;
+    animation-name: moveRight;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveRight {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: calc(100% - 15px);
+    }
+}
+
+#navbar {
+    transition: background-color 0.5s ease;
+    background-color: transparent;
+}
+
+#navbar.scrolled {
+    background-color: #002547;
+}
+
+.header_nav .item ul a:hover .item_fish {
+    display: block;
+    color: #00EFFE;
+}
+
+#navbar {
+    transition: background-color 0.5s ease;
+    background-color: transparent;
+}
+
+#navbar.scrolled {
+    background-color: #002547;
 }
 
 .header_pic {
@@ -386,14 +447,16 @@ main {
     flex-direction: column;
     gap: 80px;
     margin: 40px 0 100px 0;
+    perspective: 200px;
+
 }
 
 .level {
     display: flex;
-    padding: 150px 0 30px 0;
+    padding-top: 150px;
     position: relative;
     width: 1200px;
-    height: 650px;
+    height: 550px;
     margin: auto;
     overflow: hidden;
 }
@@ -409,7 +472,15 @@ main {
     z-index: 1;
     top: 100px;
     right: 10%;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
 }
+
+.level:hover .title {
+    transform: rotateY(360deg);
+    transition: 2s;
+}
+
 
 .level .pic {
     position: absolute;
@@ -441,6 +512,7 @@ main {
 .level .content .no .q {
     display: flex;
     gap: 30px;
+    cursor: pointer;
 }
 
 .level .content .no .q .active {
