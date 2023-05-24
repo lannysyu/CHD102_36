@@ -94,7 +94,7 @@ header {
 }
 
 .header_nav {
-    width: 1920px;
+    width: 100%;
     height: 100px;
     display: flex;
     position: fixed;
@@ -203,11 +203,16 @@ header {
 .header_pic {
     position: relative;
     font-size: 0px;
+    /* max-width: 1200px; */
     width: 100%;
+}
+.header_pic .pic{
+    max-width: 1200px;
 }
 
 .header_pic .pic img {
     width: 100%;
+    /* max-width: 1200px; */
 }
 
 .header_pic .title {
