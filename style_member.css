@@ -84,7 +84,6 @@ h5 {
     line-height: 21px;
     letter-spacing: 0.12em;
     /* text-align: center; */
-
 }
 
 header {
@@ -641,6 +640,7 @@ textarea#message {
     background-color: #BDBDBD40;
     border: none;
     width: 672px;
+    max-width: 672px;
 }
 
 input#last::placeholder,

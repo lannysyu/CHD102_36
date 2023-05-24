@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .line {
+        display: inline-block;
+    }
+
+    .line a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .line::after {
+        content: " ";
+        display: block;
+        width: 0%;
+        height: 1px;
+        background-color: black;
+        transition: .4s .2s;
+    }
+
+    .line:hover::after {
+        width: 100%;
+    }
+</style>
+
+<body>
+    <div class="line">
+        <a href="#">關於我們</a>
+    </div>
+</body>
+
+</html>
