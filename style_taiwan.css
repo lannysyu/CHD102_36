@@ -91,6 +91,7 @@ h5 {
 header {
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 .header_nav {
@@ -100,6 +101,7 @@ header {
     position: fixed;
     z-index: 10;
     margin: auto;
+    max-width: 1920px;
 }
 
 .header_nav .logo {
@@ -206,8 +208,16 @@ header {
     width: 100%;
 }
 
-.header_pic .pic img {
+.header_pic .pic {
     width: 100%;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.header_pic .pic img {
+    width: 1920px;
 }
 
 .header_pic .title {
@@ -257,34 +267,56 @@ header {
     color: #ffffff;
 }
 
-section .title {
-    position: relative;
+main {
+    max-width: 1920px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.card {
     background-color: #F9F3F0;
-    padding-left: 25%;
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
-
-section .pic_min {
     display: flex;
-    position: absolute;
-    top: -30px;
-    right: 0;
+    justify-content: center;
+    /* overflow: hidden; */
+    position: relative;
 }
 
-section .arrow a {
+.card .inter {
+    width: 1200px;
+    display: flex;
+}
+
+.card .inter .pic_min {
+    padding: 20px;
+    margin-left: auto;
+}
+
+.card .inter .title {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    display: inline-block;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.card .inter .title .arrow {
+    margin-top: auto;
+    padding-bottom: 10px;
+}
+
+.card .inter .title .arrow a {
     display: inline-block;
     padding: 20px;
     border: 1px solid transparent;
     color: #333333;
 }
 
-section .arrow a:hover {
+.card .inter .title .arrow a:hover {
     background-color: #ffffff60;
     border: 1px solid #BDBDBD60;
 }
 
-section .arrow a:focus {
+.card .inter .title .arrow a:focus {
     color: #333333;
 }
 
@@ -294,6 +326,8 @@ section .arrow a:focus {
     color: #BDBDBD;
     width: 100%;
     background-image: url(./pic/taiwan/footer_pic.png);
+    max-width: 1920px;
+    margin: auto;
 }
 
 .footer_text {
@@ -462,6 +496,8 @@ section .arrow a:focus {
     padding: 80px 0;
     display: flex;
     flex-direction: column;
+    margin: auto;
+    align-items: center;
 }
 
 .banner_protect h3 {

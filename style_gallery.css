@@ -101,6 +101,7 @@ header {
     position: fixed;
     z-index: 10;
     margin: auto;
+    max-width: 1920px;
 }
 
 .header_nav .logo {
@@ -207,8 +208,16 @@ header {
     width: 100%;
 }
 
-.header_pic .pic img {
+.header_pic .pic {
     width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.header_pic .pic img {
+    width: 1920px;
 }
 
 .header_pic .title {
@@ -229,6 +238,13 @@ header {
     background-color: #002547;
     color: #BDBDBD;
     width: 100%;
+    background-color: transparent;
+    background-image: url(./pic/gallery/footer_bg_down.png);
+    max-width: 1920px;
+    margin: auto;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .footer_text {
@@ -321,10 +337,17 @@ body {
 }
 
 main {
+    width: 100%;
+    max-width: 1920px;
+    overflow: hidden;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: auto;
+    /* background-image: url(./pic/gallery/a_bg.png);
+    background-repeat:no-repeat;
+    background-position:bottom; */
 }
 
 aside {
@@ -438,6 +461,8 @@ aside .list a {
 }
 
 .part_anemone .pic_bg {
+    width: 100%;
+    max-width: 1920px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -503,15 +528,9 @@ aside .list a {
     margin-top: auto;
 }
 
-.footer {
-    background-color: transparent;
-    /* background-image: url(./pic/gallery/footer_bg_down.png); */
-    width: 1920px;
-    margin: auto;
-}
 
-.footer .pic {
+/* .footer .pic {
     position: absolute;
     z-index: -1;
     margin: auto;
-}
+} */

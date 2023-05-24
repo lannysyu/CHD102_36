@@ -100,6 +100,7 @@ header {
     position: fixed;
     z-index: 10;
     margin: auto;
+    max-width: 1920px;
 }
 
 .header_nav .logo {
@@ -208,10 +209,14 @@ header {
 
 .header_pic .pic {
     width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
 }
 
 .header_pic .pic img {
-    width: 100%;
+    width: 1920px;
 }
 
 .header_pic .title {
@@ -243,6 +248,14 @@ header {
 .header_pic .title a:hover {
     background-color: #ffffff33;
     border: 1px solid #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
 }
 
 .hot {
@@ -385,7 +398,7 @@ header {
 .banner_learn {
     text-align: center;
     position: relative;
-    width: 100%;
+    width: 1920px;
 }
 
 .banner_learn img {
@@ -418,6 +431,7 @@ header {
 }
 
 .banner_learn .more a {
+    display: inline-block;
     border-radius: 30px;
     padding: 10px 80px;
     background-color: #DDC723;
@@ -437,8 +451,9 @@ header {
 
 .news {
     background-image: url(./bg/bg_news.svg);
-    width: 100%;
+    width: 1920px;
     height: 950px;
+
 }
 
 .owl-nav,
@@ -585,7 +600,7 @@ header {
 }
 
 .banner_sub img {
-    width: 100%;
+    width: 1920px;
 }
 
 .banner_sub .text .sub {
@@ -843,6 +858,8 @@ header {
     background-color: #002547;
     color: #BDBDBD;
     width: 100%;
+    max-width: 1920px;
+    margin: auto;
 }
 
 .footer_text {

@@ -96,11 +96,12 @@ header {
 
 .header_nav {
     width: 100%;
-    height: 100px;
+    height: 80px;
     display: flex;
     position: fixed;
     z-index: 10;
     margin: auto;
+    max-width: 1920px;
 }
 
 .header_nav .logo {
@@ -205,17 +206,23 @@ header {
     position: relative;
     font-size: 0px;
     width: 100%;
+    text-align: center;
+}
+
+.header_pic .pic {
+    width: 100%;
+    overflow: hidden;
 }
 
 .header_pic .pic img {
-    width: 100%;
+    width: 1920px;
 }
 
 .header_pic .title {
     position: absolute;
-    top: 40%;
-    transform: translateY(-50%);
+    top: 180px;
     left: 15%;
+    text-align: left;
 }
 
 .header_pic .title h2,
@@ -230,7 +237,7 @@ header {
     background-color: #ffffff20;
     border: 1px solid #ffffff;
     border-radius: 35px;
-    padding: 15px 25px 15px 25px;
+    padding: 12px 25px;
     display: inline-flex;
     margin-top: 20px;
     margin-right: 15px;
@@ -257,7 +264,7 @@ header {
     border: 1px solid #00EFFE;
     background-color: #00EFFE20;
     border-radius: 35px;
-    padding: 15px 25px;
+    padding: 12px 25px;
     display: inline-flex;
     margin-top: 20px;
     align-items: center;
@@ -282,6 +289,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     align-items: center;
+    border-radius: 3px;
 }
 
 .header_pic .box .text {
@@ -369,6 +377,8 @@ header {
     background-color: #002547;
     color: #BDBDBD;
     width: 100%;
+    max-width: 1920px;
+    margin: auto;
 }
 
 .footer_text {
@@ -460,7 +470,7 @@ header {
     margin: 200px 0 50px 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
 
 }
 
@@ -474,16 +484,17 @@ header {
     width: 130px;
     color: #333333;
     background-color: #ECECEC;
-    padding: 40px 40px;
+    padding: 30px 40px;
     position: sticky;
     /* height: 500px; */
     top: 150px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px #33333350;
 }
 
 /* NOTE sticky定位要同時設定top */
 
 .content .left aside .bottom_line {
-
     padding-bottom: 20px;
     border-bottom: 1px solid #E0E0E0;
 }
@@ -515,20 +526,48 @@ header {
     gap: 12px;
 }
 
-/* .content .left .type .item:checked {
-    border:1px solid red;
-    border-color: #5D0027;
-}
-.content .left .type .item input:checked{
-    border:1px solid red;
-    border-color: #5D0027;
+input[type="checkbox"] {
+    display: none;
 }
 
-.content .left .type .item label::before{
-    border:1px solid red;
-    border-color: #5D0027;
-} */
-/* TODO checkbox 修改樣式 */
+label {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+}
+
+label:before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #33333340;
+    border-radius: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+input[type="checkbox"]:checked+label:before {
+    background-color: #EDD523;
+}
+
+label:after {
+    content: "";
+    display: none;
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* NOTE checkbox 修改樣式的方法 */
 
 .content .right {
     display: flex;
@@ -660,9 +699,9 @@ header {
 }
 
 .content .box .text .like a:hover {
-    background-color: #00EFFE;
+    background-color: #0BC6D6;
     color: #ffffff;
-    border: 1px solid #00EFFE;
+    border: 1px solid #0BC6D6;
 }
 
 .page {

@@ -98,6 +98,7 @@ header {
     position: fixed;
     z-index: 10;
     margin: auto;
+    max-width: 1920px;
 }
 
 .header_nav .logo {
@@ -204,15 +205,23 @@ header {
     width: 100%;
 }
 
-.header_pic .pic img {
+.header_pic .pic {
     width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.header_pic .pic img {
+    width: 1920px;
 }
 
 .header_pic .title {
     position: absolute;
-    top: 45%;
-    transform: translateY(-50%);
-    left: 20%;
+    top: 250px;
+    /* transform: translateY(-50%); */
+    left: 350px;
 }
 
 .header_pic .title h2,
@@ -225,6 +234,8 @@ header {
     background-color: #002547;
     color: #BDBDBD;
     width: 100%;
+    max-width: 1920px;
+    margin: auto;
 }
 
 .footer_text {
@@ -316,7 +327,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translateX(-10%);
+    width: 1920px;
+    margin: auto;
 }
 
 section {
@@ -355,6 +367,7 @@ h3 {
 
 .favorite {
     display: flex;
+    margin-right: auto;
 }
 
 .content {
@@ -440,25 +453,42 @@ h3 {
     text-align: center;
     display: inline-block;
     color: #333333;
-    border-bottom: 2px solid transparent;
+    /* border-bottom: 2px solid transparent; */
 }
 
+.more a:after,
+.submit a:after {
+    content: " ";
+    display: block;
+    width: 0%;
+    height: 1.5px;
+    background-color: black;
+    transition: .4s .2s;
+}
+
+.more a:hover::after,
+.submit a:hover::after {
+    width: 100%;
+}
+
+/* NOTE a底線 從左跑到右的方法 */
 .more a i,
 .submit a i {
     padding-left: 10px;
 }
 
 .more a:hover {
-    border-bottom: 2px solid #333333;
+    /* border-bottom: 2px solid #333333; */
 }
 
 .submit a:hover {
-    border-bottom: 2px solid #333333;
+    /* border-bottom: 2px solid #333333; */
 }
 
 .assist {
     display: flex;
     gap: 100px;
+    margin-right: auto;
 }
 
 .assist .question {
@@ -513,6 +543,7 @@ h3 {
 .contact {
     display: flex;
     margin-bottom: 100px;
+    margin-right: auto;
 }
 
 .contact .social {

@@ -99,6 +99,7 @@ header {
     position: fixed;
     z-index: 10;
     margin: auto;
+    max-width: 1920px;
 }
 
 .header_nav .logo {
@@ -205,8 +206,16 @@ header {
     width: 100%;
 }
 
-.header_pic .pic img {
+.header_pic .pic {
     width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.header_pic .pic img {
+    width: 1920px;
 }
 
 .header_pic .title {
@@ -226,6 +235,8 @@ header {
     background-color: #002547;
     color: #BDBDBD;
     width: 100%;
+    max-width: 1920px;
+    margin: auto;
 }
 
 .footer_text {
