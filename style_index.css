@@ -735,11 +735,18 @@ main {
 .need h2,
 .title_need {
     text-align: center;
+    text-shadow: 0 0 5px #333333;
 }
 
 .need {
     position: relative;
     font-size: 0;
+    background-image: url(./pic/index/section_need_pic.png);
+    height: 1721px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .need .bck img {
@@ -747,10 +754,7 @@ main {
 }
 
 .need .text {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translateX(-50%);
+    padding-top: 250px;
 }
 
 .need .text h2 {
@@ -768,6 +772,7 @@ main {
     line-height: 21px;
     letter-spacing: 0.12em;
     padding-bottom: 90px;
+    text-shadow: 0 0 5px #333333;
 }
 
 .need .text .sdg {
@@ -879,16 +884,17 @@ main {
 .gallery {
     text-align: center;
     background-color: #00254780;
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    /* position: absolute; */
+    /* bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); */
     padding-bottom: 70px;
-    width: 100%;
+    width: 1920px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    height: 621px;
 }
 
 .gallery .gallery_pic {

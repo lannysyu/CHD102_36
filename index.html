@@ -318,9 +318,6 @@
                 <a class="join" href="#">加入我們</a>
                 <!-- TODO 寫一個signup page -->
             </div>
-            <div class="bck">
-                <img src="./pic/index/section_need_pic.png" alt="need_background">
-            </div>
             <section class="gallery">
                 <h3>攝影相冊 GALLERY</h3>
                 <div class="gallery_pic">
@@ -365,28 +362,28 @@
     </footer>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
-integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
-crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="owl/owl.carousel.min.js"></script>
 <script>
-$(document).ready(function () {
-    $(".owl-carousel").owlCarousel({
-        loop: true,
-        margin: 20,
-        nav: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 2
-            },
-            1000: {
-                items: 2
+    $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 2
+                }
             }
-        }
+        });
     });
-});
 </script>
 <script>
     window.addEventListener("scroll", function () {
