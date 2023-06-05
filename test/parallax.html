@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parallax-container {
+            height: 400px;
+            overflow: hidden;
+            perspective: 1000px;
+            /* 设置透视视角 */
+        }
+
+        .parallax-layer {
+            position: relative;
+            height: 50%;
+            transform-style: preserve-3d;
+            /* 保留3D变换效果 */
+        }
+
+        .parallax-layer img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            transform: translateZ(-10px) scale(3);
+            /* 根据需要调整移动速度和缩放比例 */
+        }
+
+        .parallax-layer h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parallax-container">
+        <div class="parallax-layer">
+            <img src="../pic/index/header_pic.png" alt="Background">
+        </div>
+        <div class="parallax-layer">
+            <h1>Title</h1>
+        </div>
+    </div>
+</body>
+
+</html>

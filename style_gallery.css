@@ -5,10 +5,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
 
-
 h1 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 40px;
     font-weight: 700;
     line-height: 60px;
@@ -17,9 +15,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
-
+    font-family: "Inter", "Noto Sans TC";
     font-size: 32px;
     font-weight: 700;
     line-height: 48px;
@@ -28,8 +24,7 @@ h2 {
 }
 
 h3 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 24px;
     font-weight: 700;
     line-height: 48px;
@@ -38,8 +33,7 @@ h3 {
 }
 
 h4 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 20px;
     font-weight: 700;
     line-height: 48px;
@@ -48,8 +42,7 @@ h4 {
 }
 
 h5 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -58,8 +51,7 @@ h5 {
 }
 
 .h5 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -68,8 +60,7 @@ h5 {
 }
 
 .h6 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 12px;
     font-weight: 400;
     line-height: 19px;
@@ -79,14 +70,12 @@ h5 {
 
 .header_pic a,
 .hot_button a {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
     letter-spacing: 0.12em;
     /* text-align: center; */
-
 }
 
 header {
@@ -133,7 +122,6 @@ header {
     color: #fff;
     padding: 0 3px;
 }
-
 
 .header_nav .search .input {
     background-color: transparent;
@@ -240,6 +228,7 @@ header {
     top: 100%;
     left: -40px;
     align-items: center;
+    background-color: #333333;
 }
 
 .header_nav .item ul .box:hover .language_item {
@@ -266,9 +255,10 @@ header {
 
 .header_pic .title {
     position: absolute;
-    top: 45%;
-    transform: translateY(-50%);
-    left: 20%;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-45%);
+    width: 1100px;
 }
 
 .header_pic .title h2,
@@ -293,8 +283,7 @@ header {
 
 .footer_text {
     color: #BDBDBD;
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 10px;
     font-weight: 400;
     line-height: 15px;
@@ -389,9 +378,7 @@ main {
     flex-direction: column;
     align-items: center;
     margin: auto;
-    /* background-image: url(./pic/gallery/a_bg.png);
-    background-repeat:no-repeat;
-    background-position:bottom; */
+    /* background-image: url(./pic/gallery/a_bg.png);    background-repeat:no-repeat;    background-position:bottom; */
 }
 
 aside {
@@ -416,8 +403,7 @@ aside .list {
 aside .list a {
     text-decoration: none;
     color: #333333;
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 14px;
     font-weight: 500;
     line-height: 21px;
@@ -445,9 +431,8 @@ aside .list a {
 }
 
 .part_title .text .small {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
-    font-size: 12px;
+    font-family: "Inter", "Noto Sans TC";
+    font-size: 14px;
     font-weight: 700;
     line-height: 19px;
     letter-spacing: 0.06em;
@@ -460,9 +445,8 @@ aside .list a {
 
 .part_title .text .content,
 .part_clownfish .text p {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
-    font-size: 12px;
+    font-family: "Inter", "Noto Sans TC";
+    font-size: 14px;
     font-weight: 400;
     line-height: 19px;
     letter-spacing: 0.06em;
@@ -572,9 +556,4 @@ aside .list a {
     margin-top: auto;
 }
 
-
-/* .footer .pic {
-    position: absolute;
-    z-index: -1;
-    margin: auto;
-} */
+/* .footer .pic {    position: absolute;    z-index: -1;    margin: auto;} */

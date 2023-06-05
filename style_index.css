@@ -7,8 +7,7 @@
 
 
 h1 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 40px;
     font-weight: 700;
     line-height: 60px;
@@ -17,8 +16,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 32px;
     font-weight: 700;
     line-height: 48px;
@@ -27,8 +25,7 @@ h2 {
 }
 
 h3 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 24px;
     font-weight: 700;
     line-height: 48px;
@@ -37,8 +34,7 @@ h3 {
 }
 
 h4 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 20px;
     font-weight: 700;
     line-height: 48px;
@@ -47,8 +43,7 @@ h4 {
 }
 
 h5 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -57,8 +52,7 @@ h5 {
 }
 
 .h5 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -67,8 +61,7 @@ h5 {
 }
 
 .h6 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 12px;
     font-weight: 400;
     line-height: 19px;
@@ -76,10 +69,19 @@ h5 {
     color: #333333;
 }
 
+.text_16px {
+    font-family: "Inter", "Noto Sans TC";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.12em;
+    color: #333333;
+    text-align: justify;
+}
+
 .header_pic a,
 .hot_button a {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -201,6 +203,7 @@ header {
     top: 100%;
     left: -40px;
     align-items: center;
+    background-color: #333333;
 }
 
 .header_nav .item ul .box:hover .language_item {
@@ -265,9 +268,10 @@ header {
 
 .header_pic .title {
     position: absolute;
-    top: 50%;
-    transform: translateY(-40%);
-    left: 14%;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-45%);
+    width: 1100px;
 }
 
 .header_pic .title h1,
@@ -275,7 +279,9 @@ header {
     color: #fff;
 }
 
-.header_pic .title a {
+header .top {}
+
+/* .header_pic .title a {
     text-decoration: none;
     color: #00EFFE;
     border: 1px solid #00EFFE;
@@ -283,16 +289,25 @@ header {
     padding: 15px 30px;
     display: inline-flex;
     margin-top: 50px;
+    background-color: #00EFFE;
 }
 
 .header_pic .title a img {
     padding-left: 10px;
+    color:#333333;
 }
 
 .header_pic .title a:hover {
-    background-color: #ffffff33;
-    border: 1px solid #fff;
+    background-color: #0BC6D6;
+    border: 1px solid #ffffff;
+    color:#ffffff;
+    
 }
+
+.header_pic .title a .fish{
+    margin-left: 10px;
+    fill:#ffffff;
+} */
 
 main {
     display: flex;
@@ -320,6 +335,10 @@ main {
     gap: 20px;
 }
 
+.hot .hot_card a {
+    text-decoration: none;
+}
+
 .hot .hot_card .oi,
 .hot .hot_card .gi {
     display: flex;
@@ -345,72 +364,66 @@ main {
     padding-top: 10px;
 }
 
-.hot .hot_card .oi .oi_button,
-.hot .hot_card .gi .gi_button {
-    position: absolute;
-    /* display: inline; */
-    top: 65%;
-    right: -4.5%;
-    padding: 45px;
-    background-color: #0BC6D6;
-    border-radius: 50%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-
-}
-
-.hot .hot_card .oi .oi_button_fish,
-.hot .hot_card .gi .gi_button_fish {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.hot .hot_card .oi .oi_button a,
-.hot .hot_card .gi .gi_button a {
-    position: absolute;
-    color: #fff;
-    font-size: 14px;
-    text-decoration: none;
-    display: flex;
-    padding: 26px 38px;
-    border-radius: 50%;
-    top: 0;
-    right: 0;
-}
-
-.hot .hot_card .oi .oi_button a:hover {
-    background-color: #ffffff30;
-    box-shadow: 0px 0px 20px #00EFFE;
-}
-
-.hot .hot_card .gi .gi_button a:hover {
-    background-color: #ffffff30;
-    box-shadow: 0px 0px 20px #00EFFE;
-}
-
-
-.fish1 {
-    position: absolute;
-    top: 310px;
+/* header_fish_button */
+header .top .fish_button {
+    position: fixed;
+    z-index: 2;
+    bottom: 100px;
     right: 50px;
 }
 
-.fish2 {
+header .top .fish_button a {
     position: absolute;
-    top: 320px;
-    right: 20px;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #0BC6D690;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", "Noto Sans TC";
+}
+
+header .top .fish_button a:hover {
+    background-color: #00EFFE;
+    box-shadow: 0px 0px 50px #00EFFE;
+}
+
+.fish1 {
+    position: fixed;
+    bottom: 65px;
+    right: 105px;
+    z-index: 3;
+    transform: scale(0.8);
+}
+
+.fish2 {
+    position: fixed;
+    bottom: 50px;
+    right: 85px;
+    z-index: 3;
+    transform: scale(0.8);
 }
 
 .fish3 {
-    position: absolute;
-    top: 300px;
-    right: -60px;
+    position: fixed;
+    bottom: 60px;
+    right: 25px;
+    z-index: 3;
+    transform: scale(0.8);
 }
 
 .fish4 {
-    position: absolute;
-    top: 320px;
-    right: -70px;
+    position: fixed;
+    bottom: 45px;
+    right: 45px;
+    z-index: 3;
+    transform: scale(0.8);
 }
 
 .hot .hot_button {
@@ -422,11 +435,11 @@ main {
 
 .hot .hot_button a {
     text-decoration: none;
-    color: #0BC6D6;
-    border: 1px solid #0BC6D6;
-    border-radius: 35px;
-    padding: 15px 35px;
-    display: inline-flex;
+    color: #333333;
+    /* border: 1px solid #0BC6D6; */
+    /* border-radius: 35px;
+    padding: 15px 35px; */
+    display: inline-block;
 }
 
 .hot .hot_button a i {
@@ -434,9 +447,17 @@ main {
     margin: auto;
 }
 
-.hot .hot_button a:hover {
-    background-color: #0BC6D6;
-    color: #fff
+.hot .hot_button a::after {
+    content: " ";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: .4s .2s;
+}
+
+.hot .hot_button a:hover::after {
+    width: 100%;
 }
 
 .banner_learn {
@@ -459,12 +480,7 @@ main {
     width: 75%;
     color: #fff;
     margin: auto;
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0.12em;
+    text-align: center;
 }
 
 .banner_learn .text {
@@ -563,8 +579,7 @@ main {
     display: inline-block;
     padding: 5px 30px;
     color: #fff;
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
@@ -592,8 +607,7 @@ main {
 
 .news .box .item .text .title p {
     color: #333333;
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 14px;
     font-weight: 400;
     /* line-height: 21px; */
@@ -610,13 +624,12 @@ main {
 
 .news .box .item .text .button a {
     display: block;
-    padding: 15px 30px;
+    /* padding: 15px 30px;
     border: 1px solid #EDD523;
-    border-radius: 30px;
+    border-radius: 30px; */
     text-decoration: none;
-    color: #EDD523;
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    color: #333333;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -624,13 +637,26 @@ main {
     text-align: center;
 }
 
-.news .box .item .text .button a:hover {
+/* .news .box .item .text .button a:hover {
     color: #ffffff;
     background-color: #EDD523;
-}
+} */
 
 .news .box .item .text .button i {
     padding-left: 10px;
+}
+
+.news .box .item .text .button a::after {
+    content: " ";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: .4s .2s;
+}
+
+.news .box .item .text .button a:hover::after {
+    width: 100%;
 }
 
 .news .box .owl-stage .owl-item {
@@ -664,15 +690,11 @@ main {
 }
 
 .banner_sub .text p {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0.12em;
-    padding: 10px 0 40px 0;
+    padding: 25px 0 40px 0;
     width: 75%;
     margin: auto;
+    color: #ffffff;
+    text-align: center;
 }
 
 .banner_sub img {
@@ -765,11 +787,10 @@ main {
 .need .text .title_need {
     color: #ffffff;
     padding: 0 70px;
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
-    font-size: 14px;
+    font-family: "Inter", "Noto Sans TC";
+    font-size: 16px;
     font-weight: 400;
-    line-height: 21px;
+    line-height: 24px;
     letter-spacing: 0.12em;
     padding-bottom: 90px;
     text-shadow: 0 0 5px #333333;
@@ -802,8 +823,7 @@ main {
 .need .text .sdg .card div title {
     display: flex;
     justify-content: center;
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     color: #333333;
     font-size: 16px;
     font-weight: 900;
@@ -825,22 +845,20 @@ main {
 .need .text .sdg .card .word {
     width: 250px;
     color: #333333;
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
-    font-size: 12px;
+    font-family: "Inter", "Noto Sans TC";
+    font-size: 14px;
     font-weight: 700;
-    line-height: 19px;
+    line-height: 21px;
     letter-spacing: 0.12em;
-    padding-top: 20px;
+    padding-top: 25px;
     text-shadow: 0px 0px 10px #ffffff;
 }
 
 .need .text .sdg .card .percentage {
     margin-top: auto;
-    padding: 25px 0 5px 0;
+    padding: 15px 0 5px 0;
     color: #fff;
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
@@ -848,8 +866,7 @@ main {
 }
 
 .need .text .sdg .card span {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 30px;
     font-weight: 700;
     line-height: 48px;
@@ -858,8 +875,7 @@ main {
 }
 
 .need .text .join {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 16px;
     font-weight: 400;
     line-height: 21px;
@@ -946,8 +962,7 @@ main {
 
 .footer_text {
     color: #BDBDBD;
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 10px;
     font-weight: 400;
     line-height: 15px;

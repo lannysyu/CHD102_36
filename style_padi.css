@@ -10,8 +10,7 @@ html {
 }
 
 h1 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 40px;
     font-weight: 700;
     line-height: 60px;
@@ -20,8 +19,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 32px;
     font-weight: 700;
     line-height: 48px;
@@ -30,8 +28,7 @@ h2 {
 }
 
 h3 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 24px;
     font-weight: 700;
     line-height: 48px;
@@ -40,8 +37,7 @@ h3 {
 }
 
 h4 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 20px;
     font-weight: 700;
     line-height: 48px;
@@ -50,8 +46,7 @@ h4 {
 }
 
 h5 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -60,8 +55,7 @@ h5 {
 }
 
 .h5 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -70,8 +64,7 @@ h5 {
 }
 
 .h6 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 12px;
     font-weight: 400;
     line-height: 19px;
@@ -81,14 +74,12 @@ h5 {
 
 .header_pic a,
 .hot_button a {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
     letter-spacing: 0.12em;
     /* text-align: center; */
-
 }
 
 header {
@@ -135,7 +126,6 @@ header {
     color: #fff;
     padding: 0 3px;
 }
-
 
 .header_nav .search .input {
     background-color: transparent;
@@ -204,6 +194,7 @@ header {
     top: 100%;
     left: -40px;
     align-items: center;
+    background-color: #333333;
 }
 
 .header_nav .item ul .box:hover .language_item {
@@ -314,14 +305,13 @@ header {
     justify-content: center;
     text-decoration: none;
     color: #ffffff;
-    border: 1px solid #ffffff30;
-    background-color: #ffffff20;
+    border: 1px solid #ffffff;
+    background-color: #ffffff50;
     width: 220px;
     height: 220px;
     text-align: center;
     font-size: 12px;
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
 }
 
 .header_pic .button a img {
@@ -329,8 +319,8 @@ header {
 }
 
 .header_pic .button a:hover {
-    background-color: #ffffff40;
-    border: 1px solid #ffffff;
+    background-color: #33333380;
+    border: 1px solid #33333380;
     color: #ffffff;
 }
 
@@ -345,8 +335,7 @@ header {
 
 .footer_text {
     color: #BDBDBD;
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 10px;
     font-weight: 400;
     line-height: 15px;
@@ -430,8 +419,7 @@ header {
 .attractions .button a {
     text-decoration: none;
     color: #fff;
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 12px;
     font-weight: 400;
     line-height: 19px;
@@ -448,7 +436,6 @@ main {
     gap: 80px;
     margin: 40px 0 100px 0;
     perspective: 200px;
-
 }
 
 .level {
@@ -480,7 +467,6 @@ main {
     transform: rotateY(360deg);
     transition: 2s;
 }
-
 
 .level .pic {
     position: absolute;
@@ -523,7 +509,6 @@ main {
     border-bottom: 1px solid #333333;
     padding-bottom: 8px;
     outline: none;
-
 }
 
 .level .content .no .q .number {
@@ -533,8 +518,7 @@ main {
 }
 
 .level .content .no .q .number span {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 16px;
     font-style: italic;
     font-weight: 400;
@@ -542,12 +526,10 @@ main {
     letter-spacing: 0em;
     text-align: left;
     color: #333333;
-
 }
 
 .level .content .no .q .active .text {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 20px;
     font-weight: 700;
     line-height: 30px;
@@ -557,8 +539,7 @@ main {
 }
 
 .level .content .no .q .active span {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -576,8 +557,7 @@ main {
 }
 
 .level .content .no .a .small {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
@@ -588,8 +568,7 @@ main {
 }
 
 .level .content .no .a .big {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 20px;
     font-weight: 700;
     line-height: 27px;
@@ -605,8 +584,7 @@ main {
 }
 
 .level .content .no .a .sign a {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 12px;
     font-weight: 400;
     line-height: 15px;
@@ -618,7 +596,6 @@ main {
     background-color: #0BC6D6;
     border-radius: 30px;
     display: inline-block;
-
 }
 
 .level .content .no .a .sign a:hover {

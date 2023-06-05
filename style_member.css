@@ -6,8 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
 
 h1 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 40px;
     font-weight: 700;
     line-height: 60px;
@@ -16,8 +15,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 32px;
     font-weight: 700;
     line-height: 48px;
@@ -26,8 +24,7 @@ h2 {
 }
 
 h3 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 24px;
     font-weight: 700;
     line-height: 48px;
@@ -36,8 +33,7 @@ h3 {
 }
 
 h4 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 20px;
     font-weight: 700;
     line-height: 48px;
@@ -46,8 +42,7 @@ h4 {
 }
 
 h5 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -56,8 +51,7 @@ h5 {
 }
 
 .h5 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -66,8 +60,7 @@ h5 {
 }
 
 .h6 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 12px;
     font-weight: 400;
     line-height: 19px;
@@ -77,8 +70,7 @@ h5 {
 
 .header_pic a,
 .hot_button a {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -130,7 +122,6 @@ header {
     color: #fff;
     padding: 0 3px;
 }
-
 
 .header_nav .search .input {
     background-color: transparent;
@@ -237,6 +228,7 @@ header {
     top: 100%;
     left: -40px;
     align-items: center;
+    background-color: #333333;
 }
 
 .header_nav .item ul .box:hover .language_item {
@@ -263,9 +255,10 @@ header {
 
 .header_pic .title {
     position: absolute;
-    top: 250px;
-    /* transform: translateY(-50%); */
-    left: 350px;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-45%);
+    width: 1100px;
 }
 
 .header_pic .title h2,
@@ -284,8 +277,7 @@ header {
 
 .footer_text {
     color: #BDBDBD;
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 10px;
     font-weight: 400;
     line-height: 15px;
@@ -366,15 +358,16 @@ header {
     background-color: #0aa9b8;
 }
 
+/* 主內容 */
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1920px;
+    max-width: 1920px;
+    width: 100%;
     margin: auto;
     overflow: hidden;
-
 }
 
 section {
@@ -396,8 +389,7 @@ h3 {
 }
 
 .pic p {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -411,11 +403,11 @@ h3 {
     left: 150px;
 }
 
+/* 我的景點 */
 .favorite {
     display: flex;
-    margin-right: auto;
-    width: 1200px;
-
+    width: 100%;
+    max-width: 1200px;
 }
 
 .content {
@@ -425,7 +417,7 @@ h3 {
 
 .content .box {
     display: flex;
-    gap: 30px;
+    gap: 27px;
     margin-left: 100px;
 }
 
@@ -464,14 +456,14 @@ h3 {
 
 .content .box .inter .my p {
     font-family: "Inter", sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0.12em;
     text-align: left;
     color: #333333;
     padding: 20px 5px 0 5px;
-    width: 275px;
+    width: 243px;
 }
 
 .content .box .inter .my .text {
@@ -492,8 +484,7 @@ h3 {
 .more a,
 .submit a {
     text-decoration: none;
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -504,12 +495,12 @@ h3 {
     /* border-bottom: 2px solid transparent; */
 }
 
-.more a:after,
-.submit a:after {
+.more a::after,
+.submit a::after {
     content: " ";
     display: block;
     width: 0%;
-    height: 1.5px;
+    height: 2px;
     background-color: black;
     transition: .4s .2s;
 }
@@ -520,15 +511,18 @@ h3 {
 }
 
 /* NOTE a底線 從左跑到右的方法 */
+
 .more a i,
 .submit a i {
     padding-left: 10px;
 }
 
+/* 協助中心 */
 .assist {
     display: flex;
     gap: 100px;
-    margin-right: auto;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .assist .question {
@@ -561,15 +555,14 @@ h3 {
 }
 
 .assist .question .list button p {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
-    font-size: 20px;
+    font-family: "Inter", "Noto Sans TC";
+    font-size: 16px;
     font-weight: 400;
     line-height: 30px;
     letter-spacing: 0.15em;
     text-align: left;
     display: block;
-    padding: 15px;
+    padding: 15px 20px;
 }
 
 .assist .question .list button .plus {
@@ -580,27 +573,34 @@ h3 {
     margin-top: auto;
 }
 
+/* 聯繫我們 */
 .contact {
     display: flex;
     margin-bottom: 100px;
-    margin-right: auto;
+    width: 100%;
+    max-width: 1200px;
+}
 
+.contact .wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: auto;
+    width: 810px;
 }
 
 .contact .social {
     display: flex;
-    flex-direction: column;
-    gap: 25px;
-    margin-left: 100px;
-    width: 155px;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
 .contact .social .a {
     display: flex;
     flex-direction: column;
     gap: 1px;
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 12px;
     font-weight: 400;
     line-height: 22px;
@@ -608,6 +608,7 @@ h3 {
     text-align: center;
     align-items: center;
     height: 62px;
+    width: 100px;
 }
 
 .contact .social .a:hover p {
@@ -629,9 +630,7 @@ h3 {
 }
 
 .contact .message {
-    margin-left: 60px;
-    width: 700px;
-    display: flex;
+    width: 100%;
 }
 
 .contact .message form {
@@ -640,11 +639,9 @@ h3 {
 }
 
 .contact .message label {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 20px;
     font-weight: 400;
-    /* line-height: 30px; */
     letter-spacing: 0.18em;
     text-align: left;
     padding: 0 10px 10px 10px;
@@ -652,11 +649,9 @@ h3 {
 }
 
 .contact .message label span {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 10px;
     font-weight: 400;
-    /* line-height: 30px; */
     letter-spacing: 0.12em;
     text-align: left;
     padding-left: 5px;
@@ -676,6 +671,8 @@ h3 {
 }
 
 .contact .message .email {
+    display: flex;
+    flex-direction: column;
     padding-bottom: 30px;
 }
 
@@ -694,7 +691,6 @@ input#first {
     padding: 14px;
     outline: none;
     background-color: #BDBDBD40;
-    width: 307px;
     border: none;
 }
 
@@ -703,7 +699,6 @@ input#email {
     outline: none;
     background-color: #BDBDBD40;
     border: none;
-    width: 672px;
 }
 
 textarea#message {
@@ -711,8 +706,7 @@ textarea#message {
     outline: none;
     background-color: #BDBDBD40;
     border: none;
-    width: 672px;
-    max-width: 672px;
+    max-width: 782px;
 }
 
 input#last::placeholder,

@@ -5,10 +5,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
 
-
 h1 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 40px;
     font-weight: 700;
     line-height: 60px;
@@ -17,8 +15,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 32px;
     font-weight: 700;
     line-height: 48px;
@@ -27,8 +24,7 @@ h2 {
 }
 
 h3 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 24px;
     font-weight: 700;
     line-height: 48px;
@@ -37,8 +33,7 @@ h3 {
 }
 
 h4 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 20px;
     font-weight: 700;
     line-height: 48px;
@@ -48,8 +43,7 @@ h4 {
 }
 
 h5 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -58,8 +52,7 @@ h5 {
 }
 
 .h5 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -68,8 +61,7 @@ h5 {
 }
 
 .h6 {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 12px;
     font-weight: 400;
     line-height: 19px;
@@ -79,14 +71,12 @@ h5 {
 
 .header_pic a,
 .hot_button a {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
     letter-spacing: 0.12em;
     /* text-align: center; */
-
 }
 
 header {
@@ -133,7 +123,6 @@ header {
     color: #ffffff;
     padding: 0 3px;
 }
-
 
 .header_nav .search .input {
     background-color: transparent;
@@ -245,6 +234,7 @@ header {
     top: 100%;
     left: -40px;
     align-items: center;
+    background-color: #333333;
 }
 
 .header_nav .item ul .box:hover .language_item {
@@ -267,10 +257,19 @@ header {
     width: 1920px;
 }
 
-.header_pic .title {
+/* .header_pic .title {
     position: absolute;
     top: 180px;
     left: 15%;
+    text-align: left;
+} */
+
+.header_pic .title {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-45%);
+    width: 1100px;
     text-align: left;
 }
 
@@ -283,7 +282,7 @@ header {
 .header_pic .title .search {
     width: 250px;
     text-decoration: none;
-    background-color: #ffffff20;
+    background-color: #ffffffcc;
     border: 1px solid #ffffff;
     border-radius: 35px;
     padding: 12px 25px;
@@ -296,11 +295,11 @@ header {
 }
 
 .header_pic .title .search:hover {
-    background-color: #ffffff40
+    background-color: #ffffff
 }
 
 .header_pic .title .search::placeholder {
-    color: #ffffff80;
+    color: #333333aa;
 }
 
 .header_pic .title .search:focus::placeholder {
@@ -309,11 +308,11 @@ header {
 
 .header_pic .title a {
     text-decoration: none;
-    color: #00EFFE;
-    border: 1px solid #00EFFE;
-    background-color: #00EFFE20;
-    border-radius: 35px;
-    padding: 12px 25px;
+    color: #ffffff;
+    /* background-color: #0BC6D6cc;
+    border: 1px solid #0BC6D6cc;
+    border-radius: 35px; */
+    padding: 12px 15px;
     display: inline-flex;
     margin-top: 20px;
     align-items: center;
@@ -324,9 +323,9 @@ header {
 }
 
 .header_pic .title a:hover {
-    background-color: #00EFFE60;
-    border: 1px solid #00EFFE;
-    color: #ffffff;
+    /* background-color: #0BC6D6;
+    border: 1px solid #0BC6D6; */
+    color: #333333;
 }
 
 .header_pic .box {
@@ -362,18 +361,14 @@ header {
     color: #333333
 }
 
-/* .header_pic .box .text input[type="date"]::-webkit-datetime-edit {
-    color: #490000;
-} */
+/* .header_pic .box .text input[type="date"]::-webkit-datetime-edit {    color: #490000;} */
 /* TODO input 確認圖示怎麼改顏色*/
-
 .header_pic .box .text input:focus {
     outline: none;
 }
 
 .header_pic .box span {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 12px;
     font-weight: 400;
     line-height: 15px;
@@ -382,8 +377,7 @@ header {
 }
 
 .header_pic .box p {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
@@ -394,12 +388,10 @@ header {
 
 .header_pic .box .check {
     height: 65px;
-
 }
 
 .header_pic .box a {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 12px;
     font-weight: 400;
     line-height: 19px;
@@ -420,7 +412,6 @@ header {
     background-color: #0aa9b8
 }
 
-
 .footer {
     display: flex;
     background-color: #002547;
@@ -432,8 +423,7 @@ header {
 
 .footer_text {
     color: #BDBDBD;
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 10px;
     font-weight: 400;
     line-height: 15px;
@@ -520,7 +510,6 @@ header {
     display: flex;
     justify-content: center;
     gap: 40px;
-
 }
 
 .content .left {
@@ -542,7 +531,6 @@ header {
 }
 
 /* NOTE sticky定位要同時設定top */
-
 .content .left aside .bottom_line {
     padding-bottom: 20px;
     border-bottom: 1px solid #E0E0E0;
@@ -553,19 +541,16 @@ header {
 }
 
 .content .left aside .type .title {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 16px;
     font-weight: 700;
     line-height: 19px;
     letter-spacing: 0em;
     padding-bottom: 10px;
-
 }
 
 .content .left aside .type .item {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
@@ -617,7 +602,6 @@ label:after {
 }
 
 /* NOTE checkbox 修改樣式的方法 */
-
 .content .right {
     display: flex;
     flex-direction: column;
@@ -644,9 +628,8 @@ label:after {
 }
 
 .content .box .text .name .introduce {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
-    font-size: 12px;
+    font-family: "Inter", "Noto Sans TC";
+    font-size: 14px;
     font-weight: 400;
     line-height: 19px;
     letter-spacing: 0.06em;
@@ -656,8 +639,7 @@ label:after {
 }
 
 .content .box .text .name .location {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
@@ -669,8 +651,7 @@ label:after {
 }
 
 .content .box .text .name .label {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
@@ -731,8 +712,7 @@ label:after {
 }
 
 .content .box .text .like a {
-    font-family: "Inter", sans-serif;
-    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Inter", "Noto Sans TC";
     font-size: 12px;
     font-weight: 400;
     line-height: 19px;
