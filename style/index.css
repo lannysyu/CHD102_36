@@ -117,7 +117,6 @@ header {
 }
 
 .header_nav .search {
-    /* outline: auto; */
     margin-right: auto;
     display: flex;
 }
@@ -213,7 +212,6 @@ header {
 .item_fish {
     position: absolute;
     top: -16px;
-    /* right: 25%; */
     display: none;
 }
 
@@ -278,8 +276,6 @@ header {
 .header_pic .title h2 {
     color: #fff;
 }
-
-header .top {}
 
 /* .header_pic .title a {
     text-decoration: none;
