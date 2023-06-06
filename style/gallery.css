@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
 
 h1 {
-    font-family: "Inter", "Noto Sans TC";
+    font-family: Inter, "Noto Sans TC";
     font-size: 40px;
     font-weight: 700;
     line-height: 60px;
@@ -15,7 +15,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Inter", "Noto Sans TC";
+    font-family: Inter, "Noto Sans TC";
     font-size: 32px;
     font-weight: 700;
     line-height: 48px;
@@ -24,7 +24,7 @@ h2 {
 }
 
 h3 {
-    font-family: "Inter", "Noto Sans TC";
+    font-family: Inter, "Noto Sans TC";
     font-size: 24px;
     font-weight: 700;
     line-height: 48px;
@@ -33,7 +33,7 @@ h3 {
 }
 
 h4 {
-    font-family: "Inter", "Noto Sans TC";
+    font-family: Inter, "Noto Sans TC";
     font-size: 20px;
     font-weight: 700;
     line-height: 48px;
@@ -42,7 +42,7 @@ h4 {
 }
 
 h5 {
-    font-family: "Inter", "Noto Sans TC";
+    font-family: Inter, "Noto Sans TC";
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -51,7 +51,7 @@ h5 {
 }
 
 .h5 {
-    font-family: "Inter", "Noto Sans TC";
+    font-family: Inter, "Noto Sans TC";
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -60,7 +60,7 @@ h5 {
 }
 
 .h6 {
-    font-family: "Inter", "Noto Sans TC";
+    font-family: Inter, "Noto Sans TC";
     font-size: 12px;
     font-weight: 400;
     line-height: 19px;
@@ -70,12 +70,11 @@ h5 {
 
 .header_pic a,
 .hot_button a {
-    font-family: "Inter", "Noto Sans TC";
+    font-family: Inter, "Noto Sans TC";
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
     letter-spacing: 0.12em;
-    /* text-align: center; */
 }
 
 header {
@@ -239,6 +238,13 @@ header {
     position: relative;
     font-size: 0px;
     width: 100%;
+    /* aspect-ratio: 1920/700; */
+}
+
+.header_pic .pic .rb {
+    max-width: 100%;
+    width: 1920px;
+    /* height:100%; */
 }
 
 .header_pic .pic {
@@ -251,6 +257,7 @@ header {
 
 .header_pic .pic img {
     width: 1920px;
+    /* overflow: hidden; */
 }
 
 .header_pic .title {
@@ -273,7 +280,7 @@ header {
     color: #BDBDBD;
     width: 100%;
     background-color: transparent;
-    background-image: url(./pic/gallery/footer_bg_down.png);
+    background-image: url(../pic/gallery/footer_bg_down.png);
     max-width: 1920px;
     margin: auto;
     text-align: center;
@@ -283,7 +290,7 @@ header {
 
 .footer_text {
     color: #BDBDBD;
-    font-family: "Inter", "Noto Sans TC";
+    font-family: Inter, "Noto Sans TC";
     font-size: 10px;
     font-weight: 400;
     line-height: 15px;
@@ -381,36 +388,6 @@ main {
     /* background-image: url(./pic/gallery/a_bg.png);    background-repeat:no-repeat;    background-position:bottom; */
 }
 
-aside {
-    position: sticky;
-    top: 100px;
-    width: 230px;
-    transform: translateX(100px);
-    margin-right: 500px;
-    display: none;
-}
-
-aside .list {
-    display: flex;
-    flex-direction: column;
-    padding: 60px;
-    gap: 40px;
-    border: 2px solid #ffffff;
-    margin-top: 100px;
-    background-color: #ffffff60;
-}
-
-aside .list a {
-    text-decoration: none;
-    color: #333333;
-    font-family: "Inter", "Noto Sans TC";
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 21px;
-    letter-spacing: 0.12em;
-    text-align: right;
-}
-
 .part_title {
     display: flex;
     width: 1200px;
@@ -431,7 +408,7 @@ aside .list a {
 }
 
 .part_title .text .small {
-    font-family: "Inter", "Noto Sans TC";
+    font-family: Inter, "Noto Sans TC";
     font-size: 14px;
     font-weight: 700;
     line-height: 19px;
@@ -445,7 +422,7 @@ aside .list a {
 
 .part_title .text .content,
 .part_clownfish .text p {
-    font-family: "Inter", "Noto Sans TC";
+    font-family: Inter, "Noto Sans TC";
     font-size: 14px;
     font-weight: 400;
     line-height: 19px;
@@ -459,7 +436,6 @@ aside .list a {
 
 .part_clownfish .pic_rb {
     font-size: 0px;
-    ;
 }
 
 .part_clownfish .text {
@@ -556,4 +532,157 @@ aside .list a {
     margin-top: auto;
 }
 
-/* .footer .pic {    position: absolute;    z-index: -1;    margin: auto;} */
+@media screen and (max-width: 768px) {
+    body {
+        max-width: 768px;
+        /* overflow: hidden; */
+    }
+
+    .part_title {
+        display: flex;
+        flex-direction: column;
+        margin: 200px 0 150px 0;
+        gap: 100px;
+    }
+
+    .part_title .pic_cm {
+        font-size: 0px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .part_title .pic_cm img {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .part_title .text {
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: 300px;
+    }
+
+    .part_title .text .content,
+    .part_clownfish .text p {
+        font-family: Inter, "Noto Sans TC";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0.06em;
+        text-align: left;
+    }
+
+    .part_clownfish {
+        margin-bottom: 200px;
+        /* width:100%; */
+    }
+
+    .part_clownfish .pic_rb {
+        font-size: 0px;
+    }
+
+    .part_clownfish .pic_rb img {
+        width: 100%;
+    }
+
+    .part_clownfish .text {
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .part_clownfish .text p {
+        width: 300px;
+        display: inline-block;
+    }
+
+    /* .part_clownfish .content {
+        display: flex;
+        margin-top: 100px;
+        justify-content: space-around
+    }
+
+    .part_clownfish .content .pic_cm {
+        font-size: 0px;
+    }
+
+    .part_anemone {
+        position: relative;
+        margin-bottom: 100px;
+    }
+
+    .part_anemone .pic_bg {
+        width: 100%;
+        max-width: 1920px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .part_anemone .pic_bg .pic {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 90px;
+        width: 1000px;
+        position: absolute;
+        z-index: 1;
+        font-size: 0;
+    }
+
+    .part_anemone .pic_bg .pic .pic_rm_2 {
+        transform: translateY(190px);
+    }
+
+    .part_anemone .pic_bg .bg {
+        position: relative;
+        transform: translateY(350px);
+    }
+
+    .part_anemone .pic_bg {
+        height: 1830px;
+    }
+
+    .part_anemone .second {
+        bottom: 190px
+    }
+
+    .part_jellyfish {
+        margin-bottom: 100px;
+    }
+
+    .part_other {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        height: 1500px;
+    }
+
+    .part_other .pic {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 90px;
+        width: 1000px;
+        position: absolute;
+        z-index: 1;
+        font-size: 0;
+        top: 0;
+    }
+
+    .part_other .pic .pic_rm_2 {
+        transform: translateY(190px);
+    }
+
+    .part_other .pic_bg {
+        font-size: 0;
+        position: relative;
+        margin-top: auto;
+    } */
+}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 1200px) {}

@@ -1,0 +1,239 @@
+h1 {
+    font-family: "Inter", "Noto Sans TC";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0.12em;
+    color: #333333;
+}
+
+h2 {
+    font-family: "Inter", "Noto Sans TC";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.18em;
+    color: #333333;
+}
+
+h3 {
+    font-family: "Inter", "Noto Sans TC";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.12em;
+    color: #333333;
+}
+
+h4 {
+    font-family: "Inter", "Noto Sans TC";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.12em;
+    color: #333333;
+}
+
+h5 {
+    font-family: "Inter", "Noto Sans TC";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    color: #333333;
+}
+
+.h5 {
+    font-family: "Inter", "Noto Sans TC";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    color: #333333;
+}
+
+.h6 {
+    font-family: "Inter", "Noto Sans TC";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.06em;
+    color: #333333;
+}
+
+.text_16px {
+    font-family: "Inter", "Noto Sans TC";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.12em;
+    color: #333333;
+    text-align: justify;
+}
+
+
+.news {
+    background-image: url(./bg/bg_news.svg);
+    width: 1920px;
+}
+
+.news h2 {
+    text-align: center;
+    padding: 100px 0 20px 0;
+}
+
+.news .arrow {
+    display: flex;
+    gap: 20px;
+}
+
+.news .arrow .a {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #EDD523;
+}
+
+.news .arrow .a a {
+    color: #EDD523;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.news .arrow .a:hover,
+.news .arrow .left:hover {
+    background-color: #EDD523;
+    color: #ffffff;
+}
+
+.news .arrow .a a:hover,
+.news .arrow .left a:hover {
+    color: #ffffff;
+}
+
+.news .box {
+    display: flex;
+    gap: 30px;
+}
+
+.news .box .wrap {
+    border: 1px solid #ECECEC;
+    border-radius: 8px;
+    padding: 20px;
+    padding-bottom: 130px;
+    width: 720px;
+    position: relative;
+}
+
+.news .box .wrap .item {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    padding: 0px 20px;
+    width: 95%;
+}
+
+.news .box .wrap .item .label {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.news .box .wrap .item .label p {
+    background-color: #EDD523;
+    display: inline-block;
+    padding: 5px 30px;
+    color: #fff;
+    font-family: "Inter", "Noto Sans TC";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: center;
+    position: relative;
+    /* top:50px; */
+}
+
+.news .box .wrap .item .label p img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -10px;
+    width: 21px;
+    font-size: 0px;
+}
+
+.news .box .wrap .item .text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.news .box .wrap .item .text .title {
+    display: flex;
+    flex-direction: column;
+}
+
+.news .box .wrap .item .text .title h4 {
+    margin: 0 0 15px 0;
+}
+
+.news .box .wrap .item .text .title p {
+    color: #333333;
+    font-family: "Inter", "Noto Sans TC";
+    font-size: 14px;
+    font-weight: 400;
+    order: -1;
+    margin: 0px
+}
+
+.news .box .wrap .item .text .title {
+    padding-left: 20px;
+}
+
+.news .box .wrap .item .text .button {
+    margin-right: 20px;
+}
+
+.news .box .wrap .item .text .button a {
+    display: block;
+    text-decoration: none;
+    color: #333333;
+    font-family: "Inter", "Noto Sans TC";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.12em;
+    text-align: center;
+}
+
+.news .box .wrap .item .text .button i {
+    padding-left: 10px;
+}
+
+.news .box .wrap .item .text .button a::after {
+    content: " ";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #333333;
+    transition: .4s .2s;
+}
+
+.news .box .wrap .item .text .button a:hover::after {
+    width: 100%;
+}
+
+.swiper {
+    width: 600px;
+    height: 300px;
+}
+
+.swiper .swiper-wrapper .swiper-slide {
+    width: 100%;
+}

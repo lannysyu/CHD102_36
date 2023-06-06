@@ -10,7 +10,7 @@ html {
 }
 
 h1 {
-    font-family: "Inter", "Noto Sans TC";
+    font-family: Inter, "Noto Sans TC";
     font-size: 40px;
     font-weight: 700;
     line-height: 60px;
@@ -19,7 +19,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Inter", "Noto Sans TC";
+    font-family: Inter, "Noto Sans TC";
     font-size: 32px;
     font-weight: 700;
     line-height: 48px;
@@ -28,7 +28,7 @@ h2 {
 }
 
 h3 {
-    font-family: "Inter", "Noto Sans TC";
+    font-family: Inter, "Noto Sans TC";
     font-size: 24px;
     font-weight: 700;
     line-height: 48px;
@@ -37,7 +37,7 @@ h3 {
 }
 
 h4 {
-    font-family: "Inter", "Noto Sans TC";
+    font-family: Inter, "Noto Sans TC";
     font-size: 20px;
     font-weight: 700;
     line-height: 48px;
@@ -46,7 +46,7 @@ h4 {
 }
 
 h5 {
-    font-family: "Inter", "Noto Sans TC";
+    font-family: Inter, "Noto Sans TC";
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -55,7 +55,7 @@ h5 {
 }
 
 .h5 {
-    font-family: "Inter", "Noto Sans TC";
+    font-family: Inter, "Noto Sans TC";
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -64,7 +64,7 @@ h5 {
 }
 
 .h6 {
-    font-family: "Inter", "Noto Sans TC";
+    font-family: Inter, "Noto Sans TC";
     font-size: 12px;
     font-weight: 400;
     line-height: 19px;
@@ -74,7 +74,7 @@ h5 {
 
 .header_pic a,
 .hot_button a {
-    font-family: "Inter", "Noto Sans TC";
+    font-family: Inter, "Noto Sans TC";
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -311,7 +311,7 @@ header {
     height: 220px;
     text-align: center;
     font-size: 12px;
-    font-family: "Inter", "Noto Sans TC";
+    font-family: Inter, "Noto Sans TC";
 }
 
 .header_pic .button a img {
@@ -335,7 +335,7 @@ header {
 
 .footer_text {
     color: #BDBDBD;
-    font-family: "Inter", "Noto Sans TC";
+    font-family: Inter, "Noto Sans TC";
     font-size: 10px;
     font-weight: 400;
     line-height: 15px;
@@ -419,7 +419,7 @@ header {
 .attractions .button a {
     text-decoration: none;
     color: #fff;
-    font-family: "Inter", "Noto Sans TC";
+    font-family: Inter, "Noto Sans TC";
     font-size: 12px;
     font-weight: 400;
     line-height: 19px;
@@ -518,7 +518,7 @@ main {
 }
 
 .level .content .no .q .number span {
-    font-family: "Inter", "Noto Sans TC";
+    font-family: Inter, "Noto Sans TC";
     font-size: 16px;
     font-style: italic;
     font-weight: 400;
@@ -529,7 +529,7 @@ main {
 }
 
 .level .content .no .q .active .text {
-    font-family: "Inter", "Noto Sans TC";
+    font-family: Inter, "Noto Sans TC";
     font-size: 20px;
     font-weight: 700;
     line-height: 30px;
@@ -539,7 +539,7 @@ main {
 }
 
 .level .content .no .q .active span {
-    font-family: "Inter", "Noto Sans TC";
+    font-family: Inter, "Noto Sans TC";
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -557,7 +557,7 @@ main {
 }
 
 .level .content .no .a .small {
-    font-family: "Inter", "Noto Sans TC";
+    font-family: Inter, "Noto Sans TC";
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
@@ -568,7 +568,7 @@ main {
 }
 
 .level .content .no .a .big {
-    font-family: "Inter", "Noto Sans TC";
+    font-family: Inter, "Noto Sans TC";
     font-size: 20px;
     font-weight: 700;
     line-height: 27px;
@@ -584,7 +584,7 @@ main {
 }
 
 .level .content .no .a .sign a {
-    font-family: "Inter", "Noto Sans TC";
+    font-family: Inter, "Noto Sans TC";
     font-size: 12px;
     font-weight: 400;
     line-height: 15px;

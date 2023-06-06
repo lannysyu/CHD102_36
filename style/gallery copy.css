@@ -81,7 +81,6 @@ h5 {
 header {
     display: flex;
     justify-content: center;
-    overflow: hidden;
 }
 
 .header_nav {
@@ -213,11 +212,6 @@ header {
     background-color: #002547;
 }
 
-.header_nav .item ul a:hover .item_fish {
-    display: block;
-    color: #00EFFE;
-}
-
 .header_nav .item ul .box {
     position: relative;
 }
@@ -249,7 +243,7 @@ header {
 
 .header_pic .pic {
     width: 100%;
-    /* overflow: hidden; */
+    overflow: hidden;
     display: flex;
     justify-content: center;
     vertical-align: middle;
@@ -270,104 +264,21 @@ header {
 .header_pic .title h2,
 .header_pic .title h3 {
     color: #fff;
-}
-
-.header_pic .button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-}
-
-.header_pic .button a {
-    display: block;
-    text-decoration: none;
-    color: #00EFFE;
-    border: 2px solid #00EFFE;
-    border-radius: 50%;
-    width: 90px;
-    height: 90px;
-    /* NOTE a 變成正圓形要設定寬高 */
-    text-align: center;
-    line-height: 90px;
-    font-size: 15px;
-}
-
-.header_pic .button a img {
-    padding-left: 10px;
-}
-
-.header_pic .button a:hover {
-    background-color: #ffffff30;
-    border: 2px solid #ffffff;
-    color: #ffffff;
-}
-
-main {
-    max-width: 1920px;
-    overflow: hidden;
-    margin: auto;
-}
-
-.card {
-    background-color: #F9F3F0;
-    display: flex;
-    justify-content: center;
-    /* overflow: hidden; */
-    position: relative;
-}
-
-.card .inter {
-    width: 1200px;
-    display: flex;
-}
-
-.card .inter .pic_min {
-    padding: 20px;
-    margin-left: auto;
-}
-
-.card .inter .title {
-    padding-top: 100px;
-    padding-bottom: 80px;
-    display: inline-block;
     text-align: left;
-    margin-left: 40px;
-}
-
-.card .inter .title .arrow {
-    margin-top: auto;
-    padding-bottom: 10px;
-}
-
-.card .inter .title .arrow a {
-    display: inline-block;
-    padding: 20px;
-    border: 1px solid transparent;
-    color: #333333;
-}
-
-.card .inter .title .arrow a:hover {
-    background-color: #ffffff60;
-    border: 1px solid #BDBDBD60;
-}
-
-.card .inter .title .arrow a:focus {
-    color: #333333;
 }
 
 .footer {
     display: flex;
-    /* background-color: #002547; */
+    background-color: #002547;
     color: #BDBDBD;
     width: 100%;
-    background-image: url(./pic/taiwan/footer_pic.png);
+    background-color: transparent;
+    background-image: url(../pic/gallery/footer_bg_down.png);
     max-width: 1920px;
     margin: auto;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .footer_text {
@@ -402,7 +313,7 @@ main {
 .footer_sub {
     display: flex;
     /* width: 20%; */
-    margin: 53px 100px 53px 50px;
+    margin: 56px 100px 56px 50px;
     padding-left: 20px;
     border-radius: 30px;
     background-color: #ffffff20;
@@ -437,7 +348,9 @@ main {
     color: #fff;
     font-size: 12px;
     letter-spacing: 0.2em;
-}.footer_sub a {
+}
+
+.footer_sub a {
     background-color: #0BC6D6;
     display: block;
     padding: 12px 25px;
@@ -451,164 +364,196 @@ main {
     background-color: #0aa9b8;
 }
 
-.attractions .button a {
-    text-decoration: none;
-    color: #fff;
-    font-family: Inter, "Noto Sans TC";
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0.06em;
-    padding: 10px 60px;
-    background-color: #0BC6D6;
-    display: inline-block;
-    border-radius: 30px;
-}
-
-.attractions .button :hover {
-    background-color: #0aa9b8;
-}
-
-.attractions {
-    display: grid;
-    width: 1200px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.2fr;
-    row-gap: 20px;
-    column-gap: 20px;
-    justify-content: center;
-    text-align: justify;
-    margin: auto;
-    padding: 90px 0;
-}
-
-.attractions div p {
-    font-family: Inter, "Noto Sans TC";
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0.12em;
-}
-
-.attractions .map {
-    grid-area: 1/2/4/4;
-}
-
-.attractions .p1 {
-    grid-area: 1/1/2/2;
-}
-
-.attractions .p2 {
-    grid-area: 2/1/3/2;
-}
-
-.attractions .p3 {
-    grid-area: 3/1/4/2;
-}
-
-.attractions .p4 {
-    grid-area: 1/4/2/5;
-}
-
-.attractions .p5 {
-    grid-area: 2/4/4/4;
-}
-
-.attractions .p6 {
-    grid-area: 3/4/4/5;
-}
-
-.attractions .button {
-    grid-area: 4/3/4/5;
-    justify-self: end;
-    align-self: end;
-}
-
-.banner_protect {
-    background-image: url(./pic/taiwan/section_pic.png);
-    width: 100%;
+body {
+    background-color: #F9F3F0;
     text-align: center;
-    padding: 80px 0;
+}
+
+main {
+    width: 100%;
+    max-width: 1920px;
+    overflow: hidden;
+    position: relative;
     display: flex;
     flex-direction: column;
-    margin: auto;
     align-items: center;
+    margin: auto;
+    /* background-image: url(./pic/gallery/a_bg.png);    background-repeat:no-repeat;    background-position:bottom; */
 }
 
-.banner_protect h3 {
-    color: #ffffff;
-    padding-bottom: 15px;
+aside {
+    position: sticky;
+    top: 100px;
+    width: 230px;
+    transform: translateX(100px);
+    margin-right: 500px;
+    display: none;
 }
 
-.banner_protect p {
-    color: #ffffff;
-}
-
-.banner_protect .icon {
+aside .list {
     display: flex;
-    justify-content: center;
-    gap: 80px;
+    flex-direction: column;
+    padding: 60px;
+    gap: 40px;
+    border: 2px solid #ffffff;
+    margin-top: 100px;
+    background-color: #ffffff60;
 }
 
-.banner_protect .text {
+aside .list a {
+    text-decoration: none;
+    color: #333333;
     font-family: Inter, "Noto Sans TC";
     font-size: 14px;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0.06em;
-    padding-bottom: 50px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.12em;
+    text-align: right;
 }
 
-.banner_protect .icon p {
+.part_title {
+    display: flex;
+    width: 1200px;
+    margin: 200px 0;
+    text-align: left;
+}
+
+.part_title .pic_cm {
+    font-size: 0px;
+    margin-left: 13%
+}
+
+.part_title .text {
+    margin: auto;
+    transform: translateX(-50px);
+    width: 488px;
+    text-align: left;
+}
+
+.part_title .text .small {
     font-family: Inter, "Noto Sans TC";
     font-size: 14px;
     font-weight: 700;
-    line-height: 21px;
-    letter-spacing: 0.12em;
-    padding-top: 20px;
+    line-height: 19px;
+    letter-spacing: 0.06em;
+    margin-bottom: 25px;
 }
 
-.banner_protect .button {
-    width: 1200px;
-    text-align: end;
-    margin: auto;
+.part_title .text h3 {
+    margin-bottom: 25px;
 }
 
-.banner_protect .button a {
+.part_title .text .content,
+.part_clownfish .text p {
     font-family: Inter, "Noto Sans TC";
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 19px;
     letter-spacing: 0.06em;
-    text-align: center;
-    text-decoration: none;
-    padding: 10px 40px 10px 50px;
+    text-align: left;
+}
+
+.part_clownfish {
+    margin-bottom: 200px;
+}
+
+.part_clownfish .pic_rb {
+    font-size: 0px;
+    ;
+}
+
+.part_clownfish .text {
+    margin-top: 100px;
+    text-align: right;
+    /* transform: translateX(-185px); */
+}
+
+.part_clownfish .text p {
+    width: 488px;
     display: inline-block;
-    /* border: 1px solid #ffffff;
-    border-radius: 30px; */
-    color: #ffffff;
-    margin-top: 60px;
 }
 
-.banner_protect .button a i {
-    padding-left: 10px;
+.part_clownfish .content {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around
 }
 
-/* .banner_protect .button a:hover {
-    background-color: #0BC6D6;
-    border: 1px solid #0BC6D6;
-    color:
-} */
-
-.banner_protect .button a::after {
-    content: " ";
-    display: block;
-    width: 0%;
-    height: 2px;
-    background-color: #ffffff;
-    transition: .4s .2s;
+.part_clownfish .content .pic_cm {
+    font-size: 0px;
 }
 
-.banner_protect .button a:hover::after {
+.part_anemone {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.part_anemone .pic_bg {
     width: 100%;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.part_anemone .pic_bg .pic {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 90px;
+    width: 1000px;
+    position: absolute;
+    z-index: 1;
+    font-size: 0;
+}
+
+.part_anemone .pic_bg .pic .pic_rm_2 {
+    transform: translateY(190px);
+}
+
+.part_anemone .pic_bg .bg {
+    position: relative;
+    transform: translateY(350px);
+}
+
+.part_anemone .pic_bg {
+    height: 1830px;
+}
+
+.part_anemone .second {
+    bottom: 190px
+}
+
+.part_jellyfish {
+    margin-bottom: 100px;
+}
+
+.part_other {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 1500px;
+}
+
+.part_other .pic {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+    width: 1000px;
+    position: absolute;
+    z-index: 1;
+    font-size: 0;
+    top: 0;
+}
+
+.part_other .pic .pic_rm_2 {
+    transform: translateY(190px);
+}
+
+.part_other .pic_bg {
+    font-size: 0;
+    position: relative;
+    margin-top: auto;
+}
+
+
