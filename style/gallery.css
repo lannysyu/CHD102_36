@@ -113,14 +113,13 @@ header {
 /* search+item */
 .header_nav .main_nav {
     position: absolute;
-    /* width: 96%; */
-    /* background-color: transparent; */
+    width: 60%;
     right: 0;
     top: 100%;
     display: flex;
     flex-direction: column;
     background-color: #002547;
-    padding: 40px;
+    padding: 50px;
     display: none;
 }
 
@@ -136,6 +135,8 @@ header {
     padding: 10px 10px;
     background-color: #F2F2F233;
     border-radius: 20px;
+    width: 100%;
+    max-width: 400px;
 }
 
 .header_nav .search .bar i {
@@ -147,6 +148,7 @@ header {
     background-color: transparent;
     border: none;
     padding: 0px 5px;
+    width: 100%;
 }
 
 .header_nav .search .input:focus {
@@ -170,16 +172,18 @@ header {
 
 /* item-bar */
 .header_nav .item {
-    align-self: center;
-    margin-top: 30px;
+    /* margin-top: 50px; */
 }
+
+/* BUG 用不好margin-top */
 
 .header_nav .item ul {
     display: flex;
     flex-direction: column;
     color: #fff;
     /* padding-right: 105px; */
-    gap: 30px;
+    gap: 50px;
+    align-items: center;
 }
 
 .header_nav .item ul a {
@@ -194,6 +198,8 @@ header {
 
 .header_nav .item ul a h5 {
     color: #fff;
+    font-size: 18px;
+    line-height: 18px;
 }
 
 /* item-fish */
@@ -289,13 +295,14 @@ header {
     display: flex;
 }
 
+/* header_pic */
 .header_pic {
     position: relative;
     font-size: 0px;
     width: 100%;
+    overflow: hidden;
 }
 
-/* .header_pic */
 .header_pic .pic {
     /* min-width:1200px; */
     /* width: 100%; */
@@ -335,17 +342,18 @@ header {
     margin: auto;
     text-align: center;
     gap: 20px;
-    padding: 30px 0;
-    min-width: 500px;
+    padding: 50px 0;
+    width: 100%;
 }
 
 .footer_text {
     color: #BDBDBD;
     font-family: Inter, "Noto Sans TC";
-    font-size: 10px;
+    font-size: 8px;
     font-weight: 400;
     line-height: 15px;
     letter-spacing: 0.12em;
+    width: 80%;
 }
 
 .footer_connect a {
@@ -426,7 +434,7 @@ body {
 /* main */
 main {
     width: 100%;
-    max-width: 1023px;
+    /* max-width: 1023px; */
     overflow: hidden;
     position: relative;
     display: flex;
@@ -446,8 +454,9 @@ main {
 .part_title .pic_cm {
     font-size: 0px;
     margin: auto;
-    padding: 0 100px;
+    /* padding: 0 100px; */
     width: 50%;
+    max-width: 500px;
 }
 
 .part_title .pic_cm img {
@@ -518,7 +527,7 @@ main {
     gap: 40px;
     padding: 0 40px;
     font-size: 0px;
-    margin-top: 100px;
+    margin-top: 130px;
 }
 
 .part_clownfish .content div:nth-child(2) {
@@ -579,10 +588,10 @@ main {
 }
 
 
-.part_anemone .pic_bg .pic .pic_rm,
+/* .part_anemone .pic_bg .pic .pic_rm,
 .part_anemone .pic_bg .pic .pic_rm_2 {
     width: 100%;
-}
+} */
 
 .part_anemone .pic_bg .pic .pic_rm img,
 .part_anemone .pic_bg .pic .pic_rm_2 img {
@@ -603,6 +612,7 @@ main {
     height: 1750px;
 }
 
+/* .pic_second */
 .part_anemone .pic_second {
     /* display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -634,9 +644,10 @@ main {
     position: relative;
     min-height: 1800px;
     width: 100%;
-    /* max-width:488px; */
-    min-height: 2000px;
+    max-height: 1500px;
 }
+
+/* BUG absolute設定高度 */
 
 .part_other .pic {
     display: grid;
@@ -649,13 +660,11 @@ main {
     font-size: 0;
     top: 0;
     width: 80%;
-    max-width: 670px;
 }
 
 .part_other .pic img {
     width: 100%;
     margin: auto;
-    max-width: 670px;
 }
 
 .part_other .pic div:nth-child(1) {
@@ -680,83 +689,13 @@ main {
     margin-top: auto;
 }
 
-@media screen and (min-width: 768px) {}
-
 @media screen and (min-width: 1024px) {
-    /* * {
-        margin: 0;
-        padding: 0;
-    }
-    
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
-    
-    h1 {
-        font-family: Inter, "Noto Sans TC";
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 60px;
-        letter-spacing: 0.12em;
-        color: #333333;
-    }
-    
-    h2 {
-        font-family: Inter, "Noto Sans TC";
-        font-size: 32px;
-        font-weight: 700;
-        line-height: 48px;
-        letter-spacing: 0.18em;
-        color: #333333;
-    }
-    
-    h3 {
-        font-family: Inter, "Noto Sans TC";
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 48px;
-        letter-spacing: 0.12em;
-        color: #333333;
-    }
-    
-    h4 {
-        font-family: Inter, "Noto Sans TC";
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 48px;
-        letter-spacing: 0.12em;
-        color: #333333;
-    }
-    
-    h5 {
-        font-family: Inter, "Noto Sans TC";
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 21px;
-        letter-spacing: 0em;
-        color: #333333;
-    }
-    
-    .h5 {
-        font-family: Inter, "Noto Sans TC";
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 21px;
-        letter-spacing: 0em;
-        color: #333333;
-    }
-    
-    .h6 {
-        font-family: Inter, "Noto Sans TC";
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 19px;
-        letter-spacing: 0.06em;
-        color: #333333;
-    } */
 
     #menu-switch {
         display: none;
     }
 
+    /* header */
     .header_pic a,
     .hot_button a {
         font-family: Inter, "Noto Sans TC";
@@ -797,16 +736,13 @@ main {
 
     /* search+item */
     .header_nav .main_nav {
-        position: absolute;
-        /* width: 96%; */
+        position: relative;
+        width: 100%;
         background-color: transparent;
-        right: 0;
-        top: 100%;
+        top: 0;
         display: flex;
-        flex-direction: column;
-        background-color: #002547;
-        padding: 30px 30px;
-        /* display: none; */
+        flex-direction: row;
+        padding: 30px 0 30px 30px;
     }
 
     /* search bar */
@@ -855,7 +791,6 @@ main {
 
     .header_nav .item {
         align-self: center;
-        /* margin-left: 480.25px */
     }
 
     .header_nav .item ul {
@@ -878,6 +813,7 @@ main {
 
     .header_nav .item ul a h5 {
         color: #fff;
+        font-size: 16px;
     }
 
     .item_fish {
@@ -946,6 +882,7 @@ main {
         display: flex;
     }
 
+    /* header_pic */
     .header_pic {
         position: relative;
         font-size: 0px;
@@ -978,18 +915,17 @@ main {
         text-align: left;
     }
 
+    /* footer */
     .footer {
         display: flex;
+        flex-direction: row;
         background-color: #002547;
         color: #BDBDBD;
         width: 100%;
-        background-color: transparent;
-        background-image: url(../pic/gallery/footer_bg_down.png);
         max-width: 1920px;
         margin: auto;
         text-align: center;
-        background-repeat: no-repeat;
-        background-position: center;
+        padding: 10px 0;
     }
 
     .footer_text {
@@ -999,7 +935,7 @@ main {
         font-weight: 400;
         line-height: 15px;
         letter-spacing: 0.12em;
-        margin-left: 100px;
+        margin: 0 30px 0 100px;
         /* width:50%; */
         display: flex;
         align-items: center;
@@ -1012,7 +948,7 @@ main {
 
     .footer_connect {
         display: flex;
-        width: 13%;
+        /* width: 13%; */
         align-items: center;
         justify-content: space-evenly;
     }
@@ -1024,8 +960,8 @@ main {
     .footer_sub {
         display: flex;
         /* width: 20%; */
-        margin: 56px 100px 56px 50px;
-        padding-left: 20px;
+        margin: 56px 100px 56px 30px;
+        padding-left: 30px;
         border-radius: 30px;
         background-color: #ffffff20;
         align-items: center;
@@ -1080,6 +1016,8 @@ main {
         text-align: center;
     }
 
+
+    /* main */
     main {
         width: 100%;
         max-width: 1920px;
@@ -1089,12 +1027,13 @@ main {
         flex-direction: column;
         align-items: center;
         margin: auto;
-        /* background-image: url(./pic/gallery/a_bg.png);    background-repeat:no-repeat;    background-position:bottom; */
     }
 
     .part_title {
         display: flex;
-        width: 1200px;
+        flex-direction: row;
+        width: 100%;
+        /* max-width: 1200px; */
         margin: 200px 0;
         text-align: left;
     }
@@ -1105,10 +1044,11 @@ main {
     }
 
     .part_title .text {
-        margin: auto;
-        transform: translateX(-50px);
-        width: 488px;
+        margin-right: 70px;
+        min-width: 488px;
+        width: 100%;
         text-align: left;
+        padding: 0;
     }
 
     .part_title .text .small {
@@ -1122,16 +1062,18 @@ main {
 
     .part_title .text h3 {
         margin-bottom: 25px;
+        font-size: 24px;
     }
 
     .part_title .text .content,
     .part_clownfish .text p {
         font-family: Inter, "Noto Sans TC";
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 400;
-        line-height: 19px;
+        line-height: 24px;
         letter-spacing: 0.06em;
         text-align: left;
+        width: 100%;
     }
 
     .part_clownfish {
@@ -1146,18 +1088,21 @@ main {
     .part_clownfish .text {
         margin-top: 100px;
         text-align: right;
+        width: 100%;
         /* transform: translateX(-185px); */
     }
 
     .part_clownfish .text p {
-        width: 488px;
+        width: 60%;
         display: inline-block;
+        margin-right: 70px;
     }
 
     .part_clownfish .content {
         display: flex;
-        margin-top: 100px;
-        justify-content: space-around
+        margin-top: 130px;
+        justify-content: space-around;
+        width: 80%;
     }
 
     .part_clownfish .content .pic_cm {
@@ -1178,18 +1123,33 @@ main {
     }
 
     .part_anemone .pic_bg .pic {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 90px;
-        width: 1000px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 60px;
+        width: 80%;
         position: absolute;
         z-index: 1;
         font-size: 0;
+        padding: 0 40px;
     }
 
-    .part_anemone .pic_bg .pic .pic_rm_2 {
-        transform: translateY(190px);
+    .part_anemone .pic_bg .pic div:nth-child(1) {
+        grid-area: 1/1/2/2;
+    }
+
+    .part_anemone .pic_bg .pic div:nth-child(2) {
+        grid-area: 1/2/3/3;
+        align-self: center;
+    }
+
+    .part_anemone .pic_bg .pic div:nth-child(3) {
+        grid-area: 2/1/3/2;
+    }
+
+    .part_anemone .pic_bg .pic div:nth-child(4) {
+        grid-area: 2/2/4/3;
+        align-self: center;
     }
 
     .part_anemone .pic_bg .bg {
@@ -1201,8 +1161,41 @@ main {
         height: 1830px;
     }
 
+    /* .pic_second */
     .part_anemone .pic_second {
         bottom: 190px
+    }
+
+    .part_anemone .pic_second {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 60px;
+        width: 80%;
+        position: absolute;
+        z-index: 1;
+        font-size: 0;
+        padding: 0 40px;
+        bottom: -5%;
+    }
+
+    .part_anemone .pic_bg .pic_second div:nth-child(1) {
+        grid-area: 1/1/2/2;
+    }
+
+    .part_anemone .pic_bg .pic_second div:nth-child(2) {
+        grid-area: 1/2/3/3;
+        align-self: center;
+    }
+
+    .part_anemone .pic_second .pic_rm,
+    .part_anemone .pic_second .pic_rm_2 {
+        width: 100%;
+    }
+
+    .part_anemone .pic_second .pic_rm img,
+    .part_anemone .pic_second .pic_rm_2 img {
+        width: 100%;
     }
 
     .part_jellyfish {
@@ -1213,22 +1206,43 @@ main {
         display: flex;
         justify-content: center;
         position: relative;
-        height: 1500px;
+        width: 100%;
+        min-height: 1500px;
     }
 
     .part_other .pic {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 90px;
-        width: 1000px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 60px;
+        width: 80%;
         position: absolute;
         z-index: 1;
         font-size: 0;
-        top: 0;
+        padding: 0 40px;
     }
 
-    .part_other .pic .pic_rm_2 {
-        transform: translateY(190px);
+    .part_other .pic img {
+        width: 100%;
+
+    }
+
+    .part_other .pic div:nth-child(1) {
+        grid-area: 1/1/2/2;
+    }
+
+    .part_other .pic div:nth-child(2) {
+        grid-area: 1/2/3/3;
+        align-self: center;
+    }
+
+    .part_other .pic div:nth-child(3) {
+        grid-area: 2/1/3/2;
+    }
+
+    .part_other .pic div:nth-child(4) {
+        grid-area: 2/2/4/3;
+        align-self: center;
     }
 
     .part_other .pic_bg {
@@ -1239,576 +1253,12 @@ main {
 }
 
 @media screen and (min-width: 1200px) {
-    /* * {
-        margin: 0;
-        padding: 0;
-    }
-    
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
-    
-    h1 {
-        font-family: Inter, "Noto Sans TC";
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 60px;
-        letter-spacing: 0.12em;
-        color: #333333;
-    }
-    
-    h2 {
-        font-family: Inter, "Noto Sans TC";
-        font-size: 32px;
-        font-weight: 700;
-        line-height: 48px;
-        letter-spacing: 0.18em;
-        color: #333333;
-    }
-    
-    h3 {
-        font-family: Inter, "Noto Sans TC";
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 48px;
-        letter-spacing: 0.12em;
-        color: #333333;
-    }
-    
-    h4 {
-        font-family: Inter, "Noto Sans TC";
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 48px;
-        letter-spacing: 0.12em;
-        color: #333333;
-    }
-    
-    h5 {
-        font-family: Inter, "Noto Sans TC";
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 21px;
-        letter-spacing: 0em;
-        color: #333333;
-    }
-    
-    .h5 {
-        font-family: Inter, "Noto Sans TC";
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 21px;
-        letter-spacing: 0em;
-        color: #333333;
-    }
-    
-    .h6 {
-        font-family: Inter, "Noto Sans TC";
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 19px;
-        letter-spacing: 0.06em;
-        color: #333333;
-    } */
-
-
-    .header_pic a,
-    .hot_button a {
-        font-family: Inter, "Noto Sans TC";
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 21px;
-        letter-spacing: 0.12em;
-        /* text-align: center; */
-    }
-
-    header {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .header_nav {
-        width: 100%;
-        height: 100px;
-        display: flex;
-        position: fixed;
-        z-index: 10;
-        margin: auto;
-        max-width: 1920px;
-    }
-
-    .header_nav .logo {
-        align-self: center;
-        padding: 0px 20px 0px 105px;
-        display: flex;
-    }
-
-    .header_nav .logo img {
-        width: 80px;
-        align-items: center;
-    }
-
-    .header_nav .main_nav {
-        position: absolute;
-        /* width: 96%; */
-        background-color: transparent;
-        right: 0;
-        top: 100%;
-        display: flex;
-        flex-direction: column;
-        background-color: #002547;
-        padding: 30px 30px;
-        /* display: none; */
-    }
-
-    .header_nav .search {
-        /* outline: auto; */
-        margin-right: auto;
-        display: flex;
-    }
-
-    .header_nav .search .bar {
-        align-self: center;
-        display: flex;
-        padding: 10px 10px;
-        background-color: #F2F2F233;
-        border-radius: 20px;
-    }
-
-    .header_nav .search .bar i {
-        color: #fff;
-        padding: 0 3px;
-    }
-
-    .header_nav .search .input {
-        background-color: transparent;
-        border: none;
-        padding: 0px 5px;
-    }
-
-    .header_nav .search .input:focus {
-        outline: none;
-    }
-
-    .header_nav .search :hover {
-        outline: none;
-        background-color: #F2F2F255;
-    }
-
-    .header_nav .search .bar i,
-    .header_nav .search .bar a,
-    .header_nav .search .bar .input:hover {
-        background-color: transparent;
-    }
-
-    .header_nav .search .bar a i:hover {
-        color: #00EFFE;
-    }
-
-    .header_nav .item {
-        align-self: center;
-    }
-
-    .header_nav .item ul {
-        display: flex;
-        flex-direction: row;
-        color: #fff;
-        padding-right: 105px;
-        gap: 35px;
-    }
-
-    .header_nav .item ul a {
-        color: #fff;
-        text-decoration: none;
-        position: relative;
-    }
-
-    .header_nav .item ul a:hover {
-        color: #00EFFE;
-    }
-
-    .header_nav .item ul a h5 {
-        color: #fff;
-    }
-
-    .item_fish {
-        position: absolute;
-        top: -16px;
-        /* right: 25%; */
-        display: none;
-    }
-
-    .item_fish img {
-        width: 15px;
-    }
-
-    .header_nav .item ul a:hover .item_fish {
-        display: block;
-        color: #00EFFE;
-        animation-name: moveRight;
-        animation-duration: 1.5s;
-        animation-fill-mode: forwards;
-    }
-
-    @keyframes moveRight {
-        0% {
-            left: 0;
-        }
-
-        100% {
-            left: calc(100% - 15px);
-        }
-    }
-
-    #navbar {
-        transition: background-color 0.5s ease;
-        background-color: transparent;
-    }
-
-    #navbar.scrolled {
-        background-color: #002547;
-    }
-
-    .header_nav .item ul .box {
-        position: relative;
-    }
-
-    .header_nav .item ul .box .language_item {
-        border-radius: 5px;
-        border: 1px solid #cccccc;
-        padding: 10px 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: -40px;
-        align-items: center;
-        background-color: #333333;
-    }
-
-    .header_nav .item ul .box:hover .language_item {
-        display: flex;
-    }
-
-    .header_pic {
-        position: relative;
-        font-size: 0px;
-        width: 100%;
-    }
-
-    .header_pic .pic {
-        width: 100%;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        vertical-align: middle;
-    }
-
-    .header_pic .pic img {
-        width: 1920px;
-    }
-
-    .header_pic .title {
-        position: absolute;
-        top: 35%;
-        left: 50%;
-        transform: translateX(-45%);
-        width: 1100px;
-    }
-
-    .header_pic .title h2,
-    .header_pic .title h3 {
-        color: #fff;
-        text-align: left;
-    }
-
-    .footer {
-        display: flex;
-        background-color: #002547;
-        color: #BDBDBD;
-        width: 100%;
-        background-color: transparent;
-        background-image: url(../pic/gallery/footer_bg_down.png);
-        max-width: 1920px;
-        margin: auto;
-        text-align: center;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
 
     .footer_text {
-        color: #BDBDBD;
-        font-family: Inter, "Noto Sans TC";
-        font-size: 10px;
-        font-weight: 400;
-        line-height: 15px;
-        letter-spacing: 0.12em;
-        margin-left: 100px;
-        /* width:50%; */
-        display: flex;
-        align-items: center;
-        flex-grow: 1;
-    }
-
-    .footer_connect a {
-        color: #BDBDBD;
+        max-width: 460px;
     }
 
     .footer_connect {
-        display: flex;
-        width: 13%;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    .footer_connect a:hover {
-        color: #0BC6D6;
-    }
-
-    .footer_sub {
-        display: flex;
-        /* width: 20%; */
-        margin: 56px 100px 56px 50px;
-        padding-left: 20px;
-        border-radius: 30px;
-        background-color: #ffffff20;
-        align-items: center;
-    }
-
-    .footer_sub .input {
-        background-color: transparent;
-        border: none;
-        padding-right: 25px;
-    }
-
-    .footer_sub .input:focus::placeholder {
-        color: transparent;
-    }
-
-    .footer_sub .input::placeholder {
-        color: #a1a1a1;
-        font-size: 9px;
-    }
-
-    .footer_sub .input:focus {
-        outline: none;
-    }
-
-    .footer_sub i {
-        margin-right: 10px;
-        color: #a1a1a1;
-    }
-
-    .footer_sub .footer_p {
-        color: #fff;
-        font-size: 12px;
-        letter-spacing: 0.2em;
-    }
-
-    .footer_sub a {
-        background-color: #0BC6D6;
-        display: block;
-        padding: 12px 25px;
-        flex-grow: 1;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 0 30px 30px 0;
-    }
-
-    .footer_sub a:hover {
-        background-color: #0aa9b8;
-    }
-
-    body {
-        background-color: #F9F3F0;
-        text-align: center;
-    }
-
-    main {
-        width: 100%;
-        max-width: 1920px;
-        overflow: hidden;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: auto;
-        /* background-image: url(./pic/gallery/a_bg.png);    background-repeat:no-repeat;    background-position:bottom; */
-    }
-
-    aside {
-        position: sticky;
-        top: 100px;
-        width: 230px;
-        transform: translateX(100px);
-        margin-right: 500px;
-        display: none;
-    }
-
-    aside .list {
-        display: flex;
-        flex-direction: column;
-        padding: 60px;
-        gap: 40px;
-        border: 2px solid #ffffff;
-        margin-top: 100px;
-        background-color: #ffffff60;
-    }
-
-    aside .list a {
-        text-decoration: none;
-        color: #333333;
-        font-family: Inter, "Noto Sans TC";
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 21px;
-        letter-spacing: 0.12em;
-        text-align: right;
-    }
-
-    .part_title {
-        display: flex;
-        width: 1200px;
-        margin: 200px 0;
-        text-align: left;
-    }
-
-    .part_title .pic_cm {
-        font-size: 0px;
-        margin-left: 13%
-    }
-
-    .part_title .text {
-        margin: auto;
-        transform: translateX(-50px);
-        width: 488px;
-        text-align: left;
-    }
-
-    .part_title .text .small {
-        font-family: Inter, "Noto Sans TC";
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 19px;
-        letter-spacing: 0.06em;
-        margin-bottom: 25px;
-    }
-
-    .part_title .text h3 {
-        margin-bottom: 25px;
-    }
-
-    .part_title .text .content,
-    .part_clownfish .text p {
-        font-family: Inter, "Noto Sans TC";
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 19px;
-        letter-spacing: 0.06em;
-        text-align: left;
-    }
-
-    .part_clownfish {
-        margin-bottom: 200px;
-    }
-
-    .part_clownfish .pic_rb {
-        font-size: 0px;
-        ;
-    }
-
-    .part_clownfish .text {
-        margin-top: 100px;
-        text-align: right;
-        /* transform: translateX(-185px); */
-    }
-
-    .part_clownfish .text p {
-        width: 488px;
-        display: inline-block;
-    }
-
-    .part_clownfish .content {
-        display: flex;
-        margin-top: 100px;
-        justify-content: space-around
-    }
-
-    .part_clownfish .content .pic_cm {
-        font-size: 0px;
-    }
-
-    .part_anemone {
-        position: relative;
-        margin-bottom: 100px;
-    }
-
-    .part_anemone .pic_bg {
-        width: 100%;
-        max-width: 1920px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .part_anemone .pic_bg .pic {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 90px;
-        width: 1000px;
-        position: absolute;
-        z-index: 1;
-        font-size: 0;
-    }
-
-    .part_anemone .pic_bg .pic .pic_rm_2 {
-        transform: translateY(190px);
-    }
-
-    .part_anemone .pic_bg .bg {
-        position: relative;
-        transform: translateY(350px);
-    }
-
-    .part_anemone .pic_bg {
-        height: 1830px;
-    }
-
-    .part_anemone .pic_second {
-        bottom: 190px
-    }
-
-    .part_jellyfish {
-        margin-bottom: 100px;
-    }
-
-    .part_other {
-        display: flex;
-        justify-content: center;
-        position: relative;
-        height: 1500px;
-    }
-
-    .part_other .pic {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 90px;
-        width: 1000px;
-        position: absolute;
-        z-index: 1;
-        font-size: 0;
-        top: 0;
-    }
-
-    .part_other .pic .pic_rm_2 {
-        transform: translateY(190px);
-    }
-
-    .part_other .pic_bg {
-        font-size: 0;
-        position: relative;
-        margin-top: auto;
+        margin-left: auto;
     }
 }
