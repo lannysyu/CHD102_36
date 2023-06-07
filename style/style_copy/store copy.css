@@ -1,0 +1,778 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+h1 {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0.12em;
+    color: #333333;
+}
+
+h2 {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.18em;
+    color: #333333;
+}
+
+h3 {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.12em;
+    color: #333333;
+}
+
+h4 {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 48px;
+    /* line-height: 38px; */
+    letter-spacing: 0.12em;
+    color: #333333;
+}
+
+h5 {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    color: #333333;
+}
+
+.h5 {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    color: #333333;
+}
+
+.h6 {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.06em;
+    color: #333333;
+}
+
+.header_pic a,
+.hot_button a {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.12em;
+    /* text-align: center; */
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.header_nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    margin: auto;
+    max-width: 1920px;
+}
+
+.header_nav .logo {
+    align-self: center;
+    padding: 0px 20px 0px 105px;
+    display: flex;
+}
+
+.header_nav .logo img {
+    width: 80px;
+    align-items: center;
+}
+
+.header_nav .search {
+    /* outline: auto; */
+    margin-right: auto;
+    display: flex;
+}
+
+.header_nav .search .bar {
+    align-self: center;
+    display: flex;
+    padding: 10px 10px;
+    background-color: #F2F2F233;
+    border-radius: 20px;
+}
+
+.header_nav .search .bar i {
+    color: #ffffff;
+    padding: 0 3px;
+}
+
+.header_nav .search .input {
+    background-color: transparent;
+    border: none;
+    padding: 0px 5px;
+}
+
+.header_nav .search .input:focus {
+    outline: none;
+}
+
+.header_nav .search :hover {
+    outline: none;
+    background-color: #F2F2F255;
+}
+
+.header_nav .search .bar i,
+.header_nav .search .bar a,
+.header_nav .search .bar .input:hover {
+    background-color: transparent;
+}
+
+.header_nav .search .bar a i:hover {
+    color: #00EFFE;
+}
+
+.header_nav .item {
+    align-self: center;
+}
+
+.header_nav .item ul {
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    padding-right: 105px;
+    gap: 35px;
+}
+
+.header_nav .item ul a {
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+}
+
+.header_nav .item ul a:hover {
+    color: #00EFFE;
+}
+
+.header_nav .item ul a h5 {
+    color: #ffffff;
+}
+
+.item_fish {
+    position: absolute;
+    top: -16px;
+    /* right: 25%; */
+    display: none;
+}
+
+.item_fish img {
+    width: 15px;
+}
+
+.header_nav .item ul a:hover .item_fish {
+    display: block;
+    color: #00EFFE;
+    animation-name: moveRight;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveRight {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: calc(100% - 15px);
+    }
+}
+
+#navbar {
+    transition: background-color 0.5s ease;
+    background-color: transparent;
+}
+
+#navbar.scrolled {
+    background-color: #002547;
+}
+
+.header_nav .item ul a:hover .item_fish {
+    display: block;
+    color: #00EFFE;
+}
+
+.header_nav .item ul .box {
+    position: relative;
+}
+
+.header_nav .item ul .box .language_item {
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -40px;
+    align-items: center;
+    background-color: #333333;
+}
+
+.header_nav .item ul .box:hover .language_item {
+    display: flex;
+}
+
+.header_pic {
+    position: relative;
+    font-size: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.header_pic .pic {
+    width: 100%;
+    overflow: hidden;
+}
+
+.header_pic .pic img {
+    width: 1920px;
+}
+
+/* .header_pic .title {
+    position: absolute;
+    top: 180px;
+    left: 15%;
+    text-align: left;
+} */
+
+.header_pic .title {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-45%);
+    width: 1100px;
+    text-align: left;
+}
+
+.header_pic .title h2,
+.header_pic .title h3 {
+    color: #ffffff;
+    text-shadow: 0px 0px 10px #94ACBA;
+}
+
+.header_pic .title .search {
+    width: 250px;
+    text-decoration: none;
+    background-color: #ffffffcc;
+    border: 1px solid #ffffff;
+    border-radius: 35px;
+    padding: 12px 25px;
+    display: inline-flex;
+    margin-top: 20px;
+    margin-right: 15px;
+    align-items: center;
+    outline: none;
+    line-height: 20px;
+}
+
+.header_pic .title .search:hover {
+    background-color: #ffffff
+}
+
+.header_pic .title .search::placeholder {
+    color: #333333aa;
+}
+
+.header_pic .title .search:focus::placeholder {
+    color: transparent;
+}
+
+.header_pic .title a {
+    text-decoration: none;
+    color: #ffffff;
+    /* background-color: #0BC6D6cc;
+    border: 1px solid #0BC6D6cc;
+    border-radius: 35px; */
+    padding: 12px 15px;
+    display: inline-flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.header_pic .title a i {
+    padding-left: 5px;
+}
+
+.header_pic .title a:hover {
+    /* background-color: #0BC6D6;
+    border: 1px solid #0BC6D6; */
+    color: #333333;
+}
+
+.header_pic .box {
+    position: absolute;
+    display: inline-flex;
+    background-color: #F9F3F0;
+    padding: 50px 80px;
+    bottom: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    border-radius: 3px;
+}
+
+.header_pic .box .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    white-space: nowrap;
+    margin: 15px;
+}
+
+.header_pic .box .text input {
+    width: 130px;
+    height: 10px;
+    border: 1px solid #ffffff;
+    background-color: #E0E0E0;
+    padding: 10px;
+    color: #a1a1a1;
+}
+
+.header_pic .box .text input:hover {
+    color: #333333
+}
+
+/* .header_pic .box .text input[type="date"]::-webkit-datetime-edit {    color: #490000;} */
+/* TODO input 確認圖示怎麼改顏色*/
+.header_pic .box .text input:focus {
+    outline: none;
+}
+
+.header_pic .box span {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.18em;
+    text-align: left;
+}
+
+.header_pic .box p {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.18em;
+    text-align: left;
+    color: #333333;
+}
+
+.header_pic .box .check {
+    height: 65px;
+}
+
+.header_pic .box a {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0BC6D6;
+    padding: 5px 10px;
+    border-radius: 30px;
+    display: inline-block;
+    width: 100px;
+    position: relative;
+    top: 35px;
+}
+
+.header_pic .box a:hover {
+    background-color: #0aa9b8
+}
+
+.footer {
+    display: flex;
+    background-color: #002547;
+    color: #BDBDBD;
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+}
+
+.footer_text {
+    color: #BDBDBD;
+    font-family: Inter, "Noto Sans TC";
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.12em;
+    margin-left: 100px;
+    /* width:50%; */
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.footer_connect a {
+    color: #BDBDBD;
+}
+
+.footer_connect {
+    display: flex;
+    width: 13%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer_connect a:hover {
+    color: #0BC6D6;
+}
+
+.footer_sub {
+    display: flex;
+    /* width: 20%; */
+    margin: 56px 100px 56px 50px;
+    padding-left: 20px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background-color: #ffffff20;
+    align-items: center;
+}
+
+.footer_sub .input {
+    background-color: transparent;
+    border: none;
+    padding-right: 25px;
+}
+
+.footer_sub .input:focus::placeholder {
+    color: transparent;
+}
+
+.footer_sub .input::placeholder {
+    color: #a1a1a1;
+    font-size: 9px;
+}
+
+.footer_sub .input:focus {
+    outline: none;
+}
+
+.footer_sub i {
+    margin-right: 10px;
+    color: #a1a1a1;
+}
+
+.footer_sub .footer_p {
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+}
+
+.footer_sub a {
+    background-color: #0BC6D6;
+    display: block;
+    padding: 12px 25px;
+    flex-grow: 1;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0 30px 30px 0;
+}
+
+.footer_sub a:hover {
+    background-color: #0aa9b8;
+}
+
+.content {
+    margin: 200px 0 50px 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.content .left {
+    position: relative;
+}
+
+.content .left aside {
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+    color: #333333;
+    background-color: #ECECEC;
+    padding: 30px 40px;
+    position: sticky;
+    /* height: 500px; */
+    top: 150px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px #33333350;
+}
+
+/* NOTE sticky定位要同時設定top */
+.content .left aside .bottom_line {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.content .left aside .type {
+    margin: 10px 0;
+}
+
+.content .left aside .type .title {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    padding-bottom: 10px;
+}
+
+.content .left aside .type .item {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    padding: 5px 0;
+    display: flex;
+    gap: 12px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+}
+
+label:before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #33333340;
+    border-radius: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+input[type="checkbox"]:checked+label:before {
+    background-color: #EDD523;
+}
+
+label:after {
+    content: "";
+    display: none;
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* NOTE checkbox 修改樣式的方法 */
+.content .right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content .box {
+    display: flex;
+    background-color: #F9F3F0;
+    font-size: 0px;
+    /* margin-bottom: 20px; */
+}
+
+.content .box .text {
+    display: flex;
+    padding: 40px 80px;
+    gap: 10px;
+}
+
+.content .box .text .name {
+    display: flex;
+    flex-direction: column;
+    width: 405px;
+}
+
+.content .box .text .name .introduce {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #333333;
+    padding-top: 5px;
+}
+
+.content .box .text .name .location {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #333333;
+    margin-top: auto;
+    padding-bottom: 15px;
+}
+
+.content .box .text .name .label {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #ffffff;
+    display: flex;
+    gap: 10px;
+}
+
+.content .box .text .name .label .r {
+    padding: 5px 15px;
+    background-color: #8D7C00;
+    border-radius: 5px;
+}
+
+.content .box .text .name .label .t {
+    padding: 5px 15px;
+    background-color: #5D0027;
+    border-radius: 5px;
+}
+
+.content .box .text .name .label .l {
+    padding: 5px 15px;
+    background-color: #00656C;
+    border-radius: 5px;
+}
+
+.content .box .text .like {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content .box .text .like .button {
+    text-align: right;
+    justify-content: end;
+    display: flex;
+    height: 48px;
+}
+
+.content .box .text .like button {
+    border: none;
+    background-color: transparent;
+}
+
+.content .box .text .like button:hover img {
+    background-image: url(./icon/store_like_icon_hover.svg);
+}
+
+.content .box .text .like button:focus img {
+    background-image: url(./icon/store_like_icon_active.svg);
+}
+
+/* TODO button 點了其他的本身的就不會有顏色 */
+.content .box .text .like .button img {
+    font-size: 0px;
+}
+
+.content .box .text .like a {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #0BC6D6;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid #0BC6D6;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.content .box .text .like a:hover {
+    background-color: #0BC6D6;
+    color: #ffffff;
+    border: 1px solid #0BC6D6;
+}
+
+.page {
+    display: flex;
+    gap: 30px;
+    font-size: 14px;
+    color: #333333;
+    margin: 80px 0 50px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.page .number {
+    border: 1px solid transparent;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #333333;
+}
+
+.page .number:hover {
+    border: 1px solid #F9F3F0;
+    color: #333333;
+    background-color: #F9F3F0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.page .arrow {
+    font-size: 0px;
+    color: #333333;
+}
+
+.page .arrow i {
+    font-size: 16px;
+}
+
+.page .arrow:hover {
+    color: #33333370;
+}

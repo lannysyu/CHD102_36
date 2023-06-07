@@ -1,0 +1,137 @@
+/* footer*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #002547;
+    color: #BDBDBD;
+    margin: auto;
+    text-align: center;
+    gap: 20px;
+    padding: 50px 0;
+    width: 100%;
+}
+
+.footer_text {
+    color: #BDBDBD;
+    font-family: Inter, "Noto Sans TC";
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.12em;
+    width: 80%;
+}
+
+.footer_connect a {
+    color: #BDBDBD;
+}
+
+.footer_connect {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.footer_connect a:hover {
+    color: #0BC6D6;
+}
+
+.footer_sub {
+    display: flex;
+    /* width: 20%; */
+    padding-left: 20px;
+    border-radius: 30px;
+    background-color: #ffffff20;
+    align-items: center;
+}
+
+.footer_sub .input {
+    background-color: transparent;
+    border: none;
+    padding-right: 25px;
+}
+
+.footer_sub .input:focus::placeholder {
+    color: transparent;
+}
+
+.footer_sub .input::placeholder {
+    color: #a1a1a1;
+    font-size: 9px;
+}
+
+.footer_sub .input:focus {
+    outline: none;
+}
+
+.footer_sub i {
+    margin-right: 10px;
+    color: #a1a1a1;
+}
+
+.footer_sub .footer_p {
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+}
+
+.footer_sub a {
+    background-color: #0BC6D6;
+    display: block;
+    padding: 12px 25px;
+    flex-grow: 1;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0 30px 30px 0;
+    width: 40px;
+}
+
+.footer_sub a:hover {
+    background-color: #0aa9b8;
+}
+
+/* body */
+body {
+    background-color: #F9F3F0;
+    text-align: center;
+    min-width: 414px;
+}
+
+@media screen and (min-width: 1024px) {
+
+    /* footer */
+    .footer {
+        flex-direction: row;
+        color: #BDBDBD;
+        width: 100%;
+        max-width: 1920px;
+        padding: 10px 0;
+    }
+
+    .footer_text {
+        font-size: 10px;
+        margin: 0 30px 0 100px;
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    .footer_sub {
+        margin: 56px 100px 56px 30px;
+        padding-left: 30px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    /* footer */
+    .footer_text {
+        max-width: 460px;
+    }
+
+    .footer_connect {
+        margin-left: auto;
+    }
+}

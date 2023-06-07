@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+h1 {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0.12em;
+    color: #333333;
+}
+
+h2 {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.18em;
+    color: #333333;
+}
+
+h3 {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.12em;
+    color: #333333;
+}
+
+h4 {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.12em;
+    color: #333333;
+}
+
+h5 {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    color: #333333;
+}
+
+.h5 {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    color: #333333;
+}
+
+.h6 {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.06em;
+    color: #333333;
+}
