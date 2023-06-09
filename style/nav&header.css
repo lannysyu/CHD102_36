@@ -1,18 +1,11 @@
 /* header */
-.header_pic a,
-.hot_button a {
-    font-family: Inter, "Noto Sans TC";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0.12em;
-    /* text-align: center; */
-}
-
 header {
     display: flex;
     justify-content: center;
     width: 100%;
+    max-width: 1920px;
+    margin: auto;
+    overflow: hidden;
 }
 
 .header_nav {
@@ -228,6 +221,17 @@ header {
     overflow: hidden;
 }
 
+/* .hot_button */
+.header_pic a,
+.hot_button a {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.12em;
+    /* text-align: center; */
+}
+
 .header_pic .pic {
     overflow: hidden;
     display: flex;
@@ -250,6 +254,13 @@ header {
     text-align: left;
     display: inline-block;
     margin-left: 90px;
+}
+
+main {
+    max-width: 1920px;
+    overflow: hidden;
+    margin: auto;
+    min-width: 414px;
 }
 
 @media screen and (min-width: 1024px) {

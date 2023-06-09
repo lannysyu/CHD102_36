@@ -10,6 +10,8 @@
     gap: 20px;
     padding: 50px 0;
     width: 100%;
+    max-width: 1920px;
+    overflow: hidden;
 }
 
 .footer_text {
@@ -105,7 +107,6 @@ body {
         flex-direction: row;
         color: #BDBDBD;
         width: 100%;
-        max-width: 1920px;
         padding: 10px 0;
     }
 

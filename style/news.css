@@ -9,13 +9,6 @@ header {
     overflow: hidden;
 }
 
-/* main */
-main {
-    margin: 60px 0;
-    min-width: 414px;
-    overflow: hidden;
-}
-
 /* header_pic */
 .header_pic .title p {
     font-family: Inter, "Noto Sans TC";
