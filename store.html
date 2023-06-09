@@ -7,68 +7,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DIV.ING</title>
     <script src="https://kit.fontawesome.com/0daa1b3f45.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/nav&header.css">
+    <link rel="stylesheet" href="./style/footer.css">
     <link rel="stylesheet" href="./style/store.css">
-    <link rel="stylesheet" href="owl/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="owl/assets/owl.theme.default.min.css">
+
 </head>
 
 <body>
     <header>
+        <input type="checkbox" name="" id="menu-switch">
         <nav class="header_nav" id="navbar">
             <div class="logo">
                 <a href="index.html"><img src="./logo/logo_black.svg" alt="div.ing_logo"></a>
             </div>
-            <div class="search">
-                <div class="bar">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input class="input" type="search" placeholder="">
-                    <a href="#">
-                        <i class="fa-solid fa-circle-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="item">
-                <ul>
-                    <a href="taiwan.html">
-                        <h5>環台潛點</h5>
-                        <div class="item_fish">
-                            <img src="./icon/header_a_icon_fish.svg" alt="fish">
-                        </div>
-                    </a>
-                    <a href="news.html">
-                        <h5>最新消息</h5>
-                        <div class="item_fish">
-                            <img src="./icon/header_a_icon_fish.svg" alt="fish">
-                        </div>
-                    </a>
-                    <a href="store.html">
-                        <h5>尋找潛店</h5>
-                        <div class="item_fish">
-                            <img src="./icon/header_a_icon_fish.svg" alt="fish">
-                        </div>
-                    </a>
-                    <a href="padi.html">
-                        <h5>PADI潛水</h5>
-                        <div class="item_fish">
-                            <img src="./icon/header_a_icon_fish.svg" alt="fish">
-                        </div>
-                    </a>
-                    <a href="gallery.html">
-                        <h5>攝影相冊</h5>
-                        <div class="item_fish">
-                            <img src="./icon/header_a_icon_fish.svg" alt="fish">
-                        </div>
-                    </a>
-                    <div class="box">
-                        <a class="language" href="#"><i class="fa-solid fa-earth-americas"></i></a>
-                        <div class="language_item">
-                            <a href="#" class="ch">Chinese</a>
-                            <a href="#" class="en">English</a>
-                            <a href="#" class="ja">Japanese</a>
-                        </div>
+            <!-- hb-label -->
+            <label for="menu-switch" class="hb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <!-- main_nav -->
+            <div class="main_nav">
+                <div class="search">
+                    <div class="bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input class="input" type="search" placeholder="">
+                        <a href="#">
+                            <i class="fa-solid fa-circle-arrow-right"></i>
+                        </a>
                     </div>
-                    <a class="member" href="member.html"><i class="fa-solid fa-circle-user"></i></a>
-                </ul>
+                </div>
+                <div class="item">
+                    <ul>
+                        <a href="taiwan.html">
+                            <h5>環台潛點</h5>
+                            <div class="item_fish">
+                                <img src="./icon/header_a_icon_fish.svg" alt="fish">
+                            </div>
+                        </a>
+                        <a href="news.html">
+                            <h5>最新消息</h5>
+                            <div class="item_fish">
+                                <img src="./icon/header_a_icon_fish.svg" alt="fish">
+                            </div>
+                        </a>
+                        <a href="store.html">
+                            <h5>尋找潛店</h5>
+                            <div class="item_fish">
+                                <img src="./icon/header_a_icon_fish.svg" alt="fish">
+                            </div>
+                        </a>
+                        <a href="padi.html">
+                            <h5>PADI潛水</h5>
+                            <div class="item_fish">
+                                <img src="./icon/header_a_icon_fish.svg" alt="fish">
+                            </div>
+                        </a>
+                        <a href="gallery.html">
+                            <h5>攝影相冊</h5>
+                            <div class="item_fish">
+                                <img src="./icon/header_a_icon_fish.svg" alt="fish">
+                            </div>
+                        </a>
+                        <div class="box">
+                            <a class="language" href="#"><i class="fa-solid fa-earth-americas"></i></a>
+                            <div class="language_item">
+                                <a href="#" class="ch">Chinese</a>
+                                <a href="#" class="en">English</a>
+                                <a href="#" class="ja">Japanese</a>
+                            </div>
+                        </div>
+                        <a class="member" href="member.html"><i class="fa-solid fa-circle-user"></i></a>
+                    </ul>
+                </div>
             </div>
         </nav>
         <div class="header_pic">
@@ -92,13 +104,15 @@
                     <p>退房日<span>DEPARTURE</span></p>
                     <input type="date" name="departure date" id="departure">
                 </div>
-                <div class="text">
-                    <p>成人<span>ADULTS</span></p>
-                    <input type="number" name="adults" id="adults">
-                </div>
-                <div class="text">
-                    <p>孩童<span>CHILDREN</span></p>
-                    <input type="number" name="children" id="children">
+                <div class="wrap">
+                    <div class="text">
+                        <p>成人<span>ADULTS</span></p>
+                        <input type="number" name="adults" id="adults">
+                    </div>
+                    <div class="text">
+                        <p>孩童<span>CHILDREN</span></p>
+                        <input type="number" name="children" id="children">
+                    </div>
                 </div>
                 <div class="check">
                     <a href="#">搜尋CHECK</a>
@@ -112,63 +126,68 @@
                 <aside>
                     <div class="type bottom_line">
                         <p class="title">地區</p>
-                        <div class="item">
-                            <input type="checkbox" id="taipei" name=taipei">
-                            <label for="taipei">台北</label>
-                        </div>
-                        <div class="item">
-                            <input type="checkbox" id="newtaipei" name=newtaipei">
-                            <label for="newtaipei">新北</label>
-                        </div>
-                        <div class="item">
-                            <input type="checkbox" id="kaohsiung" name=kaohsiung">
-                            <label for="kaohsiung">高雄</label>
-                        </div>
-                        <div class="item">
-                            <input type="checkbox" id="pingtung" name=pingtung">
-                            <label for="pingtung">屏東</label>
-                        </div>
-                        <div class="item">
-                            <input type="checkbox" id="taitung" name=taitung">
-                            <label for="taitung">台東</label>
+                        <div class="wrap">
+                            <div class="item">
+                                <input type="checkbox" id="taipei" name=taipei">
+                                <label for="taipei">台北</label>
+                            </div>
+                            <div class="item">
+                                <input type="checkbox" id="newtaipei" name=newtaipei">
+                                <label for="newtaipei">新北</label>
+                            </div>
+                            <div class="item">
+                                <input type="checkbox" id="kaohsiung" name=kaohsiung">
+                                <label for="kaohsiung">高雄</label>
+                            </div>
+                            <div class="item">
+                                <input type="checkbox" id="pingtung" name=pingtung">
+                                <label for="pingtung">屏東</label>
+                            </div>
+                            <div class="item">
+                                <input type="checkbox" id="taitung" name=taitung">
+                                <label for="taitung">台東</label>
+                            </div>
                         </div>
                     </div>
                     <div class="type bottom_line">
                         <p class="title">服務</p>
-                        <div class="item">
-                            <input type="checkbox" id="room" name=room">
-                            <label for="room">住宿</label>
-                        </div>
-                        <div class="item">
-                            <input type="checkbox" id="teach" name=teach">
-                            <label for="teach">教學</label>
-                        </div>
-                        <div class="item">
-                            <input type="checkbox" id="lease" name=lease">
-                            <label for="lease">租借</label>
+                        <div class="wrap">
+                            <div class="item">
+                                <input type="checkbox" id="room" name="room">
+                                <label for="room">住宿</label>
+                            </div>
+                            <div class="item">
+                                <input type="checkbox" id="teach" name="teach">
+                                <label for="teach">教學</label>
+                            </div>
+                            <div class="item">
+                                <input type="checkbox" id="lease" name="lease">
+                                <label for="lease">租借</label>
+                            </div>
                         </div>
                     </div>
                     <div class="type">
                         <p class="title">品牌</p>
-                        <div class="item">
-                            <input type="checkbox" id="taiwan_diving" name=taiwan_diving">
-                            <label for="taiwan_diving">台灣潛水</label>
+                        <div class="wrap">
+                            <div class="item">
+                                <input type="checkbox" id="taiwan_diving" name="taiwan_diving">
+                                <label for="taiwan_diving">台灣潛水</label>
+                            </div>
+                            <div class="item">
+                                <input type="checkbox" id="of_course" name="of_course">
+                                <label for="of_course">歐夫寇斯</label>
+                            </div>
+                            <div class="item">
+                                <input type="checkbox" id="to_diving" name="to_diving">
+                                <label for="to_diving">鬥陣潛水</label>
+                            </div>
                         </div>
-                        <div class="item">
-                            <input type="checkbox" id="of_course" name=of_course">
-                            <label for="of_course">歐夫寇斯</label>
-                        </div>
-                        <div class="item">
-                            <input type="checkbox" id="to_diving" name=to_diving">
-                            <label for="to_diving">鬥陣潛水</label>
-                        </div>
-                    </div>
                 </aside>
             </section>
             <section class="right">
                 <div class="box">
                     <div>
-                        <img src="./pic/store/store_content_pic (1).png" alt="of_course store">
+                        <img class="store_pic" src="./pic/store/store_content_pic (1).png" alt="of_course store">
                     </div>
                     <div class="text">
                         <div class="name">
@@ -196,7 +215,7 @@
                 </div>
                 <div class="box">
                     <div>
-                        <img src="./pic/store/store_content_pic (2).png" alt="of_course store">
+                        <img class="store_pic " src="./pic/store/store_content_pic (3).png" alt="of_course store">
                     </div>
                     <div class="text">
                         <div class="name">
@@ -223,7 +242,7 @@
                 </div>
                 <div class="box">
                     <div>
-                        <img src="./pic/store/store_content_pic (3).png" alt="of_course store">
+                        <img class="store_pic" src="./pic/store/store_content_pic (2).png" alt="of_course store">
                     </div>
                     <div class="text">
                         <div class="name">
@@ -250,7 +269,7 @@
                 </div>
                 <div class="box">
                     <div>
-                        <img src="./pic/store/store_content_pic (4).png" alt="of_course store">
+                        <img class="store_pic" src="./pic/store/store_content_pic (4).png" alt="of_course store">
                     </div>
                     <div class="text">
                         <div class="name">
@@ -277,7 +296,7 @@
                 </div>
                 <div class="box">
                     <div>
-                        <img src="./pic/store/store_content_pic (5).png" alt="of_course store">
+                        <img class="store_pic" src="./pic/store/store_content_pic (5).png" alt="of_course store">
                     </div>
                     <div class="text">
                         <div class="name">
@@ -305,7 +324,7 @@
                 </div>
                 <div class="box">
                     <div>
-                        <img src="./pic/store/store_content_pic (6).png" alt="of_course store">
+                        <img class="store_pic" src="./pic/store/store_content_pic (6).png" alt="of_course store">
                     </div>
                     <div class="text">
                         <div class="name">
@@ -342,7 +361,7 @@
     </main>
     <footer class="footer">
         <div class="footer_text">
-            <p>本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。 <br>若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。<br>COPYRIGHT
+            <p>本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。<br>COPYRIGHT
                 &copy;2023 div.ing All rights reserved.</p>
         </div>
         <div class="footer_connect">

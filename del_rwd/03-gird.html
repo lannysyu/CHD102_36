@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 600px;
+            height: 600px;
+            background-color: aquamarine;
+            display: grid;
+            /* grid-template-columns: 120px 120px 120px; */
+            /* grid-template-columns: repeat(2, 120px) 220px; 三個cloums */
+            grid-template-columns: repeat(3, 120px);
+
+            grid-template-rows: 100px 100px 100px 100px;
+            /* grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr 2fr 1fr; */
+
+            /* grid-template: row/column 縮寫;
+            grid-template: repeat(3,120px) / repeat(4,100px); */
+
+            /* justify-content: center; */
+            /* 控制主軸彈性空間 */
+            /* align-content: center; */
+            /* 控制交錯軸彈性空間 */
+            /* place-content: a j 縮寫;
+            place-content: center center; */
+
+
+            /* justify-items: center; */
+            /* 控制子物件在主軸的空間 */
+            /* align-items: center; */
+            /* 控制子物件在交錯軸的空間 */
+            /* place-items: a j 縮寫;
+            place-items: center center; */
+
+            grid-auto-flow: column;
+            /* 控制子物件的排列方向 */
+
+            /* gap: 10px; */
+        }
+
+        .item {}
+
+        .i1 {
+            background-color: #faa;
+            /* grid-column: 1/3;
+            橫跨第一到第三條列
+            grid-row: 1/3;
+            橫跨第一到第三條欄 */
+            /* grid-column: 1/-1; */
+            /* grid-row: 1/2; */
+            /* grid-area: 2/2/4/4; */
+        }
+
+        .i2 {
+            background-color: #afa;
+            /* align-self: start; */
+            /* grid-row: 1/span 2; */
+        }
+
+        .i3 {
+            background-color: #aaf;
+            /* order: 1; */
+        }
+
+        .i4 {
+            background-color: #fa6;
+        }
+
+        /* .item {
+            width: 50px;
+            height: 50px;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="item i1">1</div>
+        <div class="item i2">2</div>
+        <div class="item i3">3</div>
+        <div class="item i4">4</div>
+    </div>
+</body>
+
+</html>

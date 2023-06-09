@@ -40,13 +40,13 @@ header {
 /* search+item */
 .header_nav .main_nav {
     position: absolute;
-    width: 60%;
+    width: 100%;
     right: 0;
     top: 100%;
     display: flex;
     flex-direction: column;
     background-color: #002547;
-    padding: 50px;
+    padding: 50px 0;
     display: none;
 }
 
@@ -99,10 +99,8 @@ header {
 
 /* item-bar */
 .header_nav .item {
-    /* margin-top: 50px; */
+    margin-top: 50px;
 }
-
-/* BUG 用不好margin-top */
 
 .header_nav .item ul {
     display: flex;
@@ -192,7 +190,7 @@ header {
 /* nav-bg-color */
 #navbar {
     transition: background-color 0.5s ease;
-    background-color: transparent;
+    background-color: #002547;
 }
 
 #navbar.scrolled {
@@ -213,7 +211,7 @@ header {
     display: none;
     position: absolute;
     top: 0;
-    right: 40px;
+    left: -100px;
     align-items: center;
     background-color: #333333;
 }
@@ -248,13 +246,19 @@ header {
 
 .header_pic .title h2,
 .header_pic .title h3 {
-    color: #fff;
+    color: #ffffff;
     text-align: left;
     display: inline-block;
     margin-left: 90px;
 }
 
 @media screen and (min-width: 1024px) {
+
+    /* nav-bg-color */
+    #navbar {
+        transition: background-color 0.5s ease;
+        background-color: transparent;
+    }
 
     /* header */
     .header_nav {
@@ -284,6 +288,7 @@ header {
 
     .header_nav .item {
         align-self: center;
+        margin-top: 0px;
     }
 
     .header_nav .item ul {
