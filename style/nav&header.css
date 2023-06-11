@@ -248,6 +248,7 @@ header {
     flex-direction: column;
 }
 
+.header_pic .title h1,
 .header_pic .title h2,
 .header_pic .title h3 {
     color: #ffffff;
@@ -256,6 +257,14 @@ header {
     margin-left: 90px;
 }
 
+/* body */
+body {
+    background-color: #F9F3F0;
+    text-align: center;
+    min-width: 414px;
+}
+
+/* main */
 main {
     max-width: 1920px;
     overflow: hidden;
@@ -313,6 +322,12 @@ main {
         font-size: 14px;
     }
 
+    .header_nav .item ul .box .language_item {
+        padding: 10px 20px;
+        top: 100%;
+        left: -40px;
+    }
+
     /* item-fish */
     .item_fish {
         position: absolute;
@@ -346,13 +361,6 @@ main {
     /* hb-label-nav */
     .hb {
         display: none;
-    }
-
-    /* nav-bg-color */
-    .header_nav .item ul .box .language_item {
-        padding: 10px 50px;
-        top: 100%;
-        left: -40px;
     }
 
     /* header_pic */

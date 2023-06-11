@@ -7,68 +7,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DIV.ING</title>
     <script src="https://kit.fontawesome.com/0daa1b3f45.js" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/nav&header.css">
+    <link rel="stylesheet" href="./style/footer.css">
     <link rel="stylesheet" href="./style/index.css">
-    <link rel="stylesheet" href="owl/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="owl/assets/owl.theme.default.min.css">
+    <!-- slick resource -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
 </head>
 
 <body>
     <header>
+        <input type="checkbox" name="" id="menu-switch">
         <nav class="header_nav" id="navbar">
             <div class="logo">
                 <a href="index.html"><img src="./logo/logo_black.svg" alt="div.ing_logo"></a>
             </div>
-            <div class="search">
-                <div class="bar">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input class="input" type="search" placeholder="">
-                    <a href="store.html">
-                        <i class="fa-solid fa-circle-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="item">
-                <ul>
-                    <a href="taiwan.html">
-                        <h5>環台潛點</h5>
-                        <div class="item_fish">
-                            <img src="./icon/header_a_icon_fish.svg" alt="fish">
-                        </div>
-                    </a>
-                    <a href="news.html">
-                        <h5>最新消息</h5>
-                        <div class="item_fish">
-                            <img src="./icon/header_a_icon_fish.svg" alt="fish">
-                        </div>
-                    </a>
-                    <a href="store.html">
-                        <h5>尋找潛店</h5>
-                        <div class="item_fish">
-                            <img src="./icon/header_a_icon_fish.svg" alt="fish">
-                        </div>
-                    </a>
-                    <a href="padi.html">
-                        <h5>PADI潛水</h5>
-                        <div class="item_fish">
-                            <img src="./icon/header_a_icon_fish.svg" alt="fish">
-                        </div>
-                    </a>
-                    <a href="gallery.html">
-                        <h5>攝影相冊</h5>
-                        <div class="item_fish">
-                            <img src="./icon/header_a_icon_fish.svg" alt="fish">
-                        </div>
-                    </a>
-                    <div class="box">
-                        <a class="language" href="#"><i class="fa-solid fa-earth-americas"></i></a>
-                        <div class="language_item">
-                            <a href="#" class="ch">Chinese</a>
-                            <a href="#" class="en">English</a>
-                            <a href="#" class="ja">Japanese</a>
-                        </div>
+            <!-- hb-label -->
+            <label for="menu-switch" class="hb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <!-- main_nav -->
+            <div class="main_nav">
+                <div class="search">
+                    <div class="bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input class="input" type="search" placeholder="">
+                        <a href="#">
+                            <i class="fa-solid fa-circle-arrow-right"></i>
+                        </a>
                     </div>
-                    <a class="member" href="member.html"><i class="fa-solid fa-circle-user"></i></a>
-                </ul>
+                </div>
+                <div class="item">
+                    <ul>
+                        <a href="taiwan.html">
+                            <h5>環台潛點</h5>
+                            <div class="item_fish">
+                                <img src="./icon/header_a_icon_fish.svg" alt="fish">
+                            </div>
+                        </a>
+                        <a href="news.html">
+                            <h5>最新消息</h5>
+                            <div class="item_fish">
+                                <img src="./icon/header_a_icon_fish.svg" alt="fish">
+                            </div>
+                        </a>
+                        <a href="store.html">
+                            <h5>尋找潛店</h5>
+                            <div class="item_fish">
+                                <img src="./icon/header_a_icon_fish.svg" alt="fish">
+                            </div>
+                        </a>
+                        <a href="padi.html">
+                            <h5>PADI潛水</h5>
+                            <div class="item_fish">
+                                <img src="./icon/header_a_icon_fish.svg" alt="fish">
+                            </div>
+                        </a>
+                        <a href="gallery.html">
+                            <h5>攝影相冊</h5>
+                            <div class="item_fish">
+                                <img src="./icon/header_a_icon_fish.svg" alt="fish">
+                            </div>
+                        </a>
+                        <div class="box">
+                            <a class="language" href="#"><i class="fa-solid fa-earth-americas"></i></a>
+                            <div class="language_item">
+                                <a href="#" class="ch">Chinese</a>
+                                <a href="#" class="en">English</a>
+                                <a href="#" class="ja">Japanese</a>
+                            </div>
+                        </div>
+                        <a class="member" href="member.html"><i class="fa-solid fa-circle-user"></i></a>
+                    </ul>
+                </div>
             </div>
         </nav>
         <div class="header_pic">
@@ -83,9 +101,9 @@
                 </a> -->
             </div>
         </div>
-        <div class="top">
+        <div class="top" id="backToTopBtn">
             <div class="fish_button">
-                <a href="#">TOP</a>
+                <a href="#top">TOP</a>
             </div>
             <div class="fish_icon">
                 <img class=fish1 src="./icon/section_hot_buttom_fish (1).svg" alt="fish">
@@ -108,7 +126,7 @@
                         </div>
                         <div class="oi_text">
                             <h3>蘭嶼 ORCHID ISLAND</h3>
-                            <p class="text_16px">
+                            <p class="inter_text">
                                 蘭嶼位於臺灣東南方的太平洋上，因為其優美的自然風景和豐富的海洋生態而聞名。蘭嶼擁有清澈的海水、多樣化的珊瑚和海洋生物，包括鯨鯊、海龜、海豚和各種色彩繽紛的熱帶魚。
                             </p>
                         </div>
@@ -121,7 +139,7 @@
                         </div>
                         <div class="gi_text">
                             <h3>綠島 GREEN ISLAND</h3>
-                            <p class="text_16px">
+                            <p class="inter_text">
                                 綠島擁有豐富的海洋生態和獨特的地形，是潛水愛好者的夢想勝地。這裡的珊瑚礁保存完好、水質清澈、能見度高達20至30公尺，加上多樣的海洋生物和獨特的地形，讓潛水者在探索的過程中享受刺激與挑戰。
                             </p>
                         </div>
@@ -139,7 +157,7 @@
             </div>
             <div class="text">
                 <h2>獲得水肺潛水證書</h2>
-                <p class="text_16px">如果您對海底世界和生活在那裡的神奇生物著迷，那麼水肺潛水證書是您獲得支持健康海洋的非凡體驗的通行證。</p>
+                <p class="inter_text">如果您對海底世界和生活在那裡的神奇生物著迷，那麼水肺潛水證書是您獲得支持健康海洋的非凡體驗的通行證。</p>
                 <div class="more">
                     <a href="padi.html">了解更多</a>
                 </div>
@@ -280,7 +298,7 @@
             </div>
             <div class="text">
                 <h2>每月潛水雜誌搶先看</h2>
-                <p class="text_16px">擁有豐富的潛水相關內容及最佳裝備建議，從潛水團友的故事中獲得啟發，幫助您計劃潛水探險，前往夢寐以求的目的地。</p>
+                <p class="inter_text">擁有豐富的潛水相關內容及最佳裝備建議，從潛水團友的故事中獲得啟發，幫助您計劃潛水探險，前往夢寐以求的目的地。</p>
                 <div class="sub">
                     <div class="email">
                         <i class="fa-solid fa-envelope"></i>
@@ -294,10 +312,12 @@
 
         <section class="need">
             <div class="text">
-                <h2>海洋需要你</h2>
-                <p class="title_need">
-                    SDG12、13和14是可持續發展目標中專注於環境保護的三個目標。<br>海洋在地球上佔了很大的面積，不僅提供了豐富的食物、資源和經濟活動，同時也是地球生命力的重要基石。
-                </p>
+                <div class="wrap_text">
+                    <h2>海洋需要你</h2>
+                    <p class="title_need">
+                        SDG12、13和14是可持續發展目標中專注於環境保護的三個目標。<br>海洋在地球上佔了很大的面積，不僅提供了豐富的食物、資源和經濟活動，同時也是地球生命力的重要基石。
+                    </p>
+                </div>
                 <div class="sdg">
                     <div class="card">
                         <div>
@@ -330,13 +350,13 @@
             <section class="gallery">
                 <h3>攝影相冊 GALLERY</h3>
                 <div class="gallery_pic">
-                    <img src="./pic/index/section_gallery_pic (1).png" alt="gallery_pic1">
-                    <img src="./pic/index/section_gallery_pic (2).png" alt="gallery_pic2">
-                    <img src="./pic/index/section_gallery_pic (3).png" alt="gallery_pic3">
-                    <img src="./pic/index/section_gallery_pic (4).png" alt="gallery_pic4">
-                    <img src="./pic/index/section_gallery_pic (5).png" alt="gallery_pic5">
-                    <img src="./pic/index/section_gallery_pic (6).png" alt="gallery_pic5">
-                    <img src="./pic/index/section_gallery_pic (7).png" alt="gallery_pic5">
+                    <div><img src="./pic/index/section_gallery_pic (1).png" alt="gallery_pic1"></div>
+                    <div><img src="./pic/index/section_gallery_pic (2).png" alt="gallery_pic2"></div>
+                    <div><img src="./pic/index/section_gallery_pic (3).png" alt="gallery_pic3"></div>
+                    <div><img src="./pic/index/section_gallery_pic (4).png" alt="gallery_pic4"></div>
+                    <div><img src="./pic/index/section_gallery_pic (5).png" alt="gallery_pic5"></div>
+                    <div><img src="./pic/index/section_gallery_pic (6).png" alt="gallery_pic6"></div>
+                    <div><img src="./pic/index/section_gallery_pic (7).png" alt="gallery_pic7"></div>
                 </div>
                 <div class="gallery_button">
                     <a href="#" class="arrow_left">
@@ -352,7 +372,7 @@
     </main>
     <footer class="footer">
         <div class="footer_text">
-            <p>本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。 <br>若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。<br>COPYRIGHT
+            <p>本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。<br>COPYRIGHT
                 &copy;2023 div.ing All rights reserved.</p>
         </div>
         <div class="footer_connect">
@@ -372,15 +392,42 @@
     </footer>
 </body>
 <script>
-    window.addEventListener("scroll", function () {
-        var navbar = document.getElementById("navbar");
-        var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-
-        if (scrolled > 650) {
-            navbar.classList.add("scrolled");
-        } else {
-            navbar.classList.remove("scrolled");
-        }
+    $(document).ready(function () {
+        $('.box').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 3,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $('.gallery_pic').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 2000,
+        });
     });
 </script>
 
