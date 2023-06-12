@@ -55,7 +55,7 @@ header {
     padding: 10px 10px;
     background-color: #F2F2F233;
     border-radius: 20px;
-    width: 100%;
+    width: 70%;
     max-width: 400px;
 }
 
@@ -204,7 +204,7 @@ header {
     display: none;
     position: absolute;
     top: 0;
-    left: -100px;
+    left: -110px;
     align-items: center;
     background-color: #333333;
 }
@@ -254,14 +254,14 @@ header {
     color: #ffffff;
     text-align: left;
     display: inline-block;
-    margin-left: 90px;
+    margin-left: 70px;
 }
 
 /* body */
 body {
     background-color: #F9F3F0;
     text-align: center;
-    min-width: 414px;
+    min-width: 300px;
 }
 
 /* main */
@@ -269,7 +269,17 @@ main {
     max-width: 1920px;
     overflow: hidden;
     margin: auto;
-    min-width: 414px;
+    min-width: 300px;
+}
+
+@media screen and (min-width: 330px) {
+
+    .header_pic .title h1,
+    .header_pic .title h2,
+    .header_pic .title h3 {
+        margin-left: 90px;
+    }
+
 }
 
 @media screen and (min-width: 1024px) {

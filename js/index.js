@@ -21,10 +21,3 @@ window.addEventListener("scroll", function () {
         backToTopBtn.style.display = "none";
     }
 });
-
-//slick resource----------
-// $(document).ready(function () {
-//     $('.your-class').slick({
-//         setting- name: setting - value
-//     });
-// });

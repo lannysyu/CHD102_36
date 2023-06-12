@@ -10,6 +10,7 @@ h1 {
 
 h3 {
     font-size: 20px;
+    line-height: 24px;
 }
 
 main h2 {
@@ -19,6 +20,10 @@ main h2 {
 body {
     background-color: #ffffff;
     text-align: left;
+}
+
+.header_pic img {
+    transform: translateX(200px);
 }
 
 /* main */
@@ -127,16 +132,16 @@ main {
     width: 100%;
 }
 
+/* header_fish_button */
 #backToTopBtn {
     display: none;
 }
 
-/* header_fish_button */
 header .top .fish_button {
     position: fixed;
     z-index: 2;
-    bottom: 100px;
-    right: 50px;
+    bottom: 150px;
+    right: 35px;
 }
 
 header .top .fish_button a {
@@ -163,32 +168,32 @@ header .top .fish_button a:hover {
 
 .fish1 {
     position: fixed;
-    bottom: 65px;
-    right: 105px;
+    bottom: 115px;
+    right: 90px;
     z-index: 3;
     transform: scale(0.8);
 }
 
 .fish2 {
     position: fixed;
-    bottom: 50px;
-    right: 85px;
+    bottom: 100px;
+    right: 70px;
     z-index: 3;
     transform: scale(0.8);
 }
 
 .fish3 {
     position: fixed;
-    bottom: 60px;
-    right: 25px;
+    bottom: 110px;
+    right: 10px;
     z-index: 3;
     transform: scale(0.8);
 }
 
 .fish4 {
     position: fixed;
-    bottom: 45px;
-    right: 45px;
+    bottom: 105px;
+    right: 30px;
     z-index: 3;
     transform: scale(0.8);
 }
@@ -214,7 +219,7 @@ header .top .fish_button a:hover {
 
 .banner_learn h2 {
     color: #fff;
-    font-size: 26px;
+    font-size: 24px;
 }
 
 .banner_learn p {
@@ -227,18 +232,18 @@ header .top .fish_button a:hover {
 
 .banner_learn .text {
     position: absolute;
-    top: 20%;
+    top: 12%;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    padding: 0 80px;
+    padding: 0 60px;
     box-sizing: border-box;
 }
 
 .banner_learn .more a {
     display: inline-block;
     border-radius: 30px;
-    padding: 10px 80px;
+    padding: 10px 50px;
     background-color: #DDC723;
     color: #fff;
     font-weight: 700;
@@ -247,7 +252,7 @@ header .top .fish_button a:hover {
 }
 
 .banner_learn .more {
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .banner_learn .more a:hover {
@@ -443,13 +448,13 @@ header .top .fish_button a:hover {
     text-align: center;
     color: #fff;
     width: 100%;
-    padding: 0 80px;
+    padding: 0 60px;
     box-sizing: border-box;
 }
 
 .banner_sub .text h2 {
     color: #fff;
-    font-size: 26px;
+    font-size: 24px;
     letter-spacing: 0.08em;
 }
 
@@ -481,7 +486,7 @@ header .top .fish_button a:hover {
 .banner_sub .text .sub .email input {
     background-color: transparent;
     border: none;
-    padding-right: 50px;
+    /* padding-right: 50px; */
     width: 100%;
 }
 
@@ -544,12 +549,13 @@ header .top .fish_button a:hover {
 }
 
 .need .text .wrap_text {
-    padding: 0 80px;
+    padding: 0 60px;
 }
 
 .need .text h2 {
     color: #ffffff;
     padding-bottom: 20px;
+    font-size: 24px;
 }
 
 .need .text .title_need {
@@ -648,7 +654,7 @@ header .top .fish_button a:hover {
     line-height: 21px;
     letter-spacing: 0.18em;
     text-align: center;
-    padding: 10px 90px;
+    padding: 10px 50px;
     background-color: #EDD523;
     border-radius: 30px;
     display: inline-block;
@@ -795,6 +801,58 @@ header .top .fish_button a:hover {
     right: 26.8% !important;
 }
 
+@media screen and (min-width: 347px) {
+    .banner_learn .text {
+        top: 20%;
+    }
+
+}
+
+@media screen and (min-width: 406px) {
+
+    .banner_learn h2 {
+        font-size: 26px;
+    }
+
+    .banner_learn .more {
+        padding-top: 30px;
+    }
+
+    .banner_learn .more a {
+        padding: 10px 80px;
+    }
+
+    .banner_sub .text {
+        padding: 0 80px;
+    }
+
+    .need .text .wrap_text {
+        padding: 0 80px;
+    }
+
+    .need .text h2 {
+        font-size: 28px;
+    }
+
+    .need .text .join {
+        padding: 10px 80px;
+    }
+}
+
+@media screen and (min-width: 415px) {
+    h3 {
+        line-height: 40px;
+    }
+
+    .banner_sub .text h2 {
+        font-size: 26px;
+    }
+
+    .header_pic img {
+        transform: translateX(0px);
+    }
+}
+
 @media screen and (min-width: 425px) {
     .banner_learn .text {
         top: 25%;
@@ -878,10 +936,6 @@ header .top .fish_button a:hover {
     /* need */
     .need .text {
         padding-top: 250px;
-    }
-
-    .need .text .join {
-        margin-top: 50px;
     }
 
     /* .gallery */

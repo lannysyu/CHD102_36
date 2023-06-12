@@ -2,7 +2,7 @@
 body {
     background-color: #F9F3F0;
     text-align: center;
-    min-width: 414px;
+    min-width: 300px;
 }
 
 /* main */
@@ -40,7 +40,7 @@ body {
 .part_title .text {
     margin: auto;
     text-align: left;
-    padding: 0 100px;
+    padding: 0 60px;
 }
 
 .part_title .text .small {
@@ -80,6 +80,9 @@ body {
 .part_clownfish .pic_rb {
     font-size: 0px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .part_clownfish .pic_rb img {
@@ -88,7 +91,7 @@ body {
 
 .part_clownfish .text {
     margin-top: 100px;
-    padding: 0 100px;
+    padding: 0 60px;
 }
 
 .part_clownfish .text p {
@@ -99,7 +102,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 40px;
+    gap: 20px;
     padding: 0 40px;
     font-size: 0px;
     margin-top: 130px;
@@ -138,7 +141,7 @@ body {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    gap: 40px;
+    gap: 20px;
     width: 100%;
     position: absolute;
     z-index: 1;
@@ -224,7 +227,7 @@ body {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    gap: 40px;
+    gap: 20px;
     padding: 0 40px;
     position: absolute;
     z-index: 1;
@@ -258,6 +261,22 @@ body {
     position: relative;
     margin-top: auto;
 }
+
+@media screen and (min-width: 330px) {
+
+    .part_title .text,
+    .part_clownfish .text {
+        padding: 0 100px;
+    }
+
+    .part_clownfish .content,
+    .part_anemone .pic_bg .pic,
+    .part_other .pic {
+        gap: 40px;
+    }
+
+}
+
 
 @media screen and (min-width: 1024px) {
 

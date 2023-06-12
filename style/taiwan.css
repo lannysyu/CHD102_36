@@ -1,39 +1,12 @@
 /* header_pic */
-.header_pic {
-    position: relative;
-    font-size: 0px;
-    width: 100%;
-}
-
-.header_pic .pic {
-    width: 100%;
-    /* overflow: hidden; */
-    display: flex;
-    justify-content: center;
-    vertical-align: middle;
-}
-
 .header_pic .pic img {
-    width: 1920px;
-}
-
-.header_pic .title {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translateX(-45%);
-    width: 1100px;
-}
-
-.header_pic .title h2,
-.header_pic .title h3 {
-    color: #fff;
+    transform: translateX(160px);
 }
 
 .header_pic .button {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 60%;
+    /* transform: translateY(-50%); */
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -81,8 +54,8 @@ main {
 }
 
 .card .inter {
-    width: 1200px;
     display: flex;
+    flex-direction: column;
 }
 
 .card .inter .pic_min {
@@ -91,16 +64,26 @@ main {
 }
 
 .card .inter .title {
-    padding-top: 100px;
-    padding-bottom: 80px;
+    padding-top: 50px;
+    padding-bottom: 30px;
     display: inline-block;
-    text-align: left;
-    margin-left: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+.card .inter .title h2 {
+    font-size: 28px;
+}
+
+.card .inter .title h4 {
+    line-height: 30px;
+    font-size: 16px;
 }
 
 .card .inter .title .arrow {
     margin-top: auto;
     padding-bottom: 10px;
+    display: none;
 }
 
 .card .inter .title .arrow a {
@@ -117,6 +100,37 @@ main {
 
 .card .inter .title .arrow a:focus {
     color: #333333;
+}
+
+/* slick slide */
+.slick-list {
+    width: 100%;
+    height: 100% !important;
+}
+
+.slick-track {
+    display: flex !important;
+    gap: 10px;
+    height: 100% !important;
+}
+
+.slick-slide img {
+    max-width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 30px !important;
+    color: #ffffff !important;
+}
+
+.slick-prev {
+    left: 26% !important;
+    z-index: 2;
+}
+
+.slick-next {
+    right: 26.8% !important;
 }
 
 /* attractions */
@@ -139,16 +153,14 @@ main {
 }
 
 .attractions {
-    display: grid;
-    width: 1200px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.2fr;
-    row-gap: 20px;
-    column-gap: 20px;
-    justify-content: center;
+    width: 80%;
     text-align: justify;
     margin: auto;
-    padding: 90px 0;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center
 }
 
 .attractions div p {
@@ -160,10 +172,13 @@ main {
 }
 
 .attractions .map {
-    grid-area: 1/2/4/4;
+    width: 100%;
+    /* position: relative;
+    aspect-ratio: 450/600; */
+    /* grid-area: 1/2/4/4; */
 }
 
-.attractions .p1 {
+/* .attractions .p1 {
     grid-area: 1/1/2/2;
 }
 
@@ -185,16 +200,22 @@ main {
 
 .attractions .p6 {
     grid-area: 3/4/4/5;
+} */
+.attractions .map iframe {
+    width: 100%;
+    position: relative;
+    aspect-ratio: 450/600;
+    /* aspect-ratio: 600/300; */
 }
 
 .attractions .button {
-    grid-area: 4/3/4/5;
+    /* grid-area: 4/3/4/5; */
     justify-self: end;
-    align-self: end;
+    /* align-self: end; */
 }
 
 .banner_protect {
-    background-image: url(./pic/taiwan/section_pic.png);
+    background-image: url(../pic/taiwan/section_pic.png);
     width: 100%;
     text-align: center;
     padding: 80px 0;
@@ -207,16 +228,30 @@ main {
 .banner_protect h3 {
     color: #ffffff;
     padding-bottom: 15px;
+    font-size: 20px;
 }
 
 .banner_protect p {
     color: #ffffff;
+    width: 80%;
 }
 
 .banner_protect .icon {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 80px;
+    gap: 20px;
+    width: 80%;
+    max-width: 328px;
+}
+
+.banner_protect .icon div {
+    display: flex;
+    align-items: center;
+}
+
+.banner_protect .icon div img {
+    transform: scale(0.7);
 }
 
 .banner_protect .text {
@@ -226,6 +261,7 @@ main {
     line-height: 19px;
     letter-spacing: 0.06em;
     padding-bottom: 50px;
+
 }
 
 .banner_protect .icon p {
@@ -234,11 +270,11 @@ main {
     font-weight: 700;
     line-height: 21px;
     letter-spacing: 0.12em;
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
 
 .banner_protect .button {
-    width: 1200px;
+    /* width: 1200px; */
     text-align: end;
     margin: auto;
 }
@@ -251,12 +287,11 @@ main {
     letter-spacing: 0.06em;
     text-align: center;
     text-decoration: none;
-    padding: 10px 40px 10px 50px;
+    /* padding: 10px 40px 10px 50px; */
     display: inline-block;
-    /* border: 1px solid #ffffff;
-    border-radius: 30px; */
     color: #ffffff;
     margin-top: 60px;
+    /* width: 100%; */
 }
 
 .banner_protect .button a i {
@@ -280,4 +315,188 @@ main {
 
 .banner_protect .button a:hover::after {
     width: 100%;
+}
+
+@media screen and (min-width: 330px) {
+
+    .header_pic .button {
+        top: 50%;
+    }
+
+    .header_pic .pic img {
+        transform: translateX(0px);
+    }
+
+    .banner_protect h3 {
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .header_pic .button {
+        display: flex;
+    }
+
+    .header_pic .button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .header_pic .button a {
+        display: block;
+        text-decoration: none;
+        color: #00EFFE;
+        border: 2px solid #00EFFE;
+        border-radius: 50%;
+        width: 90px;
+        height: 90px;
+        /* NOTE a 變成正圓形要設定寬高 */
+        text-align: center;
+        line-height: 90px;
+        font-size: 15px;
+    }
+
+    .header_pic .button a img {
+        padding-left: 10px;
+    }
+
+    .header_pic .button a:hover {
+        background-color: #ffffff30;
+        border: 2px solid #ffffff;
+        color: #ffffff;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card .inter {
+        width: 1200px;
+        flex-direction: row;
+        text-align: left;
+        margin-left: 40px;
+    }
+
+    .card .inter .title {
+        padding: 100px 20px 80px 20px;
+        box-sizing: border-box;
+        width: 30%;
+    }
+
+    .card .inter .title h2 {
+        font-size: 32px;
+    }
+
+    .card .inter .title h4 {
+        line-height: 48px;
+        font-size: 20px;
+    }
+
+    .attractions {
+        display: grid;
+        width: 1200px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.2fr;
+        row-gap: 20px;
+        column-gap: 20px;
+        justify-content: center;
+        text-align: justify;
+        margin: auto;
+        padding: 60px 0;
+    }
+
+    .attractions div p {
+        font-family: Inter, "Noto Sans TC";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0.12em;
+    }
+
+    .attractions .map {
+        grid-area: 1/2/4/4;
+    }
+
+    .attractions .p1 {
+        grid-area: 1/1/2/2;
+    }
+
+    .attractions .p2 {
+        grid-area: 2/1/3/2;
+    }
+
+    .attractions .p3 {
+        grid-area: 3/1/4/2;
+    }
+
+    .attractions .p4 {
+        grid-area: 1/4/2/5;
+    }
+
+    .attractions .p5 {
+        grid-area: 2/4/3/4;
+    }
+
+    .attractions .p6 {
+        grid-area: 3/4/4/5;
+    }
+
+    .attractions .button {
+        grid-area: 4/3/4/5;
+        justify-self: end;
+        align-self: end;
+    }
+
+    .banner_protect .icon {
+        flex-direction: row;
+        gap: 80px;
+    }
+
+    .banner_protect .icon p {
+        padding-top: 20px;
+    }
+
+    .banner_protect .icon div img {
+        transform: scale(1);
+    }
+
+    .banner_protect .icon div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner_protect {
+        padding: 80px 0;
+    }
+
+    .banner_protect .button {
+        width: 1200px;
+        text-align: end;
+        margin: auto;
+    }
+
+    .banner_protect .button a {
+        font-family: Inter, "Noto Sans TC";
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0.06em;
+        text-align: right;
+        text-decoration: none;
+        /* padding: 10px 40px 10px 50px; */
+        display: inline-block;
+        /* border: 1px solid #ffffff;
+        border-radius: 30px; */
+        color: #ffffff;
+        margin-top: 60px;
+        width: 100%;
+    }
 }

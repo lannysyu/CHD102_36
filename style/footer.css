@@ -46,12 +46,14 @@
     border-radius: 30px;
     background-color: #ffffff20;
     align-items: center;
+    margin: 0 30px;
 }
 
 .footer_sub .input {
     background-color: transparent;
     border: none;
     padding-right: 25px;
+    width: 65%;
 }
 
 .footer_sub .input:focus::placeholder {
@@ -81,7 +83,7 @@
 .footer_sub a {
     background-color: #0BC6D6;
     display: block;
-    padding: 12px 25px;
+    padding: 12px 20px;
     flex-grow: 1;
     text-align: center;
     text-decoration: none;
@@ -89,8 +91,24 @@
     width: 40px;
 }
 
+.footer_sub a p {
+    width: 36px;
+}
+
 .footer_sub a:hover {
     background-color: #0aa9b8;
+}
+
+@media screen and (min-width: 400px) {
+    .footer_sub {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 415px) {
+    .footer_sub .input {
+        width: 165px;
+    }
 }
 
 
@@ -114,7 +132,7 @@
 
     .footer_sub {
         margin: 56px 100px 56px 30px;
-        padding-left: 30px;
+        /* padding-left: 30px; */
     }
 
 }
