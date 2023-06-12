@@ -190,11 +190,11 @@ header {
     background-color: #002547;
 }
 
-.header_nav .item ul .box {
+.header_nav .item ul .wrap_box {
     position: relative;
 }
 
-.header_nav .item ul .box .language_item {
+.header_nav .item ul .wrap_box .language_item {
     border-radius: 5px;
     border: 1px solid #cccccc;
     padding: 10px 20px;
@@ -209,7 +209,7 @@ header {
     background-color: #333333;
 }
 
-.header_nav .item ul .box:hover .language_item {
+.header_nav .item ul .wrap_box:hover .language_item {
     display: flex;
 }
 
@@ -322,7 +322,7 @@ main {
         font-size: 14px;
     }
 
-    .header_nav .item ul .box .language_item {
+    .header_nav .item ul .wrap_box .language_item {
         padding: 10px 20px;
         top: 100%;
         left: -40px;

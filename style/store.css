@@ -550,7 +550,7 @@ body {
         align-items: flex-end;
         gap: 20px;
         width: 80%;
-        padding: 50px;
+        padding: 60px;
         box-sizing: border-box;
     }
 
@@ -747,6 +747,11 @@ body {
     } */
 
     /* content */
+    .content .box .text {
+        padding: 50px 60px;
+        margin: 0;
+    }
+
     .content .box .text .name {
         display: flex;
         flex-direction: column;
@@ -765,7 +770,7 @@ body {
     }
 
     .content .box .store_pic {
-        transform: scale(2.2);
+        transform: scale(2.4);
     }
 
     .content .box .text .name .introduce {

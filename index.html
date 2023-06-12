@@ -76,7 +76,7 @@
                                 <img src="./icon/header_a_icon_fish.svg" alt="fish">
                             </div>
                         </a>
-                        <div class="box">
+                        <div class="wrap_box">
                             <a class="language" href="#"><i class="fa-solid fa-earth-americas"></i></a>
                             <div class="language_item">
                                 <a href="#" class="ch">Chinese</a>
@@ -359,16 +359,16 @@
                     <div><img src="./pic/index/section_gallery_pic (7).png" alt="gallery_pic7"></div>
                 </div>
                 <div class="gallery_button">
-                    <a href="#" class="arrow_left">
+                    <a href="gallery.html" class="more">READ MORE<i class="fa-solid fa-arrow-right-long"></i></a>
+                    <!-- <a href="#" class="arrow_left">
                         <i class="fa-solid fa-arrow-left-long"></i>
                     </a>
                     <a href="#" class="arrow_right">
                         <i class="fa-solid fa-arrow-right-long"></i>
-                    </a>
+                    </a> -->
                 </div>
             </section>
         </section>
-
     </main>
     <footer class="footer">
         <div class="footer_text">
@@ -391,42 +391,38 @@
         </div>
     </footer>
 </body>
-<script>
+<!-- <script>
     $(document).ready(function () {
         $('.box').slick({
-            centerMode: true,
-            centerPadding: '60px',
+            lazyLoad: 'ondemand',
             slidesToShow: 3,
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 3
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 1
-                    }
-                }
-            ]
+            slidesToScroll: 1
         });
     });
-</script>
+</script> -->
+
 <script>
     $(document).ready(function () {
         $('.gallery_pic').slick({
-            slidesToShow: 3,
+            slidesToShow: 5,
             slidesToScroll: 1,
             autoplay: false,
             autoplaySpeed: 2000,
+            responsive: [
+                {
+                    breakpoint: 1225,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                },
+
+            ]
         });
     });
 </script>

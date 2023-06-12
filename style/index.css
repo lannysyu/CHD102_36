@@ -214,6 +214,7 @@ header .top .fish_button a:hover {
 
 .banner_learn h2 {
     color: #fff;
+    font-size: 26px;
 }
 
 .banner_learn p {
@@ -226,7 +227,7 @@ header .top .fish_button a:hover {
 
 .banner_learn .text {
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -448,6 +449,8 @@ header .top .fish_button a:hover {
 
 .banner_sub .text h2 {
     color: #fff;
+    font-size: 26px;
+    letter-spacing: 0.08em;
 }
 
 .banner_sub .text p {
@@ -654,7 +657,7 @@ header .top .fish_button a:hover {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 .need .text .join:hover {
@@ -665,8 +668,9 @@ header .top .fish_button a:hover {
     text-align: center;
     background-color: #00254780;
     position: relative;
-    padding-bottom: 70px;
-    width: 1920px;
+    /* padding-bottom: 50px; */
+    /* max-width: 1920px; */
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -675,10 +679,23 @@ header .top .fish_button a:hover {
 
 .gallery .gallery_pic {
     display: flex;
-    gap: 8px;
-    width: 100%;
+    /* gap: 8px; */
+    width: 200%;
+    /* width: 1920px; */
     justify-content: center;
     overflow: hidden;
+    padding: 0 80px;
+    box-sizing: border-box;
+}
+
+.gallery .gallery_pic img {
+    width: 100%;
+    position: relative;
+    /* object-fit: cover;
+    object-position: center; */
+    transform: scale(0.1);
+    top: 50%;
+    transform: translateY(-50%) scale(0.63);
 }
 
 .gallery h3 {
@@ -686,7 +703,7 @@ header .top .fish_button a:hover {
     padding: 50px 0;
 }
 
-.gallery .gallery_button {
+/* .gallery .gallery_button {
     display: flex;
     width: 1200px;
     justify-content: center;
@@ -703,20 +720,99 @@ header .top .fish_button a:hover {
     padding: 15px;
     font-size: 20px;
     line-height: 30px;
-}
+} */
 
-.gallery_button a:hover {
+/* .gallery_button a:hover {
     background-color: #ffffff30;
     border: 1px solid #ffffff;
+} */
+
+.gallery .gallery_button {
+    width: 90%;
+    text-align: right;
+    /* margin: auto; */
+    padding: 30px 0 40px 0;
+    font-size: 14px;
 }
 
-.slick-slide slick-active {
-    width: 387px;
+.gallery .gallery_button a {
+    font-family: Inter, "Noto Sans TC";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+}
+
+.gallery .gallery_button a i {
+    padding-left: 5px;
+    margin: auto;
+}
+
+.gallery .gallery_button a::after {
+    content: " ";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    transition: .4s .2s;
+}
+
+.gallery .gallery_button a:hover::after {
+    width: 100%;
+}
+
+/* slick slide */
+.slick-list {
+    width: 100%;
+    height: 100% !important;
+}
+
+.slick-track {
+    display: flex !important;
+    gap: 10px;
+    height: 100% !important;
+}
+
+.slick-slide img {
+    max-width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 30px !important;
+    color: #ffffff !important;
+}
+
+.slick-prev {
+    left: 26% !important;
+    z-index: 2;
+}
+
+.slick-next {
+    right: 26.8% !important;
+}
+
+@media screen and (min-width: 425px) {
+    .banner_learn .text {
+        top: 25%;
+    }
+
+    .banner_learn h2 {
+        font-size: 28px;
+    }
 }
 
 @media screen and (min-width: 458px) {
     .banner_sub .text {
         top: 25%;
+    }
+
+    .banner_sub .text h2 {
+        font-size: 28px;
+        letter-spacing: 0.12em;
     }
 }
 
@@ -788,7 +884,16 @@ header .top .fish_button a:hover {
         margin-top: 50px;
     }
 
-
+    /* .gallery */
+    .gallery .gallery_pic img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        position: relative;
+        transform: translateY(-12%);
+        top: 0;
+        /* transform: translateY(-50%) scale(0.63); */
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -861,10 +966,6 @@ header .top .fish_button a:hover {
     .banner_learn {
         max-width: 1920px;
     }
-
-    /* .gallery */
-    .gallery .gallery_button {
-        padding-right: 20px;
-        justify-content: flex-end;
-    }
 }
+
+@media screen and (min-width: 1225px) {}
