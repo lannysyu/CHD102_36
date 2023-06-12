@@ -350,7 +350,7 @@ body {
 .content .box .text .name {
     display: flex;
     flex-direction: column;
-    min-width: 196px;
+    min-width: 183px;
 }
 
 .content .box .text .name h3 {
@@ -524,11 +524,11 @@ body {
 @media screen and (min-width: 330px) {
 
     .header_pic .title .search {
-        margin: 20px 15px 0 90px;
+        margin: 20px 15px 0 50px;
     }
 
     .header_pic .title a {
-        margin: 20px 0 0 90px;
+        margin: 20px 0 0 50px;
     }
 
     .header_pic .box span {
