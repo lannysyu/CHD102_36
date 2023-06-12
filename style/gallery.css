@@ -77,7 +77,8 @@ body {
     align-items: center;
 }
 
-.part_clownfish .pic_rb {
+.part_clownfish .pic_rb,
+.part_jellyfish .pic_rb {
     font-size: 0px;
     width: 100%;
     display: flex;
