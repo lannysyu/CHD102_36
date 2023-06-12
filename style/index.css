@@ -206,10 +206,11 @@ header .top .fish_button a:hover {
     position: relative;
 }
 
-.banner_learn .img {
+.banner_learn .img img {
     display: flex;
     align-items: center;
     justify-content: center;
+    /* transform: translateX(-900px); */
 }
 
 .banner_learn img {
@@ -266,6 +267,7 @@ header .top .fish_button a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .news h2 {
@@ -875,6 +877,9 @@ header .top .fish_button a:hover {
 }
 
 @media screen and (min-width: 560px) {
+    /* .banner_learn .img img {
+        transform: translateX(900px);
+    } */
 
     .banner_sub .text {
         top: 30%;
@@ -925,6 +930,16 @@ header .top .fish_button a:hover {
     .banner_learn p {
         width: 75%;
         max-width: 665px;
+    }
+
+    .news {
+        background-image: url(../bg/bg_news.svg);
+        max-width: 1920px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
     /* banner_sub */
