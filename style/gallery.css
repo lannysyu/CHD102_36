@@ -266,13 +266,22 @@ body {
 
     .part_title .text,
     .part_clownfish .text {
-        padding: 0 100px;
+        padding: 0 60px;
     }
 
     .part_clownfish .content,
     .part_anemone .pic_bg .pic,
     .part_other .pic {
-        gap: 40px;
+        gap: 30px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .part_title .text,
+    .part_clownfish .text {
+        padding: 0 100px;
     }
 
 }
