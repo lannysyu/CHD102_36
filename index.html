@@ -262,7 +262,7 @@
                     </div>
                     <img src="./pic/index/section_news_pic (5).png" alt="news_pic">
                 </div>
-                <!-- <div class="wrap">
+                <div class="wrap">
                     <div class="item">
                         <div class="label">
                             <p>旅遊 TRAVEL
@@ -280,16 +280,16 @@
                         </div>
                     </div>
                     <img src="./pic/index/section_news_pic (6).png" alt="news_pic">
-                </div> -->
+                </div>
             </div>
-            <div class="arrow">
+            <!-- <div class="arrow">
                 <div class="a left">
                     <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
                 </div>
                 <div class="a right">
                     <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-            </div>
+            </div> -->
         </section>
 
         <section class="banner_sub">
@@ -393,7 +393,7 @@
 </body>
 <script>
     $(document).ready(function () {
-        $('.gallery_pic').slick({
+        $('.box').slick({
             slidesToShow: 5,
             slidesToScroll: 1,
             autoplay: false,
@@ -408,10 +408,29 @@
                 {
                     breakpoint: 768,
                     settings: {
+                        slidesToShow: 3,
+                    }
+                },
+            ]
+        });
+        $('.gallery_pic').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [
+                {
+                    breakpoint: 1225,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
                         slidesToShow: 1,
                     }
                 },
-
             ]
         });
     });

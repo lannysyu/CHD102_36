@@ -32,8 +32,9 @@ header {
     margin-top: 50px;
     margin-left: 70px;
     align-items: center;
-    width: 110px;
     font-size: 12px;
+    padding: 15px 40px;
+    width: 110px;
 }
 
 .header_pic .title a i {
@@ -346,11 +347,9 @@ h3 {
 
     .header_pic .title a {
         margin-left: 90px;
-    }
-
-    .header_pic .title a {
-        padding: 15px 40px;
-        width: 130px;
+        /* padding: 15px 30px;
+        font-size: 14px;
+        width: 130px; */
     }
 
     .latest .title h3,

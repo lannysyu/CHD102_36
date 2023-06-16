@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main-header{
+            background-color: #ccc;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            position: relative;
+        }
+        .logo img{
+            vertical-align: middle;
+        }
+        #menu-switch{
+            display: none;
+        }
+        .main-nav a{
+            display: block;
+            padding: 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        @media screen and (max-width:1023px){
+            .main-nav a + a{
+                border-top: 1px solid #fff;
+            }
+            #menu-switch:checked + .main-header .main-nav {
+                display: block;
+            }
+            .main-nav{
+                display: none;
+                position: absolute;
+                width: 96%;
+                background-color: #fa0;
+                left: 0;
+                top: 100%;
+            }
+            .hb{
+                width: 40px;
+                height: 40px;
+                background-color: #000;
+                position: relative;
+            }
+            .hb span{
+                width: 84%;
+                height: 4px;
+                background-color: #f00;
+                position: absolute;
+                margin: auto;
+                left: 0;
+                right: 0;
+                rotate: 0deg;
+            }
+            .hb span:nth-child(1){
+                top: 8px;
+                transition: top .5s .5s, rotate .5s;
+            }
+            .hb span:nth-child(2){
+                top: 18px;
+            }
+            .hb span:nth-child(3){
+                top: 28px;
+                transition: top .5s .5s, rotate .5s;
+            }
+            #menu-switch:checked + .main-header .hb span:nth-child(1){
+                top: 18px;
+                rotate: 45deg;
+                transition: top .5s, rotate .5s .5s;
+            }
+            #menu-switch:checked + .main-header .hb span:nth-child(2){
+                display: none;
+            }
+            #menu-switch:checked + .main-header .hb span:nth-child(3){
+                top: 18px;
+                rotate: -45deg;
+                transition: top .5s, rotate .5s .5s;
+            }
+        }
+        @media screen and (min-width:1024px){
+            .hb{
+                display: none;
+            }
+            .main-nav a{
+                display: inline-block;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <input type="checkbox" name="" id="menu-switch">
+    <header class="main-header">
+        
+        <div class="logo">
+            <a href="#"><img src="https://picsum.photos/80/40?random=2"></a>
+        </div>
+        
+        <label for="menu-switch" class="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        
+        <nav class="main-nav">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+
+</body>
+</html>
